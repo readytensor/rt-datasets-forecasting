@@ -1,83 +1,83 @@
-﻿Company,Stock
-Brunswick,BC
-NCH,THB
-Revlon,REV
-Control Data,CDC
-Colgate-Palmolive,CL
-ConAgra Foods,CAG
+﻿Company,Ticker
+Apple Inc.,AAPL
 Archer Daniels Midland,ADM
-NCR,VYX
-Temple-Inland,TIN
-Vulcan Materials,VMC
-Smithfield Foods,SFD
-Rubbermaid,NWL
-Ocean Spray,OCESP
-Dean Foods,DFODQ
-Texas Instruments,TXN
-Anheuser-Busch,BUD
-Thorn Apple Valley,TAVI
-Gold Kist Holdings,GKIS
-Cummins,CMI
+Ametek,AME
+A.O. Smith,AOS
+Dennison Manufacturing,AVY
+Boeing,BA
+Brunswick,BC
+Becton Dickinson,BDX
 Briggs & Stratton,BGG
 Baker Hughes,BKR
-Guilford Mills,GMIL
-Crown Central,CCK
-Nacco Industries,NC
-3M,MMM
-Newmont Mining,NEM
-Warnaco Group,WRC
-Dow Jones,DJI
-Fairchild,FCS
-Standard Register,SR
-VF,VFC
 Bowater,BOW
-Merck,MRK
-Nucor,NUE
-PPG Industries,MRK
-Medtronic,PPG
-Pittway,MDT
-Navistar International,NAV
-Dow Corning,GLW
-Tesoro,TSO
-H.J. Heinz,KHC
-Dennison Manufacturing,AVY
-General Dynamics,GD
-A.O. Smith,AOS
-Mattel,MAT
-Joy Global,JOY
-Honeywell,HON
 Bethlehem Steel,BS
-Ethyl,EY
-Becton Dickinson,BDX
-Western Digital,WDC
-Johnson & Johnson,JNJ
-Maxxam,MXM
-Shell Oil,SHEL
-Valmont Industries,VMI
-Dover,DOV
-Gaylord Container,GCR
-Ametek,AME
-Toro,TTC
-Levi Strauss,LEVI
-Teledyne,TDY
-SPX,SPXC
-Coca-Cola Enterprises,KO
+Anheuser-Busch,BUD
+ConAgra Foods,CAG
+Caterpillar,CAT
+Crown Central,CCK
+Control Data,CDC
 CF Industries,CF
-IBM,IBM
-Apple Inc.,AAPL
-Microsoft,MSFT
-Exxon Mobil,XOM
-General Electric,GE
-Ford Motor Co,F
-Altria Group,MO
-Dupont,DD
+Colgate-Palmolive,CL
+Cummins,CMI
+ConocoPhillips,COP
 Chevron,CVX
-Procter & Gamble,PG
-Boeing,BA
+Dupont,DD
+Dean Foods,DFODQ
+Dow Jones,DJI
+Dover,DOV
+Ethyl,EY
+Ford Motor Co,F
+Fairchild,FCS
+Gaylord Container,GCR
+General Dynamics,GD
+General Electric,GE
+Gold Kist Holdings,GKIS
+Dow Corning,GLW
+Guilford Mills,GMIL
+Honeywell,HON
+Hewlett Packard,HPQ
+IBM,IBM
+International paper,IP
+Johnson & Johnson,JNJ
+Joy Global,JOY
+H.J. Heinz,KHC
+Coca-Cola Enterprises,KO
+Levi Strauss,LEVI
+Mattel,MAT
+Pittway,MDT
+3M,MMM
+Altria Group,MO
+Merck,MRK
+PPG Industries,MRK
+Microsoft,MSFT
+Maxxam,MXM
+Navistar International,NAV
+Nacco Industries,NC
+Newmont Mining,NEM
+Nucor,NUE
+Rubbermaid,NWL
+Ocean Spray,OCESP
 Occidental Petroleum,OXY
 Pepsico,PEP
+Procter & Gamble,PG
+Medtronic,PPG
+Revlon,REV
 Rockwell Automation,ROK
-ConocoPhillips,COP
-Hewlett Packard,HPQ
-Caterpillar,CAT
-International paper,IP
+Smithfield Foods,SFD
+Shell Oil,SHEL
+SPX,SPXC
+Standard Register,SR
+Thorn Apple Valley,TAVI
+Teledyne,TDY
+NCH,THB
+Temple-Inland,TIN
+Tesoro,TSO
+Toro,TTC
+Texas Instruments,TXN
+VF,VFC
+Vulcan Materials,VMC
+Valmont Industries,VMI
+NCR,VYX
+Western Digital,WDC
+Warnaco Group,WRC
+Exxon Mobil,XOM
