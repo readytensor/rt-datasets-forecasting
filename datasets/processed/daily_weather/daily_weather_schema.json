@@ -1,0 +1,124 @@
+{
+  "title": "Daily Weather in 25 World Cities",
+  "description": "This dataset spans 3 years and includes daily weather measurements for 26 cities worldwide. It comprises 17 weather parameters, making it suitable for both multi-variate and single-series forecasting tasks. With data from January 2020 to December 2022, it's an ideal resource for forecasting the 'temperature' series while leveraging other weather measurements as potential exogenous factors.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "daily",
+  "forecastLength": 15,
+  "id": {
+    "name": "location",
+    "description": "City of the series. "
+  },
+  "timeField": {
+    "name": "date",
+    "description": "Date of the weather observation. ",
+    "dataType": "date",
+    "example": "2020-01-01"
+  },
+  "forecastTarget": {
+    "name": "maxtemp",
+    "description": "Target variable; Maximum temperature for the day in Celcius.",
+    "dataType": "NUMERIC",
+    "example": 34
+  },
+  "additionalFeatures": [
+    {
+      "name": "mintemp",
+      "description": "Minimum temperature for the day in Celcius",
+      "dataType": "NUMERIC",
+      "example": 26
+    },
+    {
+      "name": "avgtemp",
+      "description": "Average temperature for the day in Celcius",
+      "dataType": "NUMERIC",
+      "example": 30
+    },
+    {
+      "name": "sunhour",
+      "description": "Duration between sunrise and sunset in hours",
+      "dataType": "NUMERIC",
+      "example": 10.2
+    },
+    {
+      "name": "uv_index",
+      "description": "UV Index",
+      "dataType": "NUMERIC",
+      "example": 6
+    },
+    {
+      "name": "wind_speed",
+      "description": "Maximum wind speed in kilometers per hour",
+      "dataType": "NUMERIC",
+      "example": 16
+    },
+    {
+      "name": "wind_degree",
+      "description": "Wind direction in degrees",
+      "dataType": "NUMERIC",
+      "example": 68
+    },
+    {
+      "name": "precip",
+      "description": "Precipitation amount in millimeters",
+      "dataType": "NUMERIC",
+      "example": 0.0
+    },
+    {
+      "name": "humidity",
+      "description": "Humidity as percentage",
+      "dataType": "NUMERIC",
+      "example": 44
+    },
+    {
+      "name": "visibility",
+      "description": "Average visibility in km",
+      "dataType": "NUMERIC",
+      "example": 10
+    },
+    {
+      "name": "pressure",
+      "description": "Pressure in millibars",
+      "dataType": "NUMERIC",
+      "example": 1015
+    },
+    {
+      "name": "cloudcover",
+      "description": "Cloud cover as percentage",
+      "dataType": "NUMERIC",
+      "example": 34
+    },
+    {
+      "name": "heatindex",
+      "description": "Heat index in celcius",
+      "dataType": "NUMERIC",
+      "example": 31
+    },
+    {
+      "name": "dewpoint",
+      "description": "Dew point in celcius",
+      "dataType": "NUMERIC",
+      "example": 18
+    },
+    {
+      "name": "windchill",
+      "description": "Windchill temperature in celcius",
+      "dataType": "NUMERIC",
+      "example": 30
+    },
+    {
+      "name": "windgust",
+      "description": "Wind gust in kmph",
+      "dataType": "NUMERIC",
+      "example": 23
+    },
+    {
+      "name": "feelslike",
+      "description": "Feels like in Celcius",
+      "dataType": "NUMERIC",
+      "example": 31
+    }
+  ]
+}

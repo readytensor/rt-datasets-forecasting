@@ -1,0 +1,40 @@
+{
+  "title": "Smoke Test Forecasting",
+  "description": "This dataset comprises five unique time series with varying components, including sine-wave patterns, linear trends, periodic features, and random noise. It serves as an efficient resource for testing time series forecasting models and exploring pattern recognition and periodicity analysis. ",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "none",
+  "forecastLength": 10,
+  "id": {
+    "name": "series_id",
+    "description": "Unique identifier per series"
+  },
+  "forecastTarget": {
+    "name": "y",
+    "description": "Target variable",
+    "dataType": "NUMERIC",
+    "example": 6.5
+  },
+  "additionalFeatures": [
+    {
+      "name": "sine",
+      "description": "Numeric variable representing the sine component",
+      "dataType": "NUMERIC",
+      "example": 5.0
+    },
+    {
+      "name": "trend",
+      "description": "Numeric variable representing the linear trend component",
+      "dataType": "NUMERIC",
+      "example": 0.0
+    },
+    {
+      "name": "add_step",
+      "description": "Numeric variable representing that an offset is added on this sample",
+      "dataType": "NUMERIC",
+      "example": 1.5
+    }
+  ]
+}

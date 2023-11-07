@@ -1,0 +1,34 @@
+{
+  "title": "Online Retail Sales",
+  "description": "The `Online Retail Sales` dataset aggregates daily transactions from a UK-based online retailer, focusing on the top 40 items by sales over a two-year period from 2018 to 2019. It provides insights into daily order counts and total sales per item, offering a granular view of consumer purchasing patterns and item performance within the niche market of unique all-occasion gifts. This dataset is particularly useful for retail trend analysis, inventory forecasting, and understanding seasonal impacts on e-commerce.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "daily",
+  "forecastLength": 14,
+  "id": {
+    "name": "StockCode",
+    "description": "Unique identifier per item sold"
+  },
+  "timeField": {
+    "name": "InvoiceDate",
+    "description": "Date on which the sale occurred",
+    "dataType": "date",
+    "example": "2010-12-01"
+  },
+  "forecastTarget": {
+    "name": "Quantity",
+    "description": "Total number of units sold",
+    "dataType": "NUMERIC",
+    "example": 29.0
+  },
+  "additionalFeatures": [
+    {
+      "name": "Sales",
+      "description": "Total revenue  (units sold * unit price)",
+      "dataType": "NUMERIC",
+      "example": 213.03
+    }
+  ]
+}

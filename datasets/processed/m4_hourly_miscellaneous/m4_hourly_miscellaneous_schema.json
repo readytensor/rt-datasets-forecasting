@@ -1,0 +1,21 @@
+{
+  "title": "M4 Forecasting Competition Sampled Hourly Series",
+  "description": "This dataset is a curated collection of 35 unique hourly time series, each with a length of 748 data points, sampled from the diverse and comprehensive series presented in the M4 forecasting competition. Encompassing a range of domains including finance, retail, and energy, these uni-variate series are selected for their variety and the richness they offer to hourly frequency forecasting tasks, despite originating from non-uniform time windows.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "hourly",
+  "forecastLength": 72,
+  "id": {
+    "name": "series",
+    "description": "Unique idenfier for the series"
+  },
+  "forecastTarget": {
+    "name": "value",
+    "description": "Target variable for forecasting. ",
+    "dataType": "NUMERIC",
+    "example": 2127.0
+  },
+  "additionalFeatures": []
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Synthetic ARIMA Process",
+  "description": "The `Synthetic ARIMA Process` dataset is a synthetic dataset generated using the ARIMA (Autoregressive Integrated Moving Average) model. It comprises various ARIMA scenarios, including pure noise, specific Autoregressive (AR) components, Moving Average (MA) components, and Integration (I) for differencing. It also includes an ARIMA hybrid scenario with AR and MA terms and one-time differencing. This dataset is a valuable resource for exploring and modeling time series data, making it useful for tasks like model validation, component analysis, and benchmarking in time series analysis.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "none",
+  "forecastLength": 30,
+  "id": {
+    "name": "series_id",
+    "description": "Unique identifier per series in the dataset. "
+  },
+  "forecastTarget": {
+    "name": "value",
+    "description": "Time series observation.",
+    "dataType": "NUMERIC",
+    "example": 0.221
+  },
+  "additionalFeatures": []
+}

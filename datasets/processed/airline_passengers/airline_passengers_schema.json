@@ -1,0 +1,27 @@
+{
+  "title": "Airline Passengers",
+  "description": "The `Airline Passengers` dataset consists of monthly data spanning from January 1949 to December 1960, representing the total number of airline passengers in thousands. It is a commonly used dataset in time series analysis and forecasting, making it valuable for studying seasonal patterns and applying forecasting techniques like ARIMA and exponential smoothing in the field of time series analysis.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "monthly",
+  "forecastLength": 18,
+  "id": {
+    "name": "SeriesId",
+    "description": "Unique identifier added to this dataset"
+  },
+  "timeField": {
+    "name": "Month",
+    "description": "Date representing month and year of the sample. ",
+    "dataType": "date",
+    "example": "1949-01-01"
+  },
+  "forecastTarget": {
+    "name": "#Passengers",
+    "description": "Total number of airline passengers in thousands.",
+    "dataType": "NUMERIC",
+    "example": 112
+  },
+  "additionalFeatures": []
+}

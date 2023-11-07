@@ -1,0 +1,58 @@
+{
+  "title": "Daily Stock Prices for Sampled S&P Companies",
+  "description": "This dataset provides historical stock data from 52 selected S&P 500 companies over three decades. It aims to capture individual stock trends and patterns while avoiding market-wide influences. The dataset spans 1000 trading days for each stock, with random start dates to ensure decorrelation. Stock tickers have been anonymized to focus on technical analysis. It's ideal for time series forecasting and technical analysis in a real-world stock market context.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "daily",
+  "forecastLength": 21,
+  "id": {
+    "name": "Masked_Ticker",
+    "description": "Unique identifier for the stock. This is a masked ticker that replaced the original stock ticker. "
+  },
+  "timeField": {
+    "name": "Date",
+    "description": "Date of the sample. ",
+    "dataType": "date",
+    "example": "1999-08-18"
+  },
+  "forecastTarget": {
+    "name": "Adj Close",
+    "description": "Adjusted closing price of the stock; this is the target variable for forecasting. ",
+    "dataType": "NUMERIC",
+    "example": 15.084
+  },
+  "additionalFeatures": [
+    {
+      "name": "Close",
+      "description": "Recorded closing price of the stock on the day. ",
+      "dataType": "NUMERIC",
+      "example": 21.917
+    },
+    {
+      "name": "High",
+      "description": "Recorded high (maximum) price of the during the day. ",
+      "dataType": "NUMERIC",
+      "example": 22.146
+    },
+    {
+      "name": "Low",
+      "description": "Recorded low (minimum) price of the during the day. ",
+      "dataType": "NUMERIC",
+      "example": 21.833
+    },
+    {
+      "name": "Open",
+      "description": "Recorded opening price of the stock on the day. ",
+      "dataType": "NUMERIC",
+      "example": 22.042
+    },
+    {
+      "name": "Volume",
+      "description": "Recorded volume of stocks traded during the day.",
+      "dataType": "NUMERIC",
+      "example": 2303100
+    }
+  ]
+}

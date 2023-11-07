@@ -1,0 +1,27 @@
+{
+  "title": "M4 Forecasting Competition Sampled Yearly Series",
+  "description": "This dataset comprises 100 yearly time series, each spanning 46 years from 1970 to 2015, meticulously sampled from the M4 forecasting competition. These series provide a consistent historical window and are ideal for exploring long-term trends and forecasting challenges across various sectors.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "yearly",
+  "forecastLength": 6,
+  "id": {
+    "name": "series",
+    "description": "Unique idenfier for the series"
+  },
+  "timeField": {
+    "name": "year",
+    "description": "Year of the sample for the series",
+    "dataType": "date",
+    "example": "1970-01-01"
+  },
+  "forecastTarget": {
+    "name": "value",
+    "description": "Target variable for forecasting. ",
+    "dataType": "NUMERIC",
+    "example": 2874.87
+  },
+  "additionalFeatures": []
+}

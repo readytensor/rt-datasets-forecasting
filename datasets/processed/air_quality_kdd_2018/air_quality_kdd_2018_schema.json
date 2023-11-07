@@ -1,0 +1,58 @@
+{
+  "title": "Air Quality KDD 2018",
+  "description": "Air Quality KDD 2018 is a time series dataset from the KDD Cup 2018 competition, featuring 270 hourly series of air quality data from 59 stations in Beijing and London (01/01/2017 to 31/03/2018). It includes various air quality measurements and handles missing values through zero replacement and carrying forward last observations (LOCF). Useful for benchmarking time series forecasting algorithms in air quality prediction. Original dataset contained air quality data for stations from Beijing and London. In this curated dataset, only the air quality data for stations from Beijing is included.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "hourly",
+  "forecastLength": 120,
+  "id": {
+    "name": "station",
+    "description": "Station id in city"
+  },
+  "timeField": {
+    "name": "timestamp",
+    "description": "Hour of measurement",
+    "dataType": "datetime",
+    "example": "2017-01-01 14-00-00"
+  },
+  "forecastTarget": {
+    "name": "PM2.5",
+    "description": "Air quality metric: PM2.5 - particles that are 2.5 microns or less in diameter (\u00b5g/m\u00b3)",
+    "dataType": "NUMERIC",
+    "example": 453.0
+  },
+  "additionalFeatures": [
+    {
+      "name": "PM10",
+      "description": "Air quality metric: PM10 - particles that are 10 microns or less in diameter (\u00b5g/m\u00b3)",
+      "dataType": "NUMERIC",
+      "example": 467.0
+    },
+    {
+      "name": "NO2",
+      "description": "Air quality metric: PM10 - nitrogen dioxide (\u00b5g/m\u00b3)",
+      "dataType": "NUMERIC",
+      "example": 156.0
+    },
+    {
+      "name": "CO",
+      "description": "Air quality metric: CO -carbon monoxide (\u00b5g/m\u00b3)",
+      "dataType": "NUMERIC",
+      "example": 7.2
+    },
+    {
+      "name": "O3",
+      "description": "Air quality metric: O3 - ozone (\u00b5g/m\u00b3)",
+      "dataType": "NUMERIC",
+      "example": 3.0
+    },
+    {
+      "name": "SO2",
+      "description": "Air quality metric: SO2 - sulphur dioxide (\u00b5g/m\u00b3)",
+      "dataType": "NUMERIC",
+      "example": 9.0
+    }
+  ]
+}
