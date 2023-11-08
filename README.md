@@ -6,10 +6,13 @@ The `datasets` folder contains the main data files and the schema files for all 
 
 - The `raw` folder contains the original data files from the source (see attributions below). The Jupyter notebook file within each dataset folder is used to convert the raw data file for each dataset into the processed form in `processed` folder.
 - `processed` folder contains the processed files. These files are used in the Ready Tensor platform for model benchmarking.
+  - The CSV file with suffix `_train.csv` is used for training. This file excludes the forecast horizon.
+  - `_test_key.csv` contains the data for the forecast horizon. This test key file is used to generate scores by comparing with forecasts.
+  - The JSON file with suffix `_schema.json` is the schema file for the corresponding dataset.
+  - The CSV file with the dataset name, and no other suffix, is the full data made of both training data, and data from the forecast horizon.
+  - In case of some datasets, `.png` files are also included to visualize the data.
 
----
-
-The following is the list of datasets available in this repo.
+Below is the list and description of datasets in this repo.
 
 ---
 
