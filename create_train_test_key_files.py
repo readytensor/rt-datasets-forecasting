@@ -1,25 +1,13 @@
 import os
-from sklearn.model_selection import train_test_split
+import pandas as pd
 from pandas import DataFrame
 from typing import Tuple
-import utils
+import sys
 
+import utils
 import paths
 
-def split_dataset(
-        dataset: DataFrame, test_size: float = 0.2) -> Tuple[DataFrame, DataFrame]:
-    """
-    Splits the dataset into train and test set.
-    
-    Args:
-        dataset (DataFrame): The dataset to be split.
-        test_size (float): The proportion of the dataset to include in the test split.
 
-    Returns:
-        Tuple[DataFrame, DataFrame]: The train and test datasets.
-    """
-    train_df, test_df = train_test_split(dataset, test_size=test_size, random_state=42)
-    return train_df, test_df
 
 def save_train_data(
         train_df: DataFrame, dataset_name: str, processed_datasets_path: str) -> None:
@@ -34,23 +22,6 @@ def save_train_data(
     train_df.to_csv(os.path.join(
         processed_datasets_path, dataset_name, f"{dataset_name}_train.csv"), index=False)
 
-def save_test_no_target_data(
-        test_df: DataFrame,
-        target_name: str,
-        dataset_name: str,
-        processed_datasets_path: str) -> None:
-    """
-    Saves the test data without the target column to a CSV file.
-
-    Args:
-        test_df (DataFrame): The test dataset.
-        target_name (str): The name of the target column.
-        dataset_name (str): The name of the dataset.
-        processed_datasets_path (str): The path where the processed datasets are stored.
-    """
-    test_no_target_df = test_df.drop(target_name, axis=1)
-    test_no_target_df.to_csv(
-        os.path.join(processed_datasets_path, dataset_name, f"{dataset_name}_test.csv"), index=False)
 
 def save_test_key_data(
         test_df: DataFrame,
@@ -93,19 +64,36 @@ def create_train_test_testkey_files(dataset_cfg_path:str, processed_datasets_pat
         # Read dataset
         dataset = utils.load_dataset(dataset_name, processed_datasets_path)
 
-        # Split the dataset
-        train_df, test_df = split_dataset(dataset)
+        # Read schema
+        schema = utils.load_schema(dataset_name, processed_datasets_path)
+
+        dataset_train_dfs = []
+        dataset_test_dfs = []
+
+        dataset_series_list = dataset[schema['id']['name']].unique().tolist()
+        forecast_length = schema['forecastLength']
+
+        for series in dataset_series_list:
+            series_df = dataset[dataset[schema['id']['name']] == series]
+            series_train_df = series_df.iloc[:-forecast_length]
+            series_test_df = series_df.iloc[-forecast_length:]
+            dataset_train_dfs.append(series_train_df)
+            dataset_test_dfs.append(series_test_df)
+            # print(series, series_df.shape, series_train_df.shape, series_test_df.shape)
+        
+        train_df = pd.concat(dataset_train_dfs)
+        test_df = pd.concat(dataset_test_dfs)
 
         # Save train/test data
         save_train_data(train_df, dataset_name, processed_datasets_path)
 
-        # Save test data without target
-        save_test_no_target_data(
-            test_df, dataset_row["target_name"], dataset_name, processed_datasets_path)
-
         # Save test key data
         save_test_key_data(
-            test_df, dataset_row["id_name"], dataset_row["target_name"], dataset_name, processed_datasets_path)
+            test_df,
+            schema['id']['name'],
+            schema['forecastTarget']['name'],
+            dataset_name, processed_datasets_path
+        )
 
 
 def run_train_test_testkey_files_gen():

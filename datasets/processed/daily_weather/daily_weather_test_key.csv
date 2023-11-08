@@ -1,0 +1,391 @@
+location,maxtemp
+"Bangkok, Thailand",31
+"Bangkok, Thailand",28
+"Bangkok, Thailand",28
+"Bangkok, Thailand",31
+"Bangkok, Thailand",32
+"Bangkok, Thailand",33
+"Bangkok, Thailand",33
+"Bangkok, Thailand",31
+"Bangkok, Thailand",30
+"Bangkok, Thailand",31
+"Bangkok, Thailand",32
+"Bangkok, Thailand",32
+"Bangkok, Thailand",32
+"Bangkok, Thailand",30
+"Bangkok, Thailand",31
+"Barcelona, Spain",14
+"Barcelona, Spain",15
+"Barcelona, Spain",16
+"Barcelona, Spain",15
+"Barcelona, Spain",16
+"Barcelona, Spain",18
+"Barcelona, Spain",21
+"Barcelona, Spain",18
+"Barcelona, Spain",18
+"Barcelona, Spain",19
+"Barcelona, Spain",16
+"Barcelona, Spain",17
+"Barcelona, Spain",18
+"Barcelona, Spain",17
+"Barcelona, Spain",17
+"Beijing, China",-2
+"Beijing, China",-2
+"Beijing, China",3
+"Beijing, China",1
+"Beijing, China",-1
+"Beijing, China",-1
+"Beijing, China",-1
+"Beijing, China",2
+"Beijing, China",-1
+"Beijing, China",3
+"Beijing, China",2
+"Beijing, China",2
+"Beijing, China",3
+"Beijing, China",4
+"Beijing, China",5
+"Berlin, Germany",-3
+"Berlin, Germany",-3
+"Berlin, Germany",3
+"Berlin, Germany",5
+"Berlin, Germany",6
+"Berlin, Germany",9
+"Berlin, Germany",8
+"Berlin, Germany",6
+"Berlin, Germany",9
+"Berlin, Germany",10
+"Berlin, Germany",6
+"Berlin, Germany",6
+"Berlin, Germany",11
+"Berlin, Germany",9
+"Berlin, Germany",15
+"Bogota, Colombia",18
+"Bogota, Colombia",17
+"Bogota, Colombia",18
+"Bogota, Colombia",18
+"Bogota, Colombia",18
+"Bogota, Colombia",18
+"Bogota, Colombia",17
+"Bogota, Colombia",17
+"Bogota, Colombia",17
+"Bogota, Colombia",17
+"Bogota, Colombia",17
+"Bogota, Colombia",16
+"Bogota, Colombia",17
+"Bogota, Colombia",17
+"Bogota, Colombia",16
+"Buenos Aires, Argentina",28
+"Buenos Aires, Argentina",30
+"Buenos Aires, Argentina",32
+"Buenos Aires, Argentina",33
+"Buenos Aires, Argentina",33
+"Buenos Aires, Argentina",34
+"Buenos Aires, Argentina",28
+"Buenos Aires, Argentina",25
+"Buenos Aires, Argentina",24
+"Buenos Aires, Argentina",31
+"Buenos Aires, Argentina",35
+"Buenos Aires, Argentina",31
+"Buenos Aires, Argentina",32
+"Buenos Aires, Argentina",39
+"Buenos Aires, Argentina",34
+"Cairo, Egypt",27
+"Cairo, Egypt",26
+"Cairo, Egypt",27
+"Cairo, Egypt",24
+"Cairo, Egypt",20
+"Cairo, Egypt",20
+"Cairo, Egypt",22
+"Cairo, Egypt",19
+"Cairo, Egypt",20
+"Cairo, Egypt",21
+"Cairo, Egypt",23
+"Cairo, Egypt",22
+"Cairo, Egypt",22
+"Cairo, Egypt",21
+"Cairo, Egypt",23
+"Cape Town, South Africa",25
+"Cape Town, South Africa",25
+"Cape Town, South Africa",22
+"Cape Town, South Africa",23
+"Cape Town, South Africa",29
+"Cape Town, South Africa",26
+"Cape Town, South Africa",23
+"Cape Town, South Africa",23
+"Cape Town, South Africa",22
+"Cape Town, South Africa",26
+"Cape Town, South Africa",25
+"Cape Town, South Africa",25
+"Cape Town, South Africa",22
+"Cape Town, South Africa",29
+"Cape Town, South Africa",30
+"Dubai, United Arab Emirates",25
+"Dubai, United Arab Emirates",25
+"Dubai, United Arab Emirates",25
+"Dubai, United Arab Emirates",25
+"Dubai, United Arab Emirates",25
+"Dubai, United Arab Emirates",24
+"Dubai, United Arab Emirates",24
+"Dubai, United Arab Emirates",25
+"Dubai, United Arab Emirates",24
+"Dubai, United Arab Emirates",23
+"Dubai, United Arab Emirates",22
+"Dubai, United Arab Emirates",22
+"Dubai, United Arab Emirates",23
+"Dubai, United Arab Emirates",23
+"Dubai, United Arab Emirates",23
+"Lagos, Nigeria",32
+"Lagos, Nigeria",32
+"Lagos, Nigeria",34
+"Lagos, Nigeria",33
+"Lagos, Nigeria",33
+"Lagos, Nigeria",33
+"Lagos, Nigeria",34
+"Lagos, Nigeria",34
+"Lagos, Nigeria",33
+"Lagos, Nigeria",33
+"Lagos, Nigeria",35
+"Lagos, Nigeria",33
+"Lagos, Nigeria",34
+"Lagos, Nigeria",34
+"Lagos, Nigeria",34
+"Lima, Peru",23
+"Lima, Peru",24
+"Lima, Peru",24
+"Lima, Peru",25
+"Lima, Peru",25
+"Lima, Peru",23
+"Lima, Peru",23
+"Lima, Peru",24
+"Lima, Peru",23
+"Lima, Peru",24
+"Lima, Peru",23
+"Lima, Peru",25
+"Lima, Peru",23
+"Lima, Peru",24
+"Lima, Peru",23
+"London, United Kingdom",4
+"London, United Kingdom",8
+"London, United Kingdom",13
+"London, United Kingdom",12
+"London, United Kingdom",9
+"London, United Kingdom",12
+"London, United Kingdom",13
+"London, United Kingdom",10
+"London, United Kingdom",11
+"London, United Kingdom",10
+"London, United Kingdom",10
+"London, United Kingdom",12
+"London, United Kingdom",10
+"London, United Kingdom",14
+"London, United Kingdom",13
+"Los Angeles, United States of America",18
+"Los Angeles, United States of America",18
+"Los Angeles, United States of America",19
+"Los Angeles, United States of America",18
+"Los Angeles, United States of America",23
+"Los Angeles, United States of America",20
+"Los Angeles, United States of America",22
+"Los Angeles, United States of America",26
+"Los Angeles, United States of America",28
+"Los Angeles, United States of America",24
+"Los Angeles, United States of America",16
+"Los Angeles, United States of America",18
+"Los Angeles, United States of America",14
+"Los Angeles, United States of America",14
+"Los Angeles, United States of America",15
+"Marrakesh, Morocco",20
+"Marrakesh, Morocco",24
+"Marrakesh, Morocco",24
+"Marrakesh, Morocco",24
+"Marrakesh, Morocco",24
+"Marrakesh, Morocco",23
+"Marrakesh, Morocco",25
+"Marrakesh, Morocco",25
+"Marrakesh, Morocco",24
+"Marrakesh, Morocco",23
+"Marrakesh, Morocco",24
+"Marrakesh, Morocco",22
+"Marrakesh, Morocco",22
+"Marrakesh, Morocco",23
+"Marrakesh, Morocco",22
+"Mexico City, Mexico",22
+"Mexico City, Mexico",21
+"Mexico City, Mexico",22
+"Mexico City, Mexico",23
+"Mexico City, Mexico",22
+"Mexico City, Mexico",23
+"Mexico City, Mexico",20
+"Mexico City, Mexico",20
+"Mexico City, Mexico",18
+"Mexico City, Mexico",18
+"Mexico City, Mexico",19
+"Mexico City, Mexico",20
+"Mexico City, Mexico",20
+"Mexico City, Mexico",19
+"Mexico City, Mexico",21
+"Mumbai, India",36
+"Mumbai, India",36
+"Mumbai, India",36
+"Mumbai, India",35
+"Mumbai, India",35
+"Mumbai, India",35
+"Mumbai, India",33
+"Mumbai, India",33
+"Mumbai, India",31
+"Mumbai, India",32
+"Mumbai, India",34
+"Mumbai, India",35
+"Mumbai, India",35
+"Mumbai, India",35
+"Mumbai, India",34
+"Nairobi, Kenya",24
+"Nairobi, Kenya",25
+"Nairobi, Kenya",25
+"Nairobi, Kenya",25
+"Nairobi, Kenya",24
+"Nairobi, Kenya",23
+"Nairobi, Kenya",23
+"Nairobi, Kenya",24
+"Nairobi, Kenya",24
+"Nairobi, Kenya",25
+"Nairobi, Kenya",22
+"Nairobi, Kenya",24
+"Nairobi, Kenya",22
+"Nairobi, Kenya",23
+"Nairobi, Kenya",23
+"New York City, United States of America",7
+"New York City, United States of America",5
+"New York City, United States of America",4
+"New York City, United States of America",3
+"New York City, United States of America",3
+"New York City, United States of America",10
+"New York City, United States of America",12
+"New York City, United States of America",-7
+"New York City, United States of America",-2
+"New York City, United States of America",-1
+"New York City, United States of America",3
+"New York City, United States of America",6
+"New York City, United States of America",10
+"New York City, United States of America",12
+"New York City, United States of America",9
+"Paris, France",1
+"Paris, France",5
+"Paris, France",11
+"Paris, France",12
+"Paris, France",10
+"Paris, France",14
+"Paris, France",15
+"Paris, France",12
+"Paris, France",14
+"Paris, France",10
+"Paris, France",7
+"Paris, France",11
+"Paris, France",12
+"Paris, France",15
+"Paris, France",17
+"Rio De Janeiro, Brazil",28
+"Rio De Janeiro, Brazil",26
+"Rio De Janeiro, Brazil",24
+"Rio De Janeiro, Brazil",22
+"Rio De Janeiro, Brazil",24
+"Rio De Janeiro, Brazil",24
+"Rio De Janeiro, Brazil",25
+"Rio De Janeiro, Brazil",26
+"Rio De Janeiro, Brazil",28
+"Rio De Janeiro, Brazil",30
+"Rio De Janeiro, Brazil",30
+"Rio De Janeiro, Brazil",30
+"Rio De Janeiro, Brazil",28
+"Rio De Janeiro, Brazil",26
+"Rio De Janeiro, Brazil",28
+"Rome, Italy",15
+"Rome, Italy",17
+"Rome, Italy",16
+"Rome, Italy",16
+"Rome, Italy",14
+"Rome, Italy",16
+"Rome, Italy",16
+"Rome, Italy",16
+"Rome, Italy",18
+"Rome, Italy",17
+"Rome, Italy",18
+"Rome, Italy",16
+"Rome, Italy",17
+"Rome, Italy",17
+"Rome, Italy",16
+"Santiago, Chile",30
+"Santiago, Chile",32
+"Santiago, Chile",30
+"Santiago, Chile",31
+"Santiago, Chile",31
+"Santiago, Chile",29
+"Santiago, Chile",29
+"Santiago, Chile",32
+"Santiago, Chile",31
+"Santiago, Chile",28
+"Santiago, Chile",31
+"Santiago, Chile",33
+"Santiago, Chile",34
+"Santiago, Chile",31
+"Santiago, Chile",22
+"Sydney, Australia",20
+"Sydney, Australia",20
+"Sydney, Australia",21
+"Sydney, Australia",20
+"Sydney, Australia",22
+"Sydney, Australia",22
+"Sydney, Australia",24
+"Sydney, Australia",28
+"Sydney, Australia",26
+"Sydney, Australia",28
+"Sydney, Australia",27
+"Sydney, Australia",27
+"Sydney, Australia",22
+"Sydney, Australia",25
+"Sydney, Australia",24
+"Tokyo, Japan",8
+"Tokyo, Japan",10
+"Tokyo, Japan",10
+"Tokyo, Japan",10
+"Tokyo, Japan",11
+"Tokyo, Japan",14
+"Tokyo, Japan",8
+"Tokyo, Japan",12
+"Tokyo, Japan",11
+"Tokyo, Japan",10
+"Tokyo, Japan",12
+"Tokyo, Japan",12
+"Tokyo, Japan",12
+"Tokyo, Japan",11
+"Tokyo, Japan",10
+"Toronto, Canada",1
+"Toronto, Canada",2
+"Toronto, Canada",1
+"Toronto, Canada",0
+"Toronto, Canada",2
+"Toronto, Canada",4
+"Toronto, Canada",4
+"Toronto, Canada",-5
+"Toronto, Canada",-2
+"Toronto, Canada",-5
+"Toronto, Canada",-2
+"Toronto, Canada",4
+"Toronto, Canada",6
+"Toronto, Canada",8
+"Toronto, Canada",6
+"Vancouver, Canada",2
+"Vancouver, Canada",-1
+"Vancouver, Canada",-7
+"Vancouver, Canada",-4
+"Vancouver, Canada",-8
+"Vancouver, Canada",-7
+"Vancouver, Canada",1
+"Vancouver, Canada",4
+"Vancouver, Canada",5
+"Vancouver, Canada",8
+"Vancouver, Canada",5
+"Vancouver, Canada",5
+"Vancouver, Canada",4
+"Vancouver, Canada",5
+"Vancouver, Canada",5

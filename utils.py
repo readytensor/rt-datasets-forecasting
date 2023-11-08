@@ -64,6 +64,22 @@ def load_dataset(dataset_name:str, processed_datasets_path:str):
     
     return dataset
 
+def load_schema(dataset_name:str, processed_datasets_path:str)->Dict[str, Any]:
+    """
+    Load and return schema for given dataset.
+
+    Args:
+    dataset_name (str): Name of the dataset.
+    processed_datasets_path (str): Path where processed data files are to be saved per dataset.
+
+    Returns:
+    Dict: The data features configuration.
+    """
+    schema_path = os.path.join(processed_datasets_path, dataset_name, f"{dataset_name}_schema.json")
+    with open(schema_path, 'r', encoding="utf-8") as file_:
+        schema = json.load(file_)
+    return schema
+
 class JSONEncoder(json.JSONEncoder):
     """
     Custom JSONEncoder class to handle Numpy data types.
