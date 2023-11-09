@@ -209,7 +209,7 @@ This dataset comprises five unique time series with varying components, includin
 
 #### Dataset characteristics
 
-- Number of series = 3
+- Number of series = 5
 - Series length = 100
 - Forecast length = 10
 - Time granularity = None
