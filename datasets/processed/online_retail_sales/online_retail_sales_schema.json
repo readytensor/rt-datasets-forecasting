@@ -23,12 +23,13 @@
     "dataType": "NUMERIC",
     "example": 29.0
   },
-  "additionalFeatures": [
+  "pastCovariates": [
     {
       "name": "Sales",
       "description": "Total revenue  (units sold * unit price)",
       "dataType": "NUMERIC",
       "example": 213.03
     }
-  ]
+  ],
+  "future_covariates": []
 }

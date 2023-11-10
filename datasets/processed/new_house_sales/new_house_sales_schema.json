@@ -23,12 +23,13 @@
     "dataType": "NUMERIC",
     "example": 9
   },
-  "additionalFeatures": [
+  "pastCovariates": [
     {
       "name": "houses_sold_annualized_seas_adj",
       "description": "Annualized houses sold in thousands; seasonality adjusted ",
       "dataType": "NUMERIC",
       "example": 136
     }
-  ]
+  ],
+  "future_covariates": []
 }

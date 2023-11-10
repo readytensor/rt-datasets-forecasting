@@ -17,5 +17,6 @@
     "dataType": "NUMERIC",
     "example": 0.221
   },
-  "additionalFeatures": []
+  "pastCovariates": [],
+  "future_covariates": []
 }

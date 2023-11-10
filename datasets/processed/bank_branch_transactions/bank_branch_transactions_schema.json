@@ -23,7 +23,7 @@
     "dataType": "NUMERIC",
     "example": 115.254
   },
-  "additionalFeatures": [
+  "pastCovariates": [
     {
       "name": "Act_5_0__45308",
       "description": "This is feature variable. Represents volumes for activity `Act_5_0__45308`",
@@ -53,7 +53,9 @@
       "description": "This is feature variable. Represents volumes for activity `Act_5_0__96723`",
       "dataType": "NUMERIC",
       "example": 279.328
-    },
+    }
+  ],
+  "future_covariates": [
     {
       "name": "num_holidays",
       "description": "Number of bank holidays in this week",

@@ -15,26 +15,15 @@
     "name": "y",
     "description": "Target variable",
     "dataType": "NUMERIC",
-    "example": 6.5
+    "example": 5.056
   },
-  "additionalFeatures": [
+  "pastCovariates": [],
+  "future_covariates": [
     {
-      "name": "sine",
-      "description": "Numeric variable representing the sine component",
-      "dataType": "NUMERIC",
-      "example": 5.0
-    },
-    {
-      "name": "trend",
-      "description": "Numeric variable representing the linear trend component",
-      "dataType": "NUMERIC",
-      "example": 0.0
-    },
-    {
-      "name": "add_step",
+      "name": "special_event",
       "description": "Numeric variable representing that an offset is added on this sample",
       "dataType": "NUMERIC",
-      "example": 1.5
+      "example": 0.0
     }
   ]
 }

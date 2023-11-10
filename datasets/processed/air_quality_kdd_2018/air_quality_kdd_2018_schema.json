@@ -23,7 +23,7 @@
     "dataType": "NUMERIC",
     "example": 453.0
   },
-  "additionalFeatures": [
+  "pastCovariates": [
     {
       "name": "PM10",
       "description": "Air quality metric: PM10 - particles that are 10 microns or less in diameter (\u00b5g/m\u00b3)",
@@ -54,5 +54,6 @@
       "dataType": "NUMERIC",
       "example": 9.0
     }
-  ]
+  ],
+  "future_covariates": []
 }

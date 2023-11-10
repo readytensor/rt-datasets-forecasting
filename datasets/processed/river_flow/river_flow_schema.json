@@ -1,0 +1,36 @@
+{
+  "title": "River Flow",
+  "description": "The  River Flow` dataset is a simplified simulation for predicting river flow. It considers past glacier melting rates and future rainfall data as key factors and aims to forecast river flow for a specified number of days ahead, making it a useful test case for time series forecasting models that accomodate both historical and forward-looking regressors.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "daily",
+  "forecastLength": 15,
+  "id": {
+    "name": "series",
+    "description": "Unique identifier for the series. "
+  },
+  "forecastTarget": {
+    "name": "flow",
+    "description": "Target variable: instantaneous river flow",
+    "dataType": "NUMERIC",
+    "example": 0.079
+  },
+  "pastCovariates": [
+    {
+      "name": "melting",
+      "description": "Melting rate of upstream glacier",
+      "dataType": "NUMERIC",
+      "example": 0.054
+    }
+  ],
+  "future_covariates": [
+    {
+      "name": "rainfalls",
+      "description": "Rainfall",
+      "dataType": "NUMERIC",
+      "example": 0.89
+    }
+  ]
+}

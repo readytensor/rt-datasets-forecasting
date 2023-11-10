@@ -31,7 +31,7 @@ def load_metadata(dataset_cfg_path: str) -> pd.DataFrame:
     # Load the dataset metadata
     dataset_metadata = pd.read_csv(dataset_cfg_path)
     # Apply the function to each element in the DataFrame
-    dataset_metadata = dataset_metadata.applymap(strip_quotes)
+    dataset_metadata = dataset_metadata.apply(strip_quotes)
     return dataset_metadata
 
 def load_features_config(features_cfg_path: str) -> pd.DataFrame:

@@ -2,11 +2,11 @@ model_category,name,field_num,field_name,field_type,data_type,field_description
 forecasting,air_quality_kdd_2018,1,station,id,TEXT,Station id in city
 forecasting,air_quality_kdd_2018,2,timestamp,time,datetime,Hour of measurement
 forecasting,air_quality_kdd_2018,3,PM2.5,target,NUMERIC,Air quality metric: PM2.5 - particles that are 2.5 microns or less in diameter (µg/m³)
-forecasting,air_quality_kdd_2018,4,PM10,feature,NUMERIC,Air quality metric: PM10 - particles that are 10 microns or less in diameter (µg/m³)
-forecasting,air_quality_kdd_2018,5,NO2,feature,NUMERIC,Air quality metric: PM10 - nitrogen dioxide (µg/m³)
-forecasting,air_quality_kdd_2018,6,CO,feature,NUMERIC,Air quality metric: CO -carbon monoxide (µg/m³)
-forecasting,air_quality_kdd_2018,7,O3,feature,NUMERIC,Air quality metric: O3 - ozone (µg/m³)
-forecasting,air_quality_kdd_2018,8,SO2,feature,NUMERIC,Air quality metric: SO2 - sulphur dioxide (µg/m³)
+forecasting,air_quality_kdd_2018,4,PM10,past_covariate,NUMERIC,Air quality metric: PM10 - particles that are 10 microns or less in diameter (µg/m³)
+forecasting,air_quality_kdd_2018,5,NO2,past_covariate,NUMERIC,Air quality metric: PM10 - nitrogen dioxide (µg/m³)
+forecasting,air_quality_kdd_2018,6,CO,past_covariate,NUMERIC,Air quality metric: CO -carbon monoxide (µg/m³)
+forecasting,air_quality_kdd_2018,7,O3,past_covariate,NUMERIC,Air quality metric: O3 - ozone (µg/m³)
+forecasting,air_quality_kdd_2018,8,SO2,past_covariate,NUMERIC,Air quality metric: SO2 - sulphur dioxide (µg/m³)
 forecasting,airline_passengers,1,SeriesId,id,TEXT,Unique identifier added to this dataset
 forecasting,airline_passengers,2,Month,time,date,Date representing month and year of the sample. 
 forecasting,airline_passengers,3,#Passengers,target,NUMERIC,Total number of airline passengers in thousands.
@@ -15,56 +15,56 @@ forecasting,arima_process,2,value,target,NUMERIC,Time series observation.
 forecasting,bank_branch_transactions,1,branch_id,id,TEXT,Unique identifier per branch.
 forecasting,bank_branch_transactions,2,week_start_date,time,date,Date representing week_start_date and year of the sample.
 forecasting,bank_branch_transactions,3,Act_5_0__40944,target,NUMERIC,This is target variable. Represents volumes for activity `Act_5_0__40944`
-forecasting,bank_branch_transactions,4,Act_5_0__45308,feature,NUMERIC,This is feature variable. Represents volumes for activity `Act_5_0__45308`
-forecasting,bank_branch_transactions,5,Act_5_0__82324,feature,NUMERIC,This is feature variable. Represents volumes for activity `Act_5_0__82324`
-forecasting,bank_branch_transactions,6,Act_5_0__89097,feature,NUMERIC,This is feature variable. Represents volumes for activity `Act_5_0__89097`
-forecasting,bank_branch_transactions,7,Act_5_0__94157,feature,NUMERIC,This is feature variable. Represents volumes for activity `Act_5_0__94157`
-forecasting,bank_branch_transactions,8,Act_5_0__96723,feature,NUMERIC,This is feature variable. Represents volumes for activity `Act_5_0__96723`
-forecasting,bank_branch_transactions,9,num_holidays,feature,NUMERIC,Number of bank holidays in this week
+forecasting,bank_branch_transactions,4,Act_5_0__45308,past_covariate,NUMERIC,This is feature variable. Represents volumes for activity `Act_5_0__45308`
+forecasting,bank_branch_transactions,5,Act_5_0__82324,past_covariate,NUMERIC,This is feature variable. Represents volumes for activity `Act_5_0__82324`
+forecasting,bank_branch_transactions,6,Act_5_0__89097,past_covariate,NUMERIC,This is feature variable. Represents volumes for activity `Act_5_0__89097`
+forecasting,bank_branch_transactions,7,Act_5_0__94157,past_covariate,NUMERIC,This is feature variable. Represents volumes for activity `Act_5_0__94157`
+forecasting,bank_branch_transactions,8,Act_5_0__96723,past_covariate,NUMERIC,This is feature variable. Represents volumes for activity `Act_5_0__96723`
+forecasting,bank_branch_transactions,9,num_holidays,future_covariate,NUMERIC,Number of bank holidays in this week
 forecasting,correlated_sine_waves,1,series_id,id,TEXT,Unique identifier per series. 
 forecasting,correlated_sine_waves,2,y,target,NUMERIC,Target variable for forecasting. 
 forecasting,daily_stock_prices,1,Masked_Ticker,id,TEXT,Unique identifier for the stock. This is a masked ticker that replaced the original stock ticker. 
 forecasting,daily_stock_prices,2,Date,time,date,Date of the sample. 
 forecasting,daily_stock_prices,3,Adj Close,target,NUMERIC,Adjusted closing price of the stock; this is the target variable for forecasting. 
-forecasting,daily_stock_prices,4,Close,feature,NUMERIC,Recorded closing price of the stock on the day. 
-forecasting,daily_stock_prices,5,High,feature,NUMERIC,Recorded high (maximum) price of the during the day. 
-forecasting,daily_stock_prices,6,Low,feature,NUMERIC,Recorded low (minimum) price of the during the day. 
-forecasting,daily_stock_prices,7,Open,feature,NUMERIC,Recorded opening price of the stock on the day. 
-forecasting,daily_stock_prices,8,Volume,feature,NUMERIC,Recorded volume of stocks traded during the day.
+forecasting,daily_stock_prices,4,Close,past_covariate,NUMERIC,Recorded closing price of the stock on the day. 
+forecasting,daily_stock_prices,5,High,past_covariate,NUMERIC,Recorded high (maximum) price of the during the day. 
+forecasting,daily_stock_prices,6,Low,past_covariate,NUMERIC,Recorded low (minimum) price of the during the day. 
+forecasting,daily_stock_prices,7,Open,past_covariate,NUMERIC,Recorded opening price of the stock on the day. 
+forecasting,daily_stock_prices,8,Volume,past_covariate,NUMERIC,Recorded volume of stocks traded during the day.
 forecasting,daily_weather,1,location,id,TEXT,City of the series. 
 forecasting,daily_weather,2,date,time,date,Date of the weather observation. 
 forecasting,daily_weather,3,maxtemp,target,NUMERIC,Target variable; Maximum temperature for the day in Celcius.
-forecasting,daily_weather,4,mintemp,feature,NUMERIC,Minimum temperature for the day in Celcius
-forecasting,daily_weather,5,avgtemp,feature,NUMERIC,Average temperature for the day in Celcius
-forecasting,daily_weather,6,sunhour,feature,NUMERIC,Duration between sunrise and sunset in hours
-forecasting,daily_weather,7,uv_index,feature,NUMERIC,UV Index
-forecasting,daily_weather,8,wind_speed,feature,NUMERIC,Maximum wind speed in kilometers per hour
-forecasting,daily_weather,9,wind_degree,feature,NUMERIC,Wind direction in degrees
-forecasting,daily_weather,10,precip,feature,NUMERIC,Precipitation amount in millimeters
-forecasting,daily_weather,11,humidity,feature,NUMERIC,Humidity as percentage
-forecasting,daily_weather,12,visibility,feature,NUMERIC,Average visibility in km
-forecasting,daily_weather,13,pressure,feature,NUMERIC,Pressure in millibars
-forecasting,daily_weather,14,cloudcover,feature,NUMERIC,Cloud cover as percentage
-forecasting,daily_weather,15,heatindex,feature,NUMERIC,Heat index in celcius
-forecasting,daily_weather,16,dewpoint,feature,NUMERIC,Dew point in celcius
-forecasting,daily_weather,17,windchill,feature,NUMERIC,Windchill temperature in celcius
-forecasting,daily_weather,18,windgust,feature,NUMERIC,Wind gust in kmph
-forecasting,daily_weather,19,feelslike,feature,NUMERIC,Feels like in Celcius
+forecasting,daily_weather,4,mintemp,past_covariate,NUMERIC,Minimum temperature for the day in Celcius
+forecasting,daily_weather,5,avgtemp,past_covariate,NUMERIC,Average temperature for the day in Celcius
+forecasting,daily_weather,6,sunhour,past_covariate,NUMERIC,Duration between sunrise and sunset in hours
+forecasting,daily_weather,7,uv_index,past_covariate,NUMERIC,UV Index
+forecasting,daily_weather,8,wind_speed,past_covariate,NUMERIC,Maximum wind speed in kilometers per hour
+forecasting,daily_weather,9,wind_degree,past_covariate,NUMERIC,Wind direction in degrees
+forecasting,daily_weather,10,precip,past_covariate,NUMERIC,Precipitation amount in millimeters
+forecasting,daily_weather,11,humidity,past_covariate,NUMERIC,Humidity as percentage
+forecasting,daily_weather,12,visibility,past_covariate,NUMERIC,Average visibility in km
+forecasting,daily_weather,13,pressure,past_covariate,NUMERIC,Pressure in millibars
+forecasting,daily_weather,14,cloudcover,past_covariate,NUMERIC,Cloud cover as percentage
+forecasting,daily_weather,15,heatindex,past_covariate,NUMERIC,Heat index in celcius
+forecasting,daily_weather,16,dewpoint,past_covariate,NUMERIC,Dew point in celcius
+forecasting,daily_weather,17,windchill,past_covariate,NUMERIC,Windchill temperature in celcius
+forecasting,daily_weather,18,windgust,past_covariate,NUMERIC,Wind gust in kmph
+forecasting,daily_weather,19,feelslike,past_covariate,NUMERIC,Feels like in Celcius
 forecasting,gasoline_prices,1,SeriesId,id,TEXT,Unique identifier for the series. 
 forecasting,gasoline_prices,2,Date,time,date,Date representing the week of the data sample 
 forecasting,gasoline_prices,3,Weekly U.S. All Grades All Formulations Retail Gasoline Prices (Dollars per Gallon),target,NUMERIC,"Target variable: Average retail prices per gallon for gasoline across all grades and formulations, reflecting the broad U.S. market."
-forecasting,gasoline_prices,4,Weekly U.S. All Grades Conventional Retail Gasoline Prices (Dollars per Gallon),feature,NUMERIC,"Average weekly retail prices for conventional gasoline across all grades, excluding reformulated blends."
-forecasting,gasoline_prices,5,Weekly U.S. All Grades Reformulated Retail Gasoline Prices (Dollars per Gallon),feature,NUMERIC,"Average weekly retail prices for reformulated gasoline, which is blended to reduce pollutants, across all grades."
-forecasting,gasoline_prices,6,Weekly U.S. Regular All Formulations Retail Gasoline Prices (Dollars per Gallon),feature,NUMERIC,"Composite average of retail prices for regular gasoline, encompassing both conventional and reformulated gasoline."
-forecasting,gasoline_prices,7,Weekly U.S. Regular Conventional Retail Gasoline Prices (Dollars per Gallon),feature,NUMERIC,"Average price of regular grade conventional gasoline, not including any reformulated gasoline components."
-forecasting,gasoline_prices,8,Weekly U.S. Regular Reformulated Retail Gasoline Prices (Dollars per Gallon),feature,NUMERIC,"Weekly average price for regular grade reformulated gasoline, specifically designed to produce fewer emissions."
-forecasting,gasoline_prices,9,Weekly U.S. Midgrade All Formulations Retail Gasoline Prices (Dollars per Gallon),feature,NUMERIC,"Combined average retail prices for midgrade gasoline, including both conventional and reformulated types."
-forecasting,gasoline_prices,10,Weekly U.S. Midgrade Conventional Retail Gasoline Prices (Dollars per Gallon),feature,NUMERIC,"Average retail price for midgrade conventional gasoline, which does not include reformulated gasoline."
-forecasting,gasoline_prices,11,Weekly U.S. Midgrade Reformulated Retail Gasoline Prices (Dollars per Gallon),feature,NUMERIC,"Average weekly price of midgrade gasoline in its reformulated variant, mixed to lower environmental impact."
-forecasting,gasoline_prices,12,Weekly U.S. Premium All Formulations Retail Gasoline Prices (Dollars per Gallon),feature,NUMERIC,"Average weekly prices for premium gasoline, covering all types including both conventional and reformulated gasoline."
-forecasting,gasoline_prices,13,Weekly U.S. Premium Conventional Retail Gasoline Prices (Dollars per Gallon),feature,NUMERIC,"Weekly retail prices for premium conventional gasoline, excluding the reformulated blend."
-forecasting,gasoline_prices,14,Weekly U.S. Premium Reformulated Retail Gasoline Prices (Dollars per Gallon),feature,NUMERIC,"Average price for premium grade reformulated gasoline, which burns cleaner than conventional blends."
-forecasting,gasoline_prices,15,Weekly U.S. No 2 Diesel Retail Prices (Dollars per Gallon),feature,NUMERIC,"Average retail price per gallon of No. 2 diesel fuel, commonly used in freight and diesel-engine vehicles."
+forecasting,gasoline_prices,4,Weekly U.S. All Grades Conventional Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Average weekly retail prices for conventional gasoline across all grades, excluding reformulated blends."
+forecasting,gasoline_prices,5,Weekly U.S. All Grades Reformulated Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Average weekly retail prices for reformulated gasoline, which is blended to reduce pollutants, across all grades."
+forecasting,gasoline_prices,6,Weekly U.S. Regular All Formulations Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Composite average of retail prices for regular gasoline, encompassing both conventional and reformulated gasoline."
+forecasting,gasoline_prices,7,Weekly U.S. Regular Conventional Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Average price of regular grade conventional gasoline, not including any reformulated gasoline components."
+forecasting,gasoline_prices,8,Weekly U.S. Regular Reformulated Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Weekly average price for regular grade reformulated gasoline, specifically designed to produce fewer emissions."
+forecasting,gasoline_prices,9,Weekly U.S. Midgrade All Formulations Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Combined average retail prices for midgrade gasoline, including both conventional and reformulated types."
+forecasting,gasoline_prices,10,Weekly U.S. Midgrade Conventional Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Average retail price for midgrade conventional gasoline, which does not include reformulated gasoline."
+forecasting,gasoline_prices,11,Weekly U.S. Midgrade Reformulated Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Average weekly price of midgrade gasoline in its reformulated variant, mixed to lower environmental impact."
+forecasting,gasoline_prices,12,Weekly U.S. Premium All Formulations Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Average weekly prices for premium gasoline, covering all types including both conventional and reformulated gasoline."
+forecasting,gasoline_prices,13,Weekly U.S. Premium Conventional Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Weekly retail prices for premium conventional gasoline, excluding the reformulated blend."
+forecasting,gasoline_prices,14,Weekly U.S. Premium Reformulated Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Average price for premium grade reformulated gasoline, which burns cleaner than conventional blends."
+forecasting,gasoline_prices,15,Weekly U.S. No 2 Diesel Retail Prices (Dollars per Gallon),past_covariate,NUMERIC,"Average retail price per gallon of No. 2 diesel fuel, commonly used in freight and diesel-engine vehicles."
 forecasting,m4_hourly_miscellaneous,1,series,id,TEXT,Unique idenfier for the series
 forecasting,m4_hourly_miscellaneous,2,value,target,NUMERIC,Target variable for forecasting. 
 forecasting,m4_yearly_miscellaneous,1,series,id,TEXT,Unique idenfier for the series
@@ -73,27 +73,29 @@ forecasting,m4_yearly_miscellaneous,3,value,target,NUMERIC,Target variable for f
 forecasting,monthly_unemployment,1,SERIES_ID,id,TEXT,Unique idenfier for the series (there is a single series in this dataset)
 forecasting,monthly_unemployment,2,DATE,time,date,Date representing month and year of the sample. 
 forecasting,monthly_unemployment,3,UNRATE,target,NUMERIC,"Target variable: Monthly unemployment rate, representing the percentage of the labor force that is jobless and actively seeking employment."
-forecasting,monthly_unemployment,4,CPIAUCSL,feature,NUMERIC,"Consumer Price Index for All Urban Consumers: All Items, indicating the average change over time in the prices paid by urban consumers for a market basket of consumer goods and services."
-forecasting,monthly_unemployment,5,CPIAUCSL_YoY_PCT_CHNG,feature,NUMERIC,"Year-over-Year percent change in the Consumer Price Index for All Urban Consumers: All Items, measuring the inflation rate or the increase in prices over a 12-month period."
-forecasting,monthly_unemployment,6,GDPC1,feature,NUMERIC,"Real Gross Domestic Product, reflecting the value of all goods and services produced by the nation, adjusted for inflation or deflation."
-forecasting,monthly_unemployment,7,GDPC1_YoY_PCT_CHNG,feature,NUMERIC,"Year-over-Year percent change in Real Gross Domestic Product, providing a measure of economic growth from one year to the next."
-forecasting,monthly_unemployment,8,DFF,feature,NUMERIC,"Effective Federal Funds Rate, which is the interest rate at which depository institutions trade federal funds (balances held at Federal Reserve Banks) with each other overnight."
-forecasting,monthly_unemployment,9,DFF_YoY_CHNG,feature,NUMERIC,"Year-over-Year change in the Effective Federal Funds Rate, highlighting shifts in monetary policy interest rates from one year to the next."
+forecasting,monthly_unemployment,4,CPIAUCSL,past_covariate,NUMERIC,"Consumer Price Index for All Urban Consumers: All Items, indicating the average change over time in the prices paid by urban consumers for a market basket of consumer goods and services."
+forecasting,monthly_unemployment,5,CPIAUCSL_YoY_PCT_CHNG,past_covariate,NUMERIC,"Year-over-Year percent change in the Consumer Price Index for All Urban Consumers: All Items, measuring the inflation rate or the increase in prices over a 12-month period."
+forecasting,monthly_unemployment,6,GDPC1,past_covariate,NUMERIC,"Real Gross Domestic Product, reflecting the value of all goods and services produced by the nation, adjusted for inflation or deflation."
+forecasting,monthly_unemployment,7,GDPC1_YoY_PCT_CHNG,past_covariate,NUMERIC,"Year-over-Year percent change in Real Gross Domestic Product, providing a measure of economic growth from one year to the next."
+forecasting,monthly_unemployment,8,DFF,past_covariate,NUMERIC,"Effective Federal Funds Rate, which is the interest rate at which depository institutions trade federal funds (balances held at Federal Reserve Banks) with each other overnight."
+forecasting,monthly_unemployment,9,DFF_YoY_CHNG,past_covariate,NUMERIC,"Year-over-Year change in the Effective Federal Funds Rate, highlighting shifts in monetary policy interest rates from one year to the next."
 forecasting,new_house_sales,1,Region,id,TEXT,"Unique identifier for each region; one of Mid-west, North-east, South and West. "
 forecasting,new_house_sales,2,Period,time,date,Date representing month and year of the observation. 
 forecasting,new_house_sales,3,houses_sold_not_seas_adj,target,NUMERIC,Target variable; Number of houses sold in thousands; not seasonality adjusted
-forecasting,new_house_sales,4,houses_sold_annualized_seas_adj,feature,NUMERIC,Annualized houses sold in thousands; seasonality adjusted 
+forecasting,new_house_sales,4,houses_sold_annualized_seas_adj,past_covariate,NUMERIC,Annualized houses sold in thousands; seasonality adjusted 
 forecasting,online_retail_sales,1,StockCode,id,TEXT,Unique identifier per item sold
 forecasting,online_retail_sales,2,InvoiceDate,time,date,Date on which the sale occurred
 forecasting,online_retail_sales,3,Quantity,target,NUMERIC,Total number of units sold
-forecasting,online_retail_sales,4,Sales,feature,NUMERIC,Total revenue  (units sold * unit price)
+forecasting,online_retail_sales,4,Sales,past_covariate,NUMERIC,Total revenue  (units sold * unit price)
 forecasting,random_walk,1,series_id,id,TEXT,Unique identifier per series
 forecasting,random_walk,2,value,target,NUMERIC,Target variable
 forecasting,smoke_test_forecasting,1,series_id,id,TEXT,Unique identifier per series
 forecasting,smoke_test_forecasting,2,y,target,NUMERIC,Target variable
-forecasting,smoke_test_forecasting,3,sine,feature,NUMERIC,Numeric variable representing the sine component
-forecasting,smoke_test_forecasting,4,trend,feature,NUMERIC,Numeric variable representing the linear trend component
-forecasting,smoke_test_forecasting,5,add_step,feature,NUMERIC,Numeric variable representing that an offset is added on this sample
+forecasting,smoke_test_forecasting,3,special_event,future_covariate,NUMERIC,Numeric variable representing that an offset is added on this sample
 forecasting,wikipedia_page_visits,1,topic,id,TEXT,Unique topic represented on the Wikipedia page
 forecasting,wikipedia_page_visits,2,date,time,date,Date of page visits
 forecasting,wikipedia_page_visits,3,log1p_num_page_visits,target,NUMERIC,Target variable: Total number of page visits on the day after log1p transformation (add 1 and take log)
+forecasting,river_flow,1,series,id,TEXT,Unique identifier for the series. 
+forecasting,river_flow,2,flow,target,NUMERIC,Target variable: instantaneous river flow
+forecasting,river_flow,3,melting,past_covariate,NUMERIC,Melting rate of upstream glacier
+forecasting,river_flow,4,rainfalls,future_covariate,NUMERIC,Rainfall

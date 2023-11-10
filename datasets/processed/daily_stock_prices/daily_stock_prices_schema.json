@@ -23,7 +23,7 @@
     "dataType": "NUMERIC",
     "example": 15.084
   },
-  "additionalFeatures": [
+  "pastCovariates": [
     {
       "name": "Close",
       "description": "Recorded closing price of the stock on the day. ",
@@ -54,5 +54,6 @@
       "dataType": "NUMERIC",
       "example": 2303100
     }
-  ]
+  ],
+  "future_covariates": []
 }

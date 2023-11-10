@@ -23,7 +23,7 @@
     "dataType": "NUMERIC",
     "example": 1.117
   },
-  "additionalFeatures": [
+  "pastCovariates": [
     {
       "name": "Weekly U.S. All Grades Conventional Retail Gasoline Prices (Dollars per Gallon)",
       "description": "Average weekly retail prices for conventional gasoline across all grades, excluding reformulated blends.",
@@ -96,5 +96,6 @@
       "dataType": "NUMERIC",
       "example": 1.126
     }
-  ]
+  ],
+  "future_covariates": []
 }

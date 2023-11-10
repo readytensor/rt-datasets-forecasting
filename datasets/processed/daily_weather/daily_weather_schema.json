@@ -23,7 +23,7 @@
     "dataType": "NUMERIC",
     "example": 34
   },
-  "additionalFeatures": [
+  "pastCovariates": [
     {
       "name": "mintemp",
       "description": "Minimum temperature for the day in Celcius",
@@ -120,5 +120,6 @@
       "dataType": "NUMERIC",
       "example": 31
     }
-  ]
+  ],
+  "future_covariates": []
 }
