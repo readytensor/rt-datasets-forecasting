@@ -7,7 +7,7 @@
   "encoding": "utf-8",
   "frequency": "daily",
   "forecastLength": 15,
-  "id": {
+  "idField": {
     "name": "series",
     "description": "Unique Id assigned to the data series"
   },
@@ -18,7 +18,7 @@
     "example": "2016-01-01"
   },
   "forecastTarget": {
-    "name": "final_attendance",
+    "name": "total_day_attendance",
     "description": "Target variable: Total attendance for the day",
     "dataType": "NUMERIC",
     "example": 33621.0

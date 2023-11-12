@@ -5,9 +5,9 @@
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",
   "encoding": "utf-8",
-  "frequency": "quarterly",
+  "frequency": "daily",
   "forecastLength": 6,
-  "id": {
+  "idField": {
     "name": "topic",
     "description": "Unique topic represented on the Wikipedia page"
   },
@@ -18,10 +18,10 @@
     "example": "2018-01-01"
   },
   "forecastTarget": {
-    "name": "log1p_num_page_visits",
-    "description": "Target variable: Total number of page visits on the day after log1p transformation (add 1 and take log)",
+    "name": "cube_root_num_page_visits",
+    "description": "Target variable: Total number of page visits on the day after taking cube root of it",
     "dataType": "NUMERIC",
-    "example": 8.085
+    "example": 14.802
   },
   "pastCovariates": [],
   "future_covariates": []

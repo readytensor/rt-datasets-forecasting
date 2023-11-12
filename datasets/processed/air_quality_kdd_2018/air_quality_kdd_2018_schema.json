@@ -7,7 +7,7 @@
   "encoding": "utf-8",
   "frequency": "hourly",
   "forecastLength": 120,
-  "id": {
+  "idField": {
     "name": "station",
     "description": "Station id in city"
   },

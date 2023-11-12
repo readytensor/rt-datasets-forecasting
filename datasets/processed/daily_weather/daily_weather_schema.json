@@ -7,13 +7,13 @@
   "encoding": "utf-8",
   "frequency": "daily",
   "forecastLength": 15,
-  "id": {
+  "idField": {
     "name": "location",
-    "description": "City of the series. "
+    "description": "City of the series."
   },
   "timeField": {
     "name": "date",
-    "description": "Date of the weather observation. ",
+    "description": "Date of the weather observation.",
     "dataType": "DATE",
     "example": "2020-01-01"
   },

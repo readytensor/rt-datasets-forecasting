@@ -1,10 +1,10 @@
 holiday,Day_minus3,Day_minus2,Day_minus1,Day,Day_plus1,Day_plus2
 New Years Day,1,1.05,1.1,1.2,1.1,1
-MLK Day,1.1,1.1,1.2,1.3,1.2,1.1
-Memorial Day,1.1,1.1,1.2,1.3,1.2,1.1
+MLK Day,1,1.05,1.1,1.2,1.1,1
+Memorial Day,1,1.05,1.1,1.2,1.1,1
 Independence Day,1.1,1.1,1.2,1.3,1.2,1.1
 Labor Day,1.1,1.1,1.2,1.3,1.2,1.1
-Columbus Day,1.1,1.1,1.2,1.3,1.2,1.1
-Veterans Day,1.1,1.1,1.2,1.3,1.2,1.1
+Columbus Day,1,1.05,1.1,1.2,1.1,1
+Veterans Day,1,1.05,1.1,1.2,1.1,1
 Thanksgiving Day,1.1,1.1,1.2,1.3,1.2,1.1
 Christmas Day,1.1,1.1,1.2,1.3,1.2,1.1

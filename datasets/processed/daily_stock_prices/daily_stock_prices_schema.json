@@ -7,52 +7,52 @@
   "encoding": "utf-8",
   "frequency": "daily",
   "forecastLength": 21,
-  "id": {
+  "idField": {
     "name": "Masked_Ticker",
-    "description": "Unique identifier for the stock. This is a masked ticker that replaced the original stock ticker. "
+    "description": "Unique identifier for the stock. This is a masked ticker that replaced the original stock ticker."
   },
   "timeField": {
-    "name": "Date",
-    "description": "Date of the sample. ",
-    "dataType": "DATE",
-    "example": "1999-08-18"
+    "name": "Day_Num",
+    "description": "Day number of the observation.",
+    "dataType": "INT",
+    "example": 1
   },
   "forecastTarget": {
     "name": "Adj Close",
-    "description": "Adjusted closing price of the stock; this is the target variable for forecasting. ",
+    "description": "Adjusted closing price of the stock; this is the target variable for forecasting.",
     "dataType": "NUMERIC",
-    "example": 15.084
+    "example": 3.245
   },
   "pastCovariates": [
     {
       "name": "Close",
-      "description": "Recorded closing price of the stock on the day. ",
+      "description": "Recorded closing price of the stock on the day.",
       "dataType": "NUMERIC",
-      "example": 21.917
+      "example": 49.5
     },
     {
       "name": "High",
-      "description": "Recorded high (maximum) price of the during the day. ",
+      "description": "Recorded high (maximum) price of the during the day.",
       "dataType": "NUMERIC",
-      "example": 22.146
+      "example": 50.75
     },
     {
       "name": "Low",
-      "description": "Recorded low (minimum) price of the during the day. ",
+      "description": "Recorded low (minimum) price of the during the day.",
       "dataType": "NUMERIC",
-      "example": 21.833
+      "example": 47.78
     },
     {
       "name": "Open",
-      "description": "Recorded opening price of the stock on the day. ",
+      "description": "Recorded opening price of the stock on the day.",
       "dataType": "NUMERIC",
-      "example": 22.042
+      "example": 48.45
     },
     {
       "name": "Volume",
       "description": "Recorded volume of stocks traded during the day.",
       "dataType": "NUMERIC",
-      "example": 2303100
+      "example": 11210300
     }
   ],
   "future_covariates": []

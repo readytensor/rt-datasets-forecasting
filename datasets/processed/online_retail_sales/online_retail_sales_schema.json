@@ -7,7 +7,7 @@
   "encoding": "utf-8",
   "frequency": "daily",
   "forecastLength": 14,
-  "id": {
+  "idField": {
     "name": "StockCode",
     "description": "Unique identifier per item sold"
   },
@@ -26,7 +26,7 @@
   "pastCovariates": [
     {
       "name": "Sales",
-      "description": "Total revenue  (units sold * unit price)",
+      "description": "Total revenue (units sold * unit price)",
       "dataType": "NUMERIC",
       "example": 213.03
     }

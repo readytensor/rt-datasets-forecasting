@@ -217,7 +217,7 @@ def generate_schemas(
         dataset = pd.read_csv(os.path.join(
             processed_datasets_path, dataset_name, f"{dataset_name}.csv"))
 
-        schema["id"] = create_id_section(dataset_name, features_config)
+        schema["idField"] = create_id_section(dataset_name, features_config)
 
         time_section = create_time_section(
             dataset_name, dataset, features_config)
@@ -253,7 +253,7 @@ def run_schema_gen():
     dataset_metadata = load_metadata(dataset_cfg_path=paths.dataset_cfg_path)
     features_config = load_features_config(
         features_cfg_path=paths.features_cfg_path)\
-            .applymap(strip_quotes)
+            .apply(strip_quotes)
 
     generate_schemas(
         dataset_metadata=dataset_metadata,

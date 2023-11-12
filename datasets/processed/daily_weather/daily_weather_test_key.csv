@@ -1,391 +1,391 @@
-location,maxtemp
-"Bangkok, Thailand",31
-"Bangkok, Thailand",28
-"Bangkok, Thailand",28
-"Bangkok, Thailand",31
-"Bangkok, Thailand",32
-"Bangkok, Thailand",33
-"Bangkok, Thailand",33
-"Bangkok, Thailand",31
-"Bangkok, Thailand",30
-"Bangkok, Thailand",31
-"Bangkok, Thailand",32
-"Bangkok, Thailand",32
-"Bangkok, Thailand",32
-"Bangkok, Thailand",30
-"Bangkok, Thailand",31
-"Barcelona, Spain",14
-"Barcelona, Spain",15
-"Barcelona, Spain",16
-"Barcelona, Spain",15
-"Barcelona, Spain",16
-"Barcelona, Spain",18
-"Barcelona, Spain",21
-"Barcelona, Spain",18
-"Barcelona, Spain",18
-"Barcelona, Spain",19
-"Barcelona, Spain",16
-"Barcelona, Spain",17
-"Barcelona, Spain",18
-"Barcelona, Spain",17
-"Barcelona, Spain",17
-"Beijing, China",-2
-"Beijing, China",-2
-"Beijing, China",3
-"Beijing, China",1
-"Beijing, China",-1
-"Beijing, China",-1
-"Beijing, China",-1
-"Beijing, China",2
-"Beijing, China",-1
-"Beijing, China",3
-"Beijing, China",2
-"Beijing, China",2
-"Beijing, China",3
-"Beijing, China",4
-"Beijing, China",5
-"Berlin, Germany",-3
-"Berlin, Germany",-3
-"Berlin, Germany",3
-"Berlin, Germany",5
-"Berlin, Germany",6
-"Berlin, Germany",9
-"Berlin, Germany",8
-"Berlin, Germany",6
-"Berlin, Germany",9
-"Berlin, Germany",10
-"Berlin, Germany",6
-"Berlin, Germany",6
-"Berlin, Germany",11
-"Berlin, Germany",9
-"Berlin, Germany",15
-"Bogota, Colombia",18
-"Bogota, Colombia",17
-"Bogota, Colombia",18
-"Bogota, Colombia",18
-"Bogota, Colombia",18
-"Bogota, Colombia",18
-"Bogota, Colombia",17
-"Bogota, Colombia",17
-"Bogota, Colombia",17
-"Bogota, Colombia",17
-"Bogota, Colombia",17
-"Bogota, Colombia",16
-"Bogota, Colombia",17
-"Bogota, Colombia",17
-"Bogota, Colombia",16
-"Buenos Aires, Argentina",28
-"Buenos Aires, Argentina",30
-"Buenos Aires, Argentina",32
-"Buenos Aires, Argentina",33
-"Buenos Aires, Argentina",33
-"Buenos Aires, Argentina",34
-"Buenos Aires, Argentina",28
-"Buenos Aires, Argentina",25
-"Buenos Aires, Argentina",24
-"Buenos Aires, Argentina",31
-"Buenos Aires, Argentina",35
-"Buenos Aires, Argentina",31
-"Buenos Aires, Argentina",32
-"Buenos Aires, Argentina",39
-"Buenos Aires, Argentina",34
-"Cairo, Egypt",27
-"Cairo, Egypt",26
-"Cairo, Egypt",27
-"Cairo, Egypt",24
-"Cairo, Egypt",20
-"Cairo, Egypt",20
-"Cairo, Egypt",22
-"Cairo, Egypt",19
-"Cairo, Egypt",20
-"Cairo, Egypt",21
-"Cairo, Egypt",23
-"Cairo, Egypt",22
-"Cairo, Egypt",22
-"Cairo, Egypt",21
-"Cairo, Egypt",23
-"Cape Town, South Africa",25
-"Cape Town, South Africa",25
-"Cape Town, South Africa",22
-"Cape Town, South Africa",23
-"Cape Town, South Africa",29
-"Cape Town, South Africa",26
-"Cape Town, South Africa",23
-"Cape Town, South Africa",23
-"Cape Town, South Africa",22
-"Cape Town, South Africa",26
-"Cape Town, South Africa",25
-"Cape Town, South Africa",25
-"Cape Town, South Africa",22
-"Cape Town, South Africa",29
-"Cape Town, South Africa",30
-"Dubai, United Arab Emirates",25
-"Dubai, United Arab Emirates",25
-"Dubai, United Arab Emirates",25
-"Dubai, United Arab Emirates",25
-"Dubai, United Arab Emirates",25
-"Dubai, United Arab Emirates",24
-"Dubai, United Arab Emirates",24
-"Dubai, United Arab Emirates",25
-"Dubai, United Arab Emirates",24
-"Dubai, United Arab Emirates",23
-"Dubai, United Arab Emirates",22
-"Dubai, United Arab Emirates",22
-"Dubai, United Arab Emirates",23
-"Dubai, United Arab Emirates",23
-"Dubai, United Arab Emirates",23
-"Lagos, Nigeria",32
-"Lagos, Nigeria",32
-"Lagos, Nigeria",34
-"Lagos, Nigeria",33
-"Lagos, Nigeria",33
-"Lagos, Nigeria",33
-"Lagos, Nigeria",34
-"Lagos, Nigeria",34
-"Lagos, Nigeria",33
-"Lagos, Nigeria",33
-"Lagos, Nigeria",35
-"Lagos, Nigeria",33
-"Lagos, Nigeria",34
-"Lagos, Nigeria",34
-"Lagos, Nigeria",34
-"Lima, Peru",23
-"Lima, Peru",24
-"Lima, Peru",24
-"Lima, Peru",25
-"Lima, Peru",25
-"Lima, Peru",23
-"Lima, Peru",23
-"Lima, Peru",24
-"Lima, Peru",23
-"Lima, Peru",24
-"Lima, Peru",23
-"Lima, Peru",25
-"Lima, Peru",23
-"Lima, Peru",24
-"Lima, Peru",23
-"London, United Kingdom",4
-"London, United Kingdom",8
-"London, United Kingdom",13
-"London, United Kingdom",12
-"London, United Kingdom",9
-"London, United Kingdom",12
-"London, United Kingdom",13
-"London, United Kingdom",10
-"London, United Kingdom",11
-"London, United Kingdom",10
-"London, United Kingdom",10
-"London, United Kingdom",12
-"London, United Kingdom",10
-"London, United Kingdom",14
-"London, United Kingdom",13
-"Los Angeles, United States of America",18
-"Los Angeles, United States of America",18
-"Los Angeles, United States of America",19
-"Los Angeles, United States of America",18
-"Los Angeles, United States of America",23
-"Los Angeles, United States of America",20
-"Los Angeles, United States of America",22
-"Los Angeles, United States of America",26
-"Los Angeles, United States of America",28
-"Los Angeles, United States of America",24
-"Los Angeles, United States of America",16
-"Los Angeles, United States of America",18
-"Los Angeles, United States of America",14
-"Los Angeles, United States of America",14
-"Los Angeles, United States of America",15
-"Marrakesh, Morocco",20
-"Marrakesh, Morocco",24
-"Marrakesh, Morocco",24
-"Marrakesh, Morocco",24
-"Marrakesh, Morocco",24
-"Marrakesh, Morocco",23
-"Marrakesh, Morocco",25
-"Marrakesh, Morocco",25
-"Marrakesh, Morocco",24
-"Marrakesh, Morocco",23
-"Marrakesh, Morocco",24
-"Marrakesh, Morocco",22
-"Marrakesh, Morocco",22
-"Marrakesh, Morocco",23
-"Marrakesh, Morocco",22
-"Mexico City, Mexico",22
-"Mexico City, Mexico",21
-"Mexico City, Mexico",22
-"Mexico City, Mexico",23
-"Mexico City, Mexico",22
-"Mexico City, Mexico",23
-"Mexico City, Mexico",20
-"Mexico City, Mexico",20
-"Mexico City, Mexico",18
-"Mexico City, Mexico",18
-"Mexico City, Mexico",19
-"Mexico City, Mexico",20
-"Mexico City, Mexico",20
-"Mexico City, Mexico",19
-"Mexico City, Mexico",21
-"Mumbai, India",36
-"Mumbai, India",36
-"Mumbai, India",36
-"Mumbai, India",35
-"Mumbai, India",35
-"Mumbai, India",35
-"Mumbai, India",33
-"Mumbai, India",33
-"Mumbai, India",31
-"Mumbai, India",32
-"Mumbai, India",34
-"Mumbai, India",35
-"Mumbai, India",35
-"Mumbai, India",35
-"Mumbai, India",34
-"Nairobi, Kenya",24
-"Nairobi, Kenya",25
-"Nairobi, Kenya",25
-"Nairobi, Kenya",25
-"Nairobi, Kenya",24
-"Nairobi, Kenya",23
-"Nairobi, Kenya",23
-"Nairobi, Kenya",24
-"Nairobi, Kenya",24
-"Nairobi, Kenya",25
-"Nairobi, Kenya",22
-"Nairobi, Kenya",24
-"Nairobi, Kenya",22
-"Nairobi, Kenya",23
-"Nairobi, Kenya",23
-"New York City, United States of America",7
-"New York City, United States of America",5
-"New York City, United States of America",4
-"New York City, United States of America",3
-"New York City, United States of America",3
-"New York City, United States of America",10
-"New York City, United States of America",12
-"New York City, United States of America",-7
-"New York City, United States of America",-2
-"New York City, United States of America",-1
-"New York City, United States of America",3
-"New York City, United States of America",6
-"New York City, United States of America",10
-"New York City, United States of America",12
-"New York City, United States of America",9
-"Paris, France",1
-"Paris, France",5
-"Paris, France",11
-"Paris, France",12
-"Paris, France",10
-"Paris, France",14
-"Paris, France",15
-"Paris, France",12
-"Paris, France",14
-"Paris, France",10
-"Paris, France",7
-"Paris, France",11
-"Paris, France",12
-"Paris, France",15
-"Paris, France",17
-"Rio De Janeiro, Brazil",28
-"Rio De Janeiro, Brazil",26
-"Rio De Janeiro, Brazil",24
-"Rio De Janeiro, Brazil",22
-"Rio De Janeiro, Brazil",24
-"Rio De Janeiro, Brazil",24
-"Rio De Janeiro, Brazil",25
-"Rio De Janeiro, Brazil",26
-"Rio De Janeiro, Brazil",28
-"Rio De Janeiro, Brazil",30
-"Rio De Janeiro, Brazil",30
-"Rio De Janeiro, Brazil",30
-"Rio De Janeiro, Brazil",28
-"Rio De Janeiro, Brazil",26
-"Rio De Janeiro, Brazil",28
-"Rome, Italy",15
-"Rome, Italy",17
-"Rome, Italy",16
-"Rome, Italy",16
-"Rome, Italy",14
-"Rome, Italy",16
-"Rome, Italy",16
-"Rome, Italy",16
-"Rome, Italy",18
-"Rome, Italy",17
-"Rome, Italy",18
-"Rome, Italy",16
-"Rome, Italy",17
-"Rome, Italy",17
-"Rome, Italy",16
-"Santiago, Chile",30
-"Santiago, Chile",32
-"Santiago, Chile",30
-"Santiago, Chile",31
-"Santiago, Chile",31
-"Santiago, Chile",29
-"Santiago, Chile",29
-"Santiago, Chile",32
-"Santiago, Chile",31
-"Santiago, Chile",28
-"Santiago, Chile",31
-"Santiago, Chile",33
-"Santiago, Chile",34
-"Santiago, Chile",31
-"Santiago, Chile",22
-"Sydney, Australia",20
-"Sydney, Australia",20
-"Sydney, Australia",21
-"Sydney, Australia",20
-"Sydney, Australia",22
-"Sydney, Australia",22
-"Sydney, Australia",24
-"Sydney, Australia",28
-"Sydney, Australia",26
-"Sydney, Australia",28
-"Sydney, Australia",27
-"Sydney, Australia",27
-"Sydney, Australia",22
-"Sydney, Australia",25
-"Sydney, Australia",24
-"Tokyo, Japan",8
-"Tokyo, Japan",10
-"Tokyo, Japan",10
-"Tokyo, Japan",10
-"Tokyo, Japan",11
-"Tokyo, Japan",14
-"Tokyo, Japan",8
-"Tokyo, Japan",12
-"Tokyo, Japan",11
-"Tokyo, Japan",10
-"Tokyo, Japan",12
-"Tokyo, Japan",12
-"Tokyo, Japan",12
-"Tokyo, Japan",11
-"Tokyo, Japan",10
-"Toronto, Canada",1
-"Toronto, Canada",2
-"Toronto, Canada",1
-"Toronto, Canada",0
-"Toronto, Canada",2
-"Toronto, Canada",4
-"Toronto, Canada",4
-"Toronto, Canada",-5
-"Toronto, Canada",-2
-"Toronto, Canada",-5
-"Toronto, Canada",-2
-"Toronto, Canada",4
-"Toronto, Canada",6
-"Toronto, Canada",8
-"Toronto, Canada",6
-"Vancouver, Canada",2
-"Vancouver, Canada",-1
-"Vancouver, Canada",-7
-"Vancouver, Canada",-4
-"Vancouver, Canada",-8
-"Vancouver, Canada",-7
-"Vancouver, Canada",1
-"Vancouver, Canada",4
-"Vancouver, Canada",5
-"Vancouver, Canada",8
-"Vancouver, Canada",5
-"Vancouver, Canada",5
-"Vancouver, Canada",4
-"Vancouver, Canada",5
-"Vancouver, Canada",5
+location,date,maxtemp
+"Bangkok, Thailand",2022-12-17,31
+"Bangkok, Thailand",2022-12-18,28
+"Bangkok, Thailand",2022-12-19,28
+"Bangkok, Thailand",2022-12-20,31
+"Bangkok, Thailand",2022-12-21,32
+"Bangkok, Thailand",2022-12-22,33
+"Bangkok, Thailand",2022-12-23,33
+"Bangkok, Thailand",2022-12-24,31
+"Bangkok, Thailand",2022-12-25,30
+"Bangkok, Thailand",2022-12-26,31
+"Bangkok, Thailand",2022-12-27,32
+"Bangkok, Thailand",2022-12-28,32
+"Bangkok, Thailand",2022-12-29,32
+"Bangkok, Thailand",2022-12-30,30
+"Bangkok, Thailand",2022-12-31,31
+"Barcelona, Spain",2022-12-17,14
+"Barcelona, Spain",2022-12-18,15
+"Barcelona, Spain",2022-12-19,16
+"Barcelona, Spain",2022-12-20,15
+"Barcelona, Spain",2022-12-21,16
+"Barcelona, Spain",2022-12-22,18
+"Barcelona, Spain",2022-12-23,21
+"Barcelona, Spain",2022-12-24,18
+"Barcelona, Spain",2022-12-25,18
+"Barcelona, Spain",2022-12-26,19
+"Barcelona, Spain",2022-12-27,16
+"Barcelona, Spain",2022-12-28,17
+"Barcelona, Spain",2022-12-29,18
+"Barcelona, Spain",2022-12-30,17
+"Barcelona, Spain",2022-12-31,17
+"Beijing, China",2022-12-17,-2
+"Beijing, China",2022-12-18,-2
+"Beijing, China",2022-12-19,3
+"Beijing, China",2022-12-20,1
+"Beijing, China",2022-12-21,-1
+"Beijing, China",2022-12-22,-1
+"Beijing, China",2022-12-23,-1
+"Beijing, China",2022-12-24,2
+"Beijing, China",2022-12-25,-1
+"Beijing, China",2022-12-26,3
+"Beijing, China",2022-12-27,2
+"Beijing, China",2022-12-28,2
+"Beijing, China",2022-12-29,3
+"Beijing, China",2022-12-30,4
+"Beijing, China",2022-12-31,5
+"Berlin, Germany",2022-12-17,-3
+"Berlin, Germany",2022-12-18,-3
+"Berlin, Germany",2022-12-19,3
+"Berlin, Germany",2022-12-20,5
+"Berlin, Germany",2022-12-21,6
+"Berlin, Germany",2022-12-22,9
+"Berlin, Germany",2022-12-23,8
+"Berlin, Germany",2022-12-24,6
+"Berlin, Germany",2022-12-25,9
+"Berlin, Germany",2022-12-26,10
+"Berlin, Germany",2022-12-27,6
+"Berlin, Germany",2022-12-28,6
+"Berlin, Germany",2022-12-29,11
+"Berlin, Germany",2022-12-30,9
+"Berlin, Germany",2022-12-31,15
+"Bogota, Colombia",2022-12-17,18
+"Bogota, Colombia",2022-12-18,17
+"Bogota, Colombia",2022-12-19,18
+"Bogota, Colombia",2022-12-20,18
+"Bogota, Colombia",2022-12-21,18
+"Bogota, Colombia",2022-12-22,18
+"Bogota, Colombia",2022-12-23,17
+"Bogota, Colombia",2022-12-24,17
+"Bogota, Colombia",2022-12-25,17
+"Bogota, Colombia",2022-12-26,17
+"Bogota, Colombia",2022-12-27,17
+"Bogota, Colombia",2022-12-28,16
+"Bogota, Colombia",2022-12-29,17
+"Bogota, Colombia",2022-12-30,17
+"Bogota, Colombia",2022-12-31,16
+"Buenos Aires, Argentina",2022-12-17,28
+"Buenos Aires, Argentina",2022-12-18,30
+"Buenos Aires, Argentina",2022-12-19,32
+"Buenos Aires, Argentina",2022-12-20,33
+"Buenos Aires, Argentina",2022-12-21,33
+"Buenos Aires, Argentina",2022-12-22,34
+"Buenos Aires, Argentina",2022-12-23,28
+"Buenos Aires, Argentina",2022-12-24,25
+"Buenos Aires, Argentina",2022-12-25,24
+"Buenos Aires, Argentina",2022-12-26,31
+"Buenos Aires, Argentina",2022-12-27,35
+"Buenos Aires, Argentina",2022-12-28,31
+"Buenos Aires, Argentina",2022-12-29,32
+"Buenos Aires, Argentina",2022-12-30,39
+"Buenos Aires, Argentina",2022-12-31,34
+"Cairo, Egypt",2022-12-17,27
+"Cairo, Egypt",2022-12-18,26
+"Cairo, Egypt",2022-12-19,27
+"Cairo, Egypt",2022-12-20,24
+"Cairo, Egypt",2022-12-21,20
+"Cairo, Egypt",2022-12-22,20
+"Cairo, Egypt",2022-12-23,22
+"Cairo, Egypt",2022-12-24,19
+"Cairo, Egypt",2022-12-25,20
+"Cairo, Egypt",2022-12-26,21
+"Cairo, Egypt",2022-12-27,23
+"Cairo, Egypt",2022-12-28,22
+"Cairo, Egypt",2022-12-29,22
+"Cairo, Egypt",2022-12-30,21
+"Cairo, Egypt",2022-12-31,23
+"Cape Town, South Africa",2022-12-17,25
+"Cape Town, South Africa",2022-12-18,25
+"Cape Town, South Africa",2022-12-19,22
+"Cape Town, South Africa",2022-12-20,23
+"Cape Town, South Africa",2022-12-21,29
+"Cape Town, South Africa",2022-12-22,26
+"Cape Town, South Africa",2022-12-23,23
+"Cape Town, South Africa",2022-12-24,23
+"Cape Town, South Africa",2022-12-25,22
+"Cape Town, South Africa",2022-12-26,26
+"Cape Town, South Africa",2022-12-27,25
+"Cape Town, South Africa",2022-12-28,25
+"Cape Town, South Africa",2022-12-29,22
+"Cape Town, South Africa",2022-12-30,29
+"Cape Town, South Africa",2022-12-31,30
+"Dubai, United Arab Emirates",2022-12-17,25
+"Dubai, United Arab Emirates",2022-12-18,25
+"Dubai, United Arab Emirates",2022-12-19,25
+"Dubai, United Arab Emirates",2022-12-20,25
+"Dubai, United Arab Emirates",2022-12-21,25
+"Dubai, United Arab Emirates",2022-12-22,24
+"Dubai, United Arab Emirates",2022-12-23,24
+"Dubai, United Arab Emirates",2022-12-24,25
+"Dubai, United Arab Emirates",2022-12-25,24
+"Dubai, United Arab Emirates",2022-12-26,23
+"Dubai, United Arab Emirates",2022-12-27,22
+"Dubai, United Arab Emirates",2022-12-28,22
+"Dubai, United Arab Emirates",2022-12-29,23
+"Dubai, United Arab Emirates",2022-12-30,23
+"Dubai, United Arab Emirates",2022-12-31,23
+"Lagos, Nigeria",2022-12-17,32
+"Lagos, Nigeria",2022-12-18,32
+"Lagos, Nigeria",2022-12-19,34
+"Lagos, Nigeria",2022-12-20,33
+"Lagos, Nigeria",2022-12-21,33
+"Lagos, Nigeria",2022-12-22,33
+"Lagos, Nigeria",2022-12-23,34
+"Lagos, Nigeria",2022-12-24,34
+"Lagos, Nigeria",2022-12-25,33
+"Lagos, Nigeria",2022-12-26,33
+"Lagos, Nigeria",2022-12-27,35
+"Lagos, Nigeria",2022-12-28,33
+"Lagos, Nigeria",2022-12-29,34
+"Lagos, Nigeria",2022-12-30,34
+"Lagos, Nigeria",2022-12-31,34
+"Lima, Peru",2022-12-17,23
+"Lima, Peru",2022-12-18,24
+"Lima, Peru",2022-12-19,24
+"Lima, Peru",2022-12-20,25
+"Lima, Peru",2022-12-21,25
+"Lima, Peru",2022-12-22,23
+"Lima, Peru",2022-12-23,23
+"Lima, Peru",2022-12-24,24
+"Lima, Peru",2022-12-25,23
+"Lima, Peru",2022-12-26,24
+"Lima, Peru",2022-12-27,23
+"Lima, Peru",2022-12-28,25
+"Lima, Peru",2022-12-29,23
+"Lima, Peru",2022-12-30,24
+"Lima, Peru",2022-12-31,23
+"London, United Kingdom",2022-12-17,4
+"London, United Kingdom",2022-12-18,8
+"London, United Kingdom",2022-12-19,13
+"London, United Kingdom",2022-12-20,12
+"London, United Kingdom",2022-12-21,9
+"London, United Kingdom",2022-12-22,12
+"London, United Kingdom",2022-12-23,13
+"London, United Kingdom",2022-12-24,10
+"London, United Kingdom",2022-12-25,11
+"London, United Kingdom",2022-12-26,10
+"London, United Kingdom",2022-12-27,10
+"London, United Kingdom",2022-12-28,12
+"London, United Kingdom",2022-12-29,10
+"London, United Kingdom",2022-12-30,14
+"London, United Kingdom",2022-12-31,13
+"Los Angeles, United States of America",2022-12-17,18
+"Los Angeles, United States of America",2022-12-18,18
+"Los Angeles, United States of America",2022-12-19,19
+"Los Angeles, United States of America",2022-12-20,18
+"Los Angeles, United States of America",2022-12-21,23
+"Los Angeles, United States of America",2022-12-22,20
+"Los Angeles, United States of America",2022-12-23,22
+"Los Angeles, United States of America",2022-12-24,26
+"Los Angeles, United States of America",2022-12-25,28
+"Los Angeles, United States of America",2022-12-26,24
+"Los Angeles, United States of America",2022-12-27,16
+"Los Angeles, United States of America",2022-12-28,18
+"Los Angeles, United States of America",2022-12-29,14
+"Los Angeles, United States of America",2022-12-30,14
+"Los Angeles, United States of America",2022-12-31,15
+"Marrakesh, Morocco",2022-12-17,20
+"Marrakesh, Morocco",2022-12-18,24
+"Marrakesh, Morocco",2022-12-19,24
+"Marrakesh, Morocco",2022-12-20,24
+"Marrakesh, Morocco",2022-12-21,24
+"Marrakesh, Morocco",2022-12-22,23
+"Marrakesh, Morocco",2022-12-23,25
+"Marrakesh, Morocco",2022-12-24,25
+"Marrakesh, Morocco",2022-12-25,24
+"Marrakesh, Morocco",2022-12-26,23
+"Marrakesh, Morocco",2022-12-27,24
+"Marrakesh, Morocco",2022-12-28,22
+"Marrakesh, Morocco",2022-12-29,22
+"Marrakesh, Morocco",2022-12-30,23
+"Marrakesh, Morocco",2022-12-31,22
+"Mexico City, Mexico",2022-12-17,22
+"Mexico City, Mexico",2022-12-18,21
+"Mexico City, Mexico",2022-12-19,22
+"Mexico City, Mexico",2022-12-20,23
+"Mexico City, Mexico",2022-12-21,22
+"Mexico City, Mexico",2022-12-22,23
+"Mexico City, Mexico",2022-12-23,20
+"Mexico City, Mexico",2022-12-24,20
+"Mexico City, Mexico",2022-12-25,18
+"Mexico City, Mexico",2022-12-26,18
+"Mexico City, Mexico",2022-12-27,19
+"Mexico City, Mexico",2022-12-28,20
+"Mexico City, Mexico",2022-12-29,20
+"Mexico City, Mexico",2022-12-30,19
+"Mexico City, Mexico",2022-12-31,21
+"Mumbai, India",2022-12-17,36
+"Mumbai, India",2022-12-18,36
+"Mumbai, India",2022-12-19,36
+"Mumbai, India",2022-12-20,35
+"Mumbai, India",2022-12-21,35
+"Mumbai, India",2022-12-22,35
+"Mumbai, India",2022-12-23,33
+"Mumbai, India",2022-12-24,33
+"Mumbai, India",2022-12-25,31
+"Mumbai, India",2022-12-26,32
+"Mumbai, India",2022-12-27,34
+"Mumbai, India",2022-12-28,35
+"Mumbai, India",2022-12-29,35
+"Mumbai, India",2022-12-30,35
+"Mumbai, India",2022-12-31,34
+"Nairobi, Kenya",2022-12-17,24
+"Nairobi, Kenya",2022-12-18,25
+"Nairobi, Kenya",2022-12-19,25
+"Nairobi, Kenya",2022-12-20,25
+"Nairobi, Kenya",2022-12-21,24
+"Nairobi, Kenya",2022-12-22,23
+"Nairobi, Kenya",2022-12-23,23
+"Nairobi, Kenya",2022-12-24,24
+"Nairobi, Kenya",2022-12-25,24
+"Nairobi, Kenya",2022-12-26,25
+"Nairobi, Kenya",2022-12-27,22
+"Nairobi, Kenya",2022-12-28,24
+"Nairobi, Kenya",2022-12-29,22
+"Nairobi, Kenya",2022-12-30,23
+"Nairobi, Kenya",2022-12-31,23
+"New York City, United States of America",2022-12-17,7
+"New York City, United States of America",2022-12-18,5
+"New York City, United States of America",2022-12-19,4
+"New York City, United States of America",2022-12-20,3
+"New York City, United States of America",2022-12-21,3
+"New York City, United States of America",2022-12-22,10
+"New York City, United States of America",2022-12-23,12
+"New York City, United States of America",2022-12-24,-7
+"New York City, United States of America",2022-12-25,-2
+"New York City, United States of America",2022-12-26,-1
+"New York City, United States of America",2022-12-27,3
+"New York City, United States of America",2022-12-28,6
+"New York City, United States of America",2022-12-29,10
+"New York City, United States of America",2022-12-30,12
+"New York City, United States of America",2022-12-31,9
+"Paris, France",2022-12-17,1
+"Paris, France",2022-12-18,5
+"Paris, France",2022-12-19,11
+"Paris, France",2022-12-20,12
+"Paris, France",2022-12-21,10
+"Paris, France",2022-12-22,14
+"Paris, France",2022-12-23,15
+"Paris, France",2022-12-24,12
+"Paris, France",2022-12-25,14
+"Paris, France",2022-12-26,10
+"Paris, France",2022-12-27,7
+"Paris, France",2022-12-28,11
+"Paris, France",2022-12-29,12
+"Paris, France",2022-12-30,15
+"Paris, France",2022-12-31,17
+"Rio De Janeiro, Brazil",2022-12-17,28
+"Rio De Janeiro, Brazil",2022-12-18,26
+"Rio De Janeiro, Brazil",2022-12-19,24
+"Rio De Janeiro, Brazil",2022-12-20,22
+"Rio De Janeiro, Brazil",2022-12-21,24
+"Rio De Janeiro, Brazil",2022-12-22,24
+"Rio De Janeiro, Brazil",2022-12-23,25
+"Rio De Janeiro, Brazil",2022-12-24,26
+"Rio De Janeiro, Brazil",2022-12-25,28
+"Rio De Janeiro, Brazil",2022-12-26,30
+"Rio De Janeiro, Brazil",2022-12-27,30
+"Rio De Janeiro, Brazil",2022-12-28,30
+"Rio De Janeiro, Brazil",2022-12-29,28
+"Rio De Janeiro, Brazil",2022-12-30,26
+"Rio De Janeiro, Brazil",2022-12-31,28
+"Rome, Italy",2022-12-17,15
+"Rome, Italy",2022-12-18,17
+"Rome, Italy",2022-12-19,16
+"Rome, Italy",2022-12-20,16
+"Rome, Italy",2022-12-21,14
+"Rome, Italy",2022-12-22,16
+"Rome, Italy",2022-12-23,16
+"Rome, Italy",2022-12-24,16
+"Rome, Italy",2022-12-25,18
+"Rome, Italy",2022-12-26,17
+"Rome, Italy",2022-12-27,18
+"Rome, Italy",2022-12-28,16
+"Rome, Italy",2022-12-29,17
+"Rome, Italy",2022-12-30,17
+"Rome, Italy",2022-12-31,16
+"Santiago, Chile",2022-12-17,30
+"Santiago, Chile",2022-12-18,32
+"Santiago, Chile",2022-12-19,30
+"Santiago, Chile",2022-12-20,31
+"Santiago, Chile",2022-12-21,31
+"Santiago, Chile",2022-12-22,29
+"Santiago, Chile",2022-12-23,29
+"Santiago, Chile",2022-12-24,32
+"Santiago, Chile",2022-12-25,31
+"Santiago, Chile",2022-12-26,28
+"Santiago, Chile",2022-12-27,31
+"Santiago, Chile",2022-12-28,33
+"Santiago, Chile",2022-12-29,34
+"Santiago, Chile",2022-12-30,31
+"Santiago, Chile",2022-12-31,22
+"Sydney, Australia",2022-12-17,20
+"Sydney, Australia",2022-12-18,20
+"Sydney, Australia",2022-12-19,21
+"Sydney, Australia",2022-12-20,20
+"Sydney, Australia",2022-12-21,22
+"Sydney, Australia",2022-12-22,22
+"Sydney, Australia",2022-12-23,24
+"Sydney, Australia",2022-12-24,28
+"Sydney, Australia",2022-12-25,26
+"Sydney, Australia",2022-12-26,28
+"Sydney, Australia",2022-12-27,27
+"Sydney, Australia",2022-12-28,27
+"Sydney, Australia",2022-12-29,22
+"Sydney, Australia",2022-12-30,25
+"Sydney, Australia",2022-12-31,24
+"Tokyo, Japan",2022-12-17,8
+"Tokyo, Japan",2022-12-18,10
+"Tokyo, Japan",2022-12-19,10
+"Tokyo, Japan",2022-12-20,10
+"Tokyo, Japan",2022-12-21,11
+"Tokyo, Japan",2022-12-22,14
+"Tokyo, Japan",2022-12-23,8
+"Tokyo, Japan",2022-12-24,12
+"Tokyo, Japan",2022-12-25,11
+"Tokyo, Japan",2022-12-26,10
+"Tokyo, Japan",2022-12-27,12
+"Tokyo, Japan",2022-12-28,12
+"Tokyo, Japan",2022-12-29,12
+"Tokyo, Japan",2022-12-30,11
+"Tokyo, Japan",2022-12-31,10
+"Toronto, Canada",2022-12-17,1
+"Toronto, Canada",2022-12-18,2
+"Toronto, Canada",2022-12-19,1
+"Toronto, Canada",2022-12-20,0
+"Toronto, Canada",2022-12-21,2
+"Toronto, Canada",2022-12-22,4
+"Toronto, Canada",2022-12-23,4
+"Toronto, Canada",2022-12-24,-5
+"Toronto, Canada",2022-12-25,-2
+"Toronto, Canada",2022-12-26,-5
+"Toronto, Canada",2022-12-27,-2
+"Toronto, Canada",2022-12-28,4
+"Toronto, Canada",2022-12-29,6
+"Toronto, Canada",2022-12-30,8
+"Toronto, Canada",2022-12-31,6
+"Vancouver, Canada",2022-12-17,2
+"Vancouver, Canada",2022-12-18,-1
+"Vancouver, Canada",2022-12-19,-7
+"Vancouver, Canada",2022-12-20,-4
+"Vancouver, Canada",2022-12-21,-8
+"Vancouver, Canada",2022-12-22,-7
+"Vancouver, Canada",2022-12-23,1
+"Vancouver, Canada",2022-12-24,4
+"Vancouver, Canada",2022-12-25,5
+"Vancouver, Canada",2022-12-26,8
+"Vancouver, Canada",2022-12-27,5
+"Vancouver, Canada",2022-12-28,5
+"Vancouver, Canada",2022-12-29,4
+"Vancouver, Canada",2022-12-30,5
+"Vancouver, Canada",2022-12-31,5

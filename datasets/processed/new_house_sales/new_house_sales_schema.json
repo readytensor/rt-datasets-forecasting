@@ -7,13 +7,13 @@
   "encoding": "utf-8",
   "frequency": "monthly",
   "forecastLength": 15,
-  "id": {
+  "idField": {
     "name": "Region",
-    "description": "Unique identifier for each region; one of Mid-west, North-east, South and West. "
+    "description": "Unique identifier for each region; one of Mid-west, North-east, South and West."
   },
   "timeField": {
     "name": "Period",
-    "description": "Date representing month and year of the observation. ",
+    "description": "Date representing month and year of the observation.",
     "dataType": "DATE",
     "example": "1973-01-01"
   },
@@ -26,7 +26,7 @@
   "pastCovariates": [
     {
       "name": "houses_sold_annualized_seas_adj",
-      "description": "Annualized houses sold in thousands; seasonality adjusted ",
+      "description": "Annualized houses sold in thousands; seasonality adjusted",
       "dataType": "NUMERIC",
       "example": 136
     }

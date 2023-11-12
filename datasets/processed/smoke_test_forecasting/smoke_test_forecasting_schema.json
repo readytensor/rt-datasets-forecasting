@@ -5,11 +5,17 @@
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",
   "encoding": "utf-8",
-  "frequency": "none",
+  "frequency": "other",
   "forecastLength": 10,
-  "id": {
+  "idField": {
     "name": "series_id",
     "description": "Unique identifier per series"
+  },
+  "timeField": {
+    "name": "t",
+    "description": "Time step number of observation.",
+    "dataType": "INT",
+    "example": 1
   },
   "forecastTarget": {
     "name": "y",
@@ -23,7 +29,7 @@
       "name": "special_event",
       "description": "Numeric variable representing that an offset is added on this sample",
       "dataType": "NUMERIC",
-      "example": 0.0
+      "example": 0
     }
   ]
 }

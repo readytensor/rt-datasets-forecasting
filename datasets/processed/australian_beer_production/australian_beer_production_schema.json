@@ -1,13 +1,13 @@
 {
   "title": "Australian Beer Production",
-  "description": NaN,
+  "description": "The `Australian Beer Production Dataset` is a univariate time series dataset detailing quarterly beer production in megaliters in Australia from 1956 to 2010, ideal for analyzing seasonal patterns and long-term trends in the brewing industry.",
   "modelCategory": "forecasting",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",
   "encoding": "utf-8",
-  "frequency": "daily",
+  "frequency": "quarterly",
   "forecastLength": 30,
-  "id": {
+  "idField": {
     "name": "Series",
     "description": "Unique Id assigned to the data series"
   },

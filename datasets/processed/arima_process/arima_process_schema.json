@@ -5,11 +5,17 @@
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",
   "encoding": "utf-8",
-  "frequency": "none",
+  "frequency": "other",
   "forecastLength": 30,
-  "id": {
+  "idField": {
     "name": "series_id",
-    "description": "Unique identifier per series in the dataset. "
+    "description": "Unique identifier per series in the dataset."
+  },
+  "timeField": {
+    "name": "time_step",
+    "description": "Time step number of observation.",
+    "dataType": "INT",
+    "example": 1
   },
   "forecastTarget": {
     "name": "value",

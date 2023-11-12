@@ -7,13 +7,19 @@
   "encoding": "utf-8",
   "frequency": "hourly",
   "forecastLength": 72,
-  "id": {
+  "idField": {
     "name": "series",
-    "description": "Unique idenfier for the series"
+    "description": "Unique idenfier for the series."
+  },
+  "timeField": {
+    "name": "hour_num",
+    "description": "Hour number of measurement.",
+    "dataType": "INT",
+    "example": 1
   },
   "forecastTarget": {
     "name": "value",
-    "description": "Target variable for forecasting. ",
+    "description": "Target variable for forecasting.",
     "dataType": "NUMERIC",
     "example": 2127.0
   },

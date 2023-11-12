@@ -7,13 +7,13 @@
   "encoding": "utf-8",
   "frequency": "weekly",
   "forecastLength": 13,
-  "id": {
+  "idField": {
     "name": "branch_id",
     "description": "Unique identifier per branch."
   },
   "timeField": {
     "name": "week_start_date",
-    "description": "Date representing week_start_date and year of the sample.",
+    "description": "Date representing week of the sample.",
     "dataType": "DATE",
     "example": "2013-04-01"
   },

@@ -7,13 +7,13 @@
   "encoding": "utf-8",
   "frequency": "monthly",
   "forecastLength": 15,
-  "id": {
+  "idField": {
     "name": "SERIES_ID",
     "description": "Unique idenfier for the series (there is a single series in this dataset)"
   },
   "timeField": {
     "name": "DATE",
-    "description": "Date representing month and year of the sample. ",
+    "description": "Date representing month and year of the sample.",
     "dataType": "DATE",
     "example": "1955-07-01"
   },

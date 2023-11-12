@@ -6,10 +6,16 @@
   "inputDataFormat": "CSV",
   "encoding": "utf-8",
   "frequency": "daily",
-  "forecastLength": 15,
-  "id": {
+  "forecastLength": 10,
+  "idField": {
     "name": "series",
-    "description": "Unique identifier for the series. "
+    "description": "Unique identifier for the series."
+  },
+  "timeField": {
+    "name": "date",
+    "description": "Date of the observation",
+    "dataType": "DATE",
+    "example": "2000-01-06"
   },
   "forecastTarget": {
     "name": "flow",
