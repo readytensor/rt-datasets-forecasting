@@ -1,5 +1,5 @@
 {
-  "title": "Daily Stock Prices for Sampled S&P Companies",
+  "title": "Daily Stock Prices ",
   "description": "This dataset provides historical stock data from 52 selected S&P 500 companies over three decades. It aims to capture individual stock trends and patterns while avoiding market-wide influences. The dataset spans 1000 trading days for each stock, with random start dates to ensure decorrelation. Stock tickers have been anonymized to focus on technical analysis. It's ideal for time series forecasting and technical analysis in a real-world stock market context.",
   "modelCategory": "forecasting",
   "schemaVersion": 1.0,

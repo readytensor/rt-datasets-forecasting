@@ -1,6 +1,6 @@
 {
   "title": "Australian Beer Production",
-  "description": "The `Daily Wikipedia Page Visits` dataset captures the ebb and flow of public interest over five years (2018-2022), charting the daily visit counts of 50 diverse Wikipedia pages. Topics span sports, politics, entertainment, technology, and environmental issues, reflecting a broad spectrum of global events and trends such as the 2020 U.S. presidential election, the COVID-19 pandemic, and significant cultural moments like the Black Lives Matter movement. This dataset is a rich repository for analyzing temporal patterns in collective attention and information-seeking behavior.",
+  "description": NaN,
   "modelCategory": "forecasting",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",

@@ -1,0 +1,16 @@
+series,date,max_temp,precipitation,Christmas Day,Christmas Day_minus1,Christmas Day_minus2,Christmas Day_minus3,Christmas Day_plus1,Christmas Day_plus2,Columbus Day,Columbus Day_minus1,Columbus Day_minus2,Columbus Day_minus3,Columbus Day_plus1,Columbus Day_plus2,Independence Day,Independence Day_minus1,Independence Day_minus2,Independence Day_minus3,Independence Day_plus1,Independence Day_plus2,Labor Day,Labor Day_minus1,Labor Day_minus2,Labor Day_minus3,Labor Day_plus1,Labor Day_plus2,MLK Day,MLK Day_minus1,MLK Day_minus2,MLK Day_minus3,MLK Day_plus1,MLK Day_plus2,Memorial Day,Memorial Day_minus1,Memorial Day_minus2,Memorial Day_minus3,Memorial Day_plus1,Memorial Day_plus2,New Years Day,New Years Day_minus1,New Years Day_minus2,New Years Day_minus3,New Years Day_plus1,New Years Day_plus2,Thanksgiving Day,Thanksgiving Day_minus1,Thanksgiving Day_minus2,Thanksgiving Day_minus3,Thanksgiving Day_plus1,Thanksgiving Day_plus2,Veterans Day,Veterans Day_minus1,Veterans Day_minus2,Veterans Day_minus3,Veterans Day_plus1,Veterans Day_plus2
+theme_park,2019-02-01,16,0.6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+theme_park,2019-02-02,15,60.6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+theme_park,2019-02-03,13,15.6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+theme_park,2019-02-04,14,17.7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+theme_park,2019-02-05,12,1.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+theme_park,2019-02-06,13,0.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+theme_park,2019-02-07,16,0.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+theme_park,2019-02-08,16,0.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+theme_park,2019-02-09,15,3.3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+theme_park,2019-02-10,12,3.4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+theme_park,2019-02-11,16,0.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+theme_park,2019-02-12,19,0.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+theme_park,2019-02-13,14,6.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+theme_park,2019-02-14,16,58.3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+theme_park,2019-02-15,14,1.4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
