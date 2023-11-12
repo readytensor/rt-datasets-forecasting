@@ -14,7 +14,7 @@
   "timeField": {
     "name": "Date",
     "description": "Date representing the week of the data sample ",
-    "dataType": "date",
+    "dataType": "DATE",
     "example": "1994-11-28"
   },
   "forecastTarget": {

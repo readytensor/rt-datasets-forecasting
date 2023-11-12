@@ -14,7 +14,7 @@
   "timeField": {
     "name": "timestamp",
     "description": "Hour of measurement",
-    "dataType": "datetime",
+    "dataType": "DATETIME",
     "example": "2017-01-01 14-00-00"
   },
   "forecastTarget": {

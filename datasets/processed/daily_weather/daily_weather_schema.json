@@ -14,7 +14,7 @@
   "timeField": {
     "name": "date",
     "description": "Date of the weather observation. ",
-    "dataType": "date",
+    "dataType": "DATE",
     "example": "2020-01-01"
   },
   "forecastTarget": {

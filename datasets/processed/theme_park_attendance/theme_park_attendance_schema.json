@@ -1,0 +1,365 @@
+{
+  "title": "Theme Park attendance",
+  "description": "This dataset represents synthetic daily attendance at a fictitious theme park in Los Angeles from 2016 to 2019. It is ideal for time series forecasting, showcasing the impact of annual and weekly seasonality, exogenous variables such as holidays and weather, and random fluctuations on attendance numbers.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "daily",
+  "forecastLength": 15,
+  "id": {
+    "name": "series",
+    "description": "Unique Id assigned to the data series"
+  },
+  "timeField": {
+    "name": "date",
+    "description": "Date of attendance",
+    "dataType": "DATE",
+    "example": "2016-01-01"
+  },
+  "forecastTarget": {
+    "name": "final_attendance",
+    "description": "Target variable: Total attendance for the day",
+    "dataType": "NUMERIC",
+    "example": 33621.0
+  },
+  "pastCovariates": [],
+  "future_covariates": [
+    {
+      "name": "max_temp",
+      "description": "Maximum temperature in Celcius on the day",
+      "dataType": "NUMERIC",
+      "example": 18
+    },
+    {
+      "name": "precipitation",
+      "description": "Precipation in millimeters on the day",
+      "dataType": "NUMERIC",
+      "example": 0.0
+    },
+    {
+      "name": "Christmas Day",
+      "description": "Binary indicator whether Christmas holiday occurred on this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Christmas Day_minus1",
+      "description": "Binary indicator whether Christmas holiday occurred next day from this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Christmas Day_minus2",
+      "description": "Binary indicator whether Christmas holiday occurred 2 days after this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Christmas Day_minus3",
+      "description": "Binary indicator whether Christmas holiday occurred 3 days after this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Christmas Day_plus1",
+      "description": "Binary indicator whether Christmas holiday occurred 1 day before this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Christmas Day_plus2",
+      "description": "Binary indicator whether Christmas holiday occurred 2 days before this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Columbus Day",
+      "description": "Binary indicator whether Columbus Day holiday occurred on this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Columbus Day_minus1",
+      "description": "Binary indicator whether Columbus Day holiday occurred next day from this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Columbus Day_minus2",
+      "description": "Binary indicator whether Columbus Day holiday occurred 2 days after this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Columbus Day_minus3",
+      "description": "Binary indicator whether Columbus Day holiday occurred 3 days after this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Columbus Day_plus1",
+      "description": "Binary indicator whether Columbus Day holiday occurred 1 day before this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Columbus Day_plus2",
+      "description": "Binary indicator whether Columbus Day holiday occurred 2 days before this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Independence Day",
+      "description": "Binary indicator whether Independence Day holiday occurred on this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Independence Day_minus1",
+      "description": "Binary indicator whether Independence Day holiday occurred next day from this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Independence Day_minus2",
+      "description": "Binary indicator whether Independence Day holiday occurred 2 days after this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Independence Day_minus3",
+      "description": "Binary indicator whether Independence Day holiday occurred 3 days after this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Independence Day_plus1",
+      "description": "Binary indicator whether Independence Day holiday occurred 1 day before this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Independence Day_plus2",
+      "description": "Binary indicator whether Independence Day holiday occurred 2 days before this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Labor Day",
+      "description": "Binary indicator whether Labor Day holiday occurred on this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Labor Day_minus1",
+      "description": "Binary indicator whether Labor Day holiday occurred next day from this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Labor Day_minus2",
+      "description": "Binary indicator whether Labor Day holiday occurred 2 days after this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Labor Day_minus3",
+      "description": "Binary indicator whether Labor Day holiday occurred 3 days after this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Labor Day_plus1",
+      "description": "Binary indicator whether Labor Day holiday occurred 1 day before this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Labor Day_plus2",
+      "description": "Binary indicator whether Labor Day holiday occurred 2 days before this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "MLK Day",
+      "description": "Binary indicator whether MLK Day holiday occurred on this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "MLK Day_minus1",
+      "description": "Binary indicator whether MLK Day holiday occurred next day from this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "MLK Day_minus2",
+      "description": "Binary indicator whether MLK Day holiday occurred 2 days after this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "MLK Day_minus3",
+      "description": "Binary indicator whether MLK Day holiday occurred 3 days after this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "MLK Day_plus1",
+      "description": "Binary indicator whether MLK Day holiday occurred 1 day before this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "MLK Day_plus2",
+      "description": "Binary indicator whether MLK Day holiday occurred 2 days before this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Memorial Day",
+      "description": "Binary indicator whether Memorial Day holiday occurred on this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Memorial Day_minus1",
+      "description": "Binary indicator whether Memorial Day holiday occurred next day from this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Memorial Day_minus2",
+      "description": "Binary indicator whether Memorial Day holiday occurred 2 days after this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Memorial Day_minus3",
+      "description": "Binary indicator whether Memorial Day holiday occurred 3 days after this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Memorial Day_plus1",
+      "description": "Binary indicator whether Memorial Day holiday occurred 1 day before this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Memorial Day_plus2",
+      "description": "Binary indicator whether Memorial Day holiday occurred 2 days before this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "New Years Day",
+      "description": "Binary indicator whether New Years Day holiday occurred on this day",
+      "dataType": "NUMERIC",
+      "example": 1
+    },
+    {
+      "name": "New Years Day_minus1",
+      "description": "Binary indicator whether New Years Day holiday occurred next day from this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "New Years Day_minus2",
+      "description": "Binary indicator whether New Years Day holiday occurred 2 days after this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "New Years Day_minus3",
+      "description": "Binary indicator whether New Years Day holiday occurred 3 days after this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "New Years Day_plus1",
+      "description": "Binary indicator whether New Years Day holiday occurred 1 day before this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "New Years Day_plus2",
+      "description": "Binary indicator whether New Years Day holiday occurred 2 days before this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Thanksgiving Day",
+      "description": "Binary indicator whether Thanksgiving Day holiday occurred on this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Thanksgiving Day_minus1",
+      "description": "Binary indicator whether Thanksgiving Day holiday occurred next day from this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Thanksgiving Day_minus2",
+      "description": "Binary indicator whether Thanksgiving Day holiday occurred 2 days after this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Thanksgiving Day_minus3",
+      "description": "Binary indicator whether Thanksgiving Day holiday occurred 3 days after this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Thanksgiving Day_plus1",
+      "description": "Binary indicator whether Thanksgiving Day holiday occurred 1 day before this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Thanksgiving Day_plus2",
+      "description": "Binary indicator whether Thanksgiving Day holiday occurred 2 days before this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Veterans Day",
+      "description": "Binary indicator whether Veterans Day holiday occurred on this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Veterans Day_minus1",
+      "description": "Binary indicator whether Veterans Day holiday occurred next day from this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Veterans Day_minus2",
+      "description": "Binary indicator whether Veterans Day holiday occurred 2 days after this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Veterans Day_minus3",
+      "description": "Binary indicator whether Veterans Day holiday occurred 3 days after this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Veterans Day_plus1",
+      "description": "Binary indicator whether Veterans Day holiday occurred 1 day before this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Veterans Day_plus2",
+      "description": "Binary indicator whether Veterans Day holiday occurred 2 days before this day",
+      "dataType": "NUMERIC",
+      "example": 0
+    }
+  ]
+}

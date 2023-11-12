@@ -14,7 +14,7 @@
   "timeField": {
     "name": "Date",
     "description": "Date of the sample. ",
-    "dataType": "date",
+    "dataType": "DATE",
     "example": "1999-08-18"
   },
   "forecastTarget": {

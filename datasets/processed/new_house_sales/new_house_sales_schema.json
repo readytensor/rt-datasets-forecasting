@@ -14,7 +14,7 @@
   "timeField": {
     "name": "Period",
     "description": "Date representing month and year of the observation. ",
-    "dataType": "date",
+    "dataType": "DATE",
     "example": "1973-01-01"
   },
   "forecastTarget": {

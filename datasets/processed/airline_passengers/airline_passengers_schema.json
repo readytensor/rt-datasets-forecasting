@@ -14,7 +14,7 @@
   "timeField": {
     "name": "Month",
     "description": "Date representing month and year of the sample. ",
-    "dataType": "date",
+    "dataType": "DATE",
     "example": "1949-01-01"
   },
   "forecastTarget": {

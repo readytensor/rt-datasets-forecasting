@@ -14,7 +14,7 @@
   "timeField": {
     "name": "week_start_date",
     "description": "Date representing week_start_date and year of the sample.",
-    "dataType": "date",
+    "dataType": "DATE",
     "example": "2013-04-01"
   },
   "forecastTarget": {

@@ -14,7 +14,7 @@
   "timeField": {
     "name": "InvoiceDate",
     "description": "Date on which the sale occurred",
-    "dataType": "date",
+    "dataType": "DATE",
     "example": "2010-12-01"
   },
   "forecastTarget": {
