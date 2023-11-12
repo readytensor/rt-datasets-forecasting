@@ -1,5 +1,5 @@
 {
-  "title": "Theme Park attendance",
+  "title": "Theme Park Attendance",
   "description": "This dataset represents synthetic daily attendance at a fictitious theme park in Los Angeles from 2016 to 2019. It is ideal for time series forecasting, showcasing the impact of annual and weekly seasonality, exogenous variables such as holidays and weather, and random fluctuations on attendance numbers.",
   "modelCategory": "forecasting",
   "schemaVersion": 1.0,

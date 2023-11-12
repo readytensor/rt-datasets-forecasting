@@ -1,5 +1,5 @@
 {
-  "title": "Synthetic Bank Branch Transactions",
+  "title": "Bank Branch Transactions",
   "description": "The Bank Branch Network Simulation dataset is a synthetic dataset that emulates the transaction activities of a fictitious bank network consisting of 32 branches over a period of 169 weeks. It captures the weekly transaction data for 6 different transaction types at each branch while simulating correlations between transaction types and branches. The dataset also models the impact of bank holidays. It is versatile, suitable for multi-variate forecasting, or individual series forecasting, with the option to use other transaction series as exogenous factors for forecasting tasks.",
   "modelCategory": "forecasting",
   "schemaVersion": 1.0,

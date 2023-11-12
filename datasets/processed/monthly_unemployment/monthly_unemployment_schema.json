@@ -1,6 +1,6 @@
 {
-  "title": "FRED U.S. Unemployment ",
-  "description": "The `FRED U.S. Unemployment` dataset is a valuable assembly of monthly economic indicators from 1955 to 2018, sourced from the Federal Reserve Economic Data. It includes critical measures such as the Unemployment Rate (UNRATE), Consumer Price Index (CPIAUCSL), Real GDP (GDPC1), and the Effective Federal Funds Rate (DFF), along with their year-over-year percentage changes, providing a robust foundation for forecasting the U.S. unemployment rate.",
+  "title": "Monthly Unemployment ",
+  "description": "The `Monthly Unemployment` dataset is a valuable assembly of monthly economic indicators from 1955 to 2018, sourced from the Federal Reserve Economic Data. It includes critical measures such as the Unemployment Rate (UNRATE), Consumer Price Index (CPIAUCSL), Real GDP (GDPC1), and the Effective Federal Funds Rate (DFF), along with their year-over-year percentage changes, providing a robust foundation for forecasting the U.S. unemployment rate.",
   "modelCategory": "forecasting",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",
