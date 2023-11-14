@@ -13,7 +13,7 @@ The `datasets` folder contains the main data files and the schema files for all 
   - The CSV file with the dataset name, and no other suffix, is the full data made of both training data, and data from the forecast horizon.
   - In case of some datasets, `.png` files are also included to visualize the data.
 
-Below is the list and description of datasets in this repo.
+Below is the list and description of 19 datasets in this repo. Note that one of the datasets is a "smoke test" dataset that is used for quick testing of models to ensure that they are working as expected. The smoke test dataset is not used for scoring and benchmarking in the Ready Tensor platform.
 
 ---
 
