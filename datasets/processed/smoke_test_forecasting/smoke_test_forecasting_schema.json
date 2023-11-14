@@ -24,7 +24,7 @@
     "example": 5.056
   },
   "pastCovariates": [],
-  "future_covariates": [
+  "futureCovariates": [
     {
       "name": "special_event",
       "description": "Numeric variable representing that an offset is added on this sample",

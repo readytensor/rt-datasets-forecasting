@@ -24,7 +24,7 @@
     "example": 33621.0
   },
   "pastCovariates": [],
-  "future_covariates": [
+  "futureCovariates": [
     {
       "name": "max_temp",
       "description": "Maximum temperature in Celcius on the day",

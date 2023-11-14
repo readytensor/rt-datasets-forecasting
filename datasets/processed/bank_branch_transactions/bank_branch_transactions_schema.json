@@ -55,7 +55,7 @@
       "example": 279.328
     }
   ],
-  "future_covariates": [
+  "futureCovariates": [
     {
       "name": "num_holidays",
       "description": "Number of bank holidays in this week",

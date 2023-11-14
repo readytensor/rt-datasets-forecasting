@@ -24,5 +24,5 @@
     "example": 0.0
   },
   "pastCovariates": [],
-  "future_covariates": []
+  "futureCovariates": []
 }

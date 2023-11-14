@@ -232,7 +232,7 @@ def generate_schemas(
             dataset_name, dataset_row, dataset, features_config)
 
         schema["pastCovariates"] = past_covariates
-        schema["future_covariates"] = future_covariates
+        schema["futureCovariates"] = future_covariates
 
         schemas.append(schema)
         dataset_names.append(dataset_name)
