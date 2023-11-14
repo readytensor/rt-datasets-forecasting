@@ -12,8 +12,12 @@ The `datasets` folder contains the main data files and the schema files for all 
   - The JSON file with suffix `_schema.json` is the schema file for the corresponding dataset.
   - The CSV file with the dataset name, and no other suffix, is the full data made of both training data, and data from the forecast horizon.
   - In case of some datasets, `.png` files are also included to visualize the data.
+- The folder `config` contains two csv files - one called `forecasting_datasets.csv` which contains the dataset level attribute information. The second csv called `forecasting_datasets_fields.csv` contains information regarding all the fields in each of the datasets.
+- `generate_schemas.py`: contains the code to generate the schema files for each dataset. These are saved in the `datasets/processed` folder.
+- `create_train_test_key_files.py`: contains the code to generate the train, test, and test-key files for each dataset. These are saved in the `datasets/processed` folder.
+- `run_all.py`: This is used to run the above two scripts in sequence.
 
-Below is the list and description of 19 datasets in this repo. Note that one of the datasets is a "smoke test" dataset that is used for quick testing of models to ensure that they are working as expected. The smoke test dataset is not used for scoring and benchmarking in the Ready Tensor platform.
+Below is the list and description of 19 datasets in this repo. One of the datasets is a "smoke test" dataset that is used for quick testing of models to ensure that they are working as expected. The smoke test dataset is not used for scoring and benchmarking in the Ready Tensor platform.
 
 ---
 
