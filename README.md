@@ -17,7 +17,7 @@ The `datasets` folder contains the main data files and the schema files for all 
 - `create_train_test_key_files.py`: contains the code to generate the train, test, and test-key files for each dataset. These are saved in the `datasets/processed` folder.
 - `run_all.py`: This is used to run the above two scripts in sequence.
 
-Below is the list and description of 19 datasets in this repo. One of the datasets is a "smoke test" dataset that is used for quick testing of models to ensure that they are working as expected. The smoke test dataset is not used for scoring and benchmarking in the Ready Tensor platform.
+Below is the description of 19 datasets in this repo. One of the datasets is a "smoke test" dataset that is used for quick testing of models to ensure that they are working as expected. The smoke test dataset is not used for scoring and benchmarking in the Ready Tensor platform.
 
 ---
 
@@ -92,7 +92,7 @@ Box, G.E.P., Jenkins, G.M., Reinsel, G.C., & Ljung, G.M. (2015). Time Series Ana
 
 #### Description
 
-The "Synthetic ARIMA Process" dataset is a synthetic dataset generated using the ARIMA (Autoregressive Integrated Moving Average) model. It comprises various ARIMA scenarios, including pure noise, specific Autoregressive (AR) components, Moving Average (MA) components, and Integration (I) for differencing. It also includes an ARIMA hybrid scenario with AR and MA terms and one-time differencing. This dataset is a valuable resource for exploring and modeling time series data, making it useful for tasks like model validation, component analysis, and benchmarking in time series analysis.
+The "ARIMA Process" dataset is a synthetic dataset generated using the ARIMA (Autoregressive Integrated Moving Average) model. It comprises various ARIMA scenarios, including pure noise, specific Autoregressive (AR) components, Moving Average (MA) components, and Integration (I) for differencing. It also includes an ARIMA hybrid scenario with AR and MA terms and one-time differencing. This dataset is a valuable resource for exploring and modeling time series data, making it useful for tasks like model validation, component analysis, and benchmarking in time series analysis.
 
 #### Dataset characteristics
 
@@ -143,7 +143,7 @@ https://github.com/unit8co/darts
 
 #### Description
 
-The "Bank Branch Network Simulation" dataset is a synthetic dataset that emulates the transaction activities of a fictitious bank network consisting of 32 branches over a period of 169 weeks. It captures the weekly transaction data for 6 different transaction types at each branch while simulating correlations between transaction types and branches. The dataset also models the impact of bank holidays. It is versatile, suitable for multi-variate forecasting, or individual series forecasting, with the option to use other transaction series as exogenous factors for forecasting tasks.
+The "Bank Branch Transactions" dataset is a synthetic dataset that emulates the transaction activities of a fictitious bank network consisting of 32 branches over a period of 169 weeks. It captures the weekly transaction data for 6 different transaction types at each branch while simulating correlations between transaction types and branches. The dataset also models the impact of bank holidays. It is versatile, suitable for multi-variate forecasting, or individual series forecasting, with the option to use other transaction series as exogenous factors for forecasting tasks.
 
 #### Dataset characteristics
 
