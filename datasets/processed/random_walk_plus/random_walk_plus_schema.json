@@ -1,5 +1,5 @@
 {
-  "title": "Random Walk Dataset",
+  "title": "Random Walk Plus Dataset",
   "description": "The `Random Walk` dataset is crafted to simulate the unpredictable nature of financial markets and economic trends through random walk time series, some of which include deliberate regime shifts to model changes in drift and volatility. It serves as a robust testbed for developing and evaluating time series forecasting models and regime change detection algorithms, offering both the fundamental simplicity of a random walk and the intricate complexity introduced by the regime changes.",
   "modelCategory": "forecasting",
   "schemaVersion": 1.0,

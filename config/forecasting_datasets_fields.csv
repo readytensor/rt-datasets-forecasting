@@ -87,9 +87,9 @@ forecasting,online_retail_sales,1,StockCode,id,TEXT,Unique identifier per item s
 forecasting,online_retail_sales,2,InvoiceDate,time,DATE,Date on which the sale occurred
 forecasting,online_retail_sales,3,Quantity,target,NUMERIC,Total number of units sold
 forecasting,online_retail_sales,4,Sales,past_covariate,NUMERIC,Total revenue (units sold * unit price)
-forecasting,random_walk,1,series_id,id,TEXT,Unique identifier per series
-forecasting,random_walk,2,time_step,time,INT,Time step number of observation.
-forecasting,random_walk,3,value,target,NUMERIC,Target variable
+forecasting,random_walk_plus,1,series_id,id,TEXT,Unique identifier per series
+forecasting,random_walk_plus,2,time_step,time,INT,Time step number of observation.
+forecasting,random_walk_plus,3,value,target,NUMERIC,Target variable
 forecasting,smoke_test_forecasting,1,series_id,id,TEXT,Unique identifier per series
 forecasting,smoke_test_forecasting,2,t,time,INT,Time step number of observation.
 forecasting,smoke_test_forecasting,3,y,target,NUMERIC,Target variable
@@ -164,3 +164,6 @@ forecasting,theme_park_attendance,56,Veterans Day_minus2,future_covariate,NUMERI
 forecasting,theme_park_attendance,57,Veterans Day_minus3,future_covariate,NUMERIC,Binary indicator whether Veterans Day holiday occurred 3 days after this day
 forecasting,theme_park_attendance,58,Veterans Day_plus1,future_covariate,NUMERIC,Binary indicator whether Veterans Day holiday occurred 1 day before this day
 forecasting,theme_park_attendance,59,Veterans Day_plus2,future_covariate,NUMERIC,Binary indicator whether Veterans Day holiday occurred 2 days before this day
+forecasting,geometric_brownian_motion,1,series_id,id,TEXT,Unique identifier for each series.
+forecasting,geometric_brownian_motion,2,time,time,INT,Time step (in integer) of the observation.
+forecasting,geometric_brownian_motion,3,value,target,NUMERIC,Target variable to forecast.

@@ -1,0 +1,28 @@
+{
+  "title": "Geometric Brownian Motion",
+  "description": "The Geometric Brownian Motion (GBM) dataset consists of simulated time series representing stochastic asset price movements, widely used in financial modeling for scenarios like stock price behavior under various market conditions. It offers a diverse collection of GBM paths, generated with customizable drift and volatility parameters, suitable for financial analysis and machine learning applications.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "other",
+  "forecastLength": 10,
+  "idField": {
+    "name": "series_id",
+    "description": "Unique identifier for each series."
+  },
+  "timeField": {
+    "name": "time",
+    "description": "Time step (in integer) of the observation.",
+    "dataType": "INT",
+    "example": 1
+  },
+  "forecastTarget": {
+    "name": "value",
+    "description": "Target variable to forecast.",
+    "dataType": "NUMERIC",
+    "example": 100.0
+  },
+  "pastCovariates": [],
+  "future_covariates": []
+}
