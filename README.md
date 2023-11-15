@@ -33,7 +33,7 @@ Air Quality KDD 2018 is a time series dataset from the KDD Cup 2018 competition,
 
 #### Dataset characteristics
 
-- Number of series = 35
+- Number of series = 34
 - Series length = 10,890
 - Forecast length = 120
 - Time granularity = Hourly
@@ -395,7 +395,7 @@ The "Online Retail Sales" dataset aggregates daily transactions from a UK-based 
 
 #### Dataset characteristics
 
-- Number of series = 40
+- Number of series = 38
 - Series length = 374
 - Forecast length = 21
 - Time granularity = Daily
