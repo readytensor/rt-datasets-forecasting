@@ -5,7 +5,7 @@
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",
   "encoding": "utf-8",
-  "frequency": "monthly",
+  "frequency": "MONTHLY",
   "forecastLength": 15,
   "idField": {
     "name": "Region",

@@ -5,7 +5,7 @@
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",
   "encoding": "utf-8",
-  "frequency": "daily",
+  "frequency": "DAILY",
   "forecastLength": 14,
   "idField": {
     "name": "StockCode",
