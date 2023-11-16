@@ -15,7 +15,7 @@
     "name": "timestamp",
     "description": "Hour of measurement",
     "dataType": "DATETIME",
-    "example": "2017-01-01 14-00-00"
+    "example": "2017-01-01 14:00:00"
   },
   "forecastTarget": {
     "name": "PM2.5",

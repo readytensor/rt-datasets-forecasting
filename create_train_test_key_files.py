@@ -114,6 +114,9 @@ def create_train_test_testkey_files(dataset_cfg_path:str, processed_datasets_pat
         # Read schema
         schema = utils.load_schema(dataset_name, processed_datasets_path)
 
+        if schema["timeField"]["dataType"] != "INT":
+            dataset[schema["timeField"]["name"]] = pd.to_datetime(dataset[schema["timeField"]["name"]])
+
         dataset_train_dfs = []
         dataset_test_dfs = []
 
