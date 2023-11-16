@@ -193,7 +193,7 @@ Extracted using `yfinance` python library. See more information on the usage her
 
 #### Description
 
-The "Daily Weather Dataset" spans 3 years and includes daily weather measurements for 26 cities worldwide. It comprises 17 weather parameters, making it suitable for both multi-variate and single-series forecasting tasks. With data from January 2020 to December 2022, it's an ideal resource for forecasting the 'temperature' series while leveraging other weather measurements as potential exogenous factors.
+The "Daily Weather Dataset" spans 3 years and includes daily weather measurements for 26 cities worldwide. It comprises 17 weather parameters, making it suitable for both multi-variate and single-series forecasting tasks. With data from January 2020 to December 2022, it's an ideal resource for forecasting the 'maxtemp' series while leveraging other weather measurements as potential exogenous factors.
 
 #### Dataset characteristics
 
