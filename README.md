@@ -189,7 +189,7 @@ Extracted using `yfinance` python library. See more information on the usage her
 
 #### Alias (on scoreboards): daily_weather
 
-#### Domain / Industry: Weather
+#### Domain / Industry: Meteorology
 
 #### Description
 
@@ -327,7 +327,7 @@ DOI: 10.5281/zenodo.4656379
 
 #### Alias (on scoreboards): monthly_unemployment
 
-#### Domain / Industry: Economics
+#### Domain / Industry: Macroeconomics
 
 #### Description
 
