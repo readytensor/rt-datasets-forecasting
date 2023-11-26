@@ -1,5 +1,5 @@
 {
-  "title": "Daily Weather in 25 World Cities",
+  "title": "Daily Weather in 26 World Cities",
   "description": "This dataset spans 3 years and includes daily weather measurements for 26 cities worldwide. It comprises 17 weather parameters, making it suitable for both multi-variate and single-series forecasting tasks. With data from January 2020 to December 2022, it's an ideal resource for forecasting the 'temperature' series while leveraging other weather measurements as potential exogenous factors.",
   "modelCategory": "forecasting",
   "schemaVersion": 1.0,
