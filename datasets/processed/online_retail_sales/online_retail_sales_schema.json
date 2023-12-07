@@ -6,7 +6,7 @@
   "inputDataFormat": "CSV",
   "encoding": "utf-8",
   "frequency": "DAILY",
-  "forecastLength": 14,
+  "forecastLength": 21,
   "idField": {
     "name": "StockCode",
     "description": "Unique identifier per item sold"

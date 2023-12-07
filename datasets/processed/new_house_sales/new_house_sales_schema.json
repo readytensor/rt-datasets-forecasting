@@ -6,7 +6,7 @@
   "inputDataFormat": "CSV",
   "encoding": "utf-8",
   "frequency": "MONTHLY",
-  "forecastLength": 15,
+  "forecastLength": 18,
   "idField": {
     "name": "Region",
     "description": "Unique identifier for each region; one of Mid-west, North-east, South and West."

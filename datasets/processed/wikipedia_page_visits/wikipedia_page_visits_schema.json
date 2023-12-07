@@ -6,7 +6,7 @@
   "inputDataFormat": "CSV",
   "encoding": "utf-8",
   "frequency": "DAILY",
-  "forecastLength": 6,
+  "forecastLength": 30,
   "idField": {
     "name": "topic",
     "description": "Unique topic represented on the Wikipedia page"

@@ -1,4 +1,7 @@
 Region,Period
+Mid-west,2022-03-01
+Mid-west,2022-04-01
+Mid-west,2022-05-01
 Mid-west,2022-06-01
 Mid-west,2022-07-01
 Mid-west,2022-08-01
@@ -14,6 +17,9 @@ Mid-west,2023-05-01
 Mid-west,2023-06-01
 Mid-west,2023-07-01
 Mid-west,2023-08-01
+North-east,2022-03-01
+North-east,2022-04-01
+North-east,2022-05-01
 North-east,2022-06-01
 North-east,2022-07-01
 North-east,2022-08-01
@@ -29,6 +35,9 @@ North-east,2023-05-01
 North-east,2023-06-01
 North-east,2023-07-01
 North-east,2023-08-01
+South,2022-03-01
+South,2022-04-01
+South,2022-05-01
 South,2022-06-01
 South,2022-07-01
 South,2022-08-01
@@ -44,6 +53,9 @@ South,2023-05-01
 South,2023-06-01
 South,2023-07-01
 South,2023-08-01
+West,2022-03-01
+West,2022-04-01
+West,2022-05-01
 West,2022-06-01
 West,2022-07-01
 West,2022-08-01

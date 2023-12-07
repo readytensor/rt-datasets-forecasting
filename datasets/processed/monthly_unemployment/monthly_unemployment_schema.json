@@ -6,7 +6,7 @@
   "inputDataFormat": "CSV",
   "encoding": "utf-8",
   "frequency": "MONTHLY",
-  "forecastLength": 15,
+  "forecastLength": 18,
   "idField": {
     "name": "SERIES_ID",
     "description": "Unique idenfier for the series (there is a single series in this dataset)"

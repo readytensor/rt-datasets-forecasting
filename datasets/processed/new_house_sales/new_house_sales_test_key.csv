@@ -1,4 +1,7 @@
 Region,Period,houses_sold_not_seas_adj
+Mid-west,2022-03-01,8
+Mid-west,2022-04-01,7
+Mid-west,2022-05-01,5
 Mid-west,2022-06-01,6
 Mid-west,2022-07-01,4
 Mid-west,2022-08-01,5
@@ -14,6 +17,9 @@ Mid-west,2023-05-01,7
 Mid-west,2023-06-01,5
 Mid-west,2023-07-01,8
 Mid-west,2023-08-01,6
+North-east,2022-03-01,4
+North-east,2022-04-01,4
+North-east,2022-05-01,2
 North-east,2022-06-01,1
 North-east,2022-07-01,2
 North-east,2022-08-01,2
@@ -29,6 +35,9 @@ North-east,2023-05-01,3
 North-east,2023-06-01,3
 North-east,2023-07-01,2
 North-east,2023-08-01,3
+South,2022-03-01,39
+South,2022-04-01,32
+South,2022-05-01,36
 South,2022-06-01,31
 South,2022-07-01,29
 South,2022-08-01,33
@@ -44,6 +53,9 @@ South,2023-05-01,40
 South,2023-06-01,37
 South,2023-07-01,34
 South,2023-08-01,30
+West,2022-03-01,17
+West,2022-04-01,13
+West,2022-05-01,15
 West,2022-06-01,9
 West,2022-07-01,9
 West,2022-08-01,10
