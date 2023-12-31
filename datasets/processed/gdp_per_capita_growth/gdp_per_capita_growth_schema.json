@@ -1,6 +1,6 @@
 {
   "title": "GDP per Capita Change",
-  "description": NaN,
+  "description": "This dataset detailing GDP per Capita change from 1961 to 2019 for 89 countries provides a comprehensive look at economic growth and contraction over nearly six decades. Sourced from the World Bank, a reputable authority in global economic data, this dataset offers annual percentage changes in Gross Domestic Product (GDP) for a wide range of countries, reflecting the economic performance of each nation over time. The dataset's extended timeframe and broad coverage make it an invaluable tool for testing various time series forecasting models, offering insights into cyclical patterns, long-term trends, and potential future trajectories of economies.",
   "modelCategory": "forecasting",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",

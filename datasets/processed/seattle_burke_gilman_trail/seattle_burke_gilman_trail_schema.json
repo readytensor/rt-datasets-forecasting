@@ -1,6 +1,6 @@
 {
   "title": "Seattle Burke Gilman Trail",
-  "description": "This dataset contains hourly level pedestrian and bicycle counts at the Burke Gilman Trail in Seattle. \nThere are a total of 4 series in the dataset for the pedestrian and bike counts in each direction (north-bound and south-bound). The data is filtered to cover the date range from 1/1/2017 to 7/31/2017. This dataset is useful for timeseries analysis involving short-term seasonalities, especially intra-day (hour-of-the-day) and intra-week (day-of-the-week) seasonalities. The dataset contains some extreme outliers, presumably due to one-off special events at the trail locations. ",
+  "description": "This dataset contains hourly level pedestrian and bicycle counts at the Burke Gilman Trail in Seattle. \r\nThere are a total of 4 series in the dataset for the pedestrian and bike counts in each direction (north-bound and south-bound). The data is filtered to cover the date range from 1/1/2017 to 7/31/2017. This dataset is useful for timeseries analysis involving short-term seasonalities, especially intra-day (hour-of-the-day) and intra-week (day-of-the-week) seasonalities. The dataset contains some extreme outliers, presumably due to one-off special events at the trail locations. ",
   "modelCategory": "forecasting",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",
