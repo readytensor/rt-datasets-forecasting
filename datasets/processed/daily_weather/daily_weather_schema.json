@@ -121,5 +121,19 @@
       "example": 31
     }
   ],
-  "futureCovariates": []
+  "futureCovariates": [],
+  "staticCovariates": [
+    {
+      "name": "in_northern_hemisphere",
+      "description": "Whether the city is in northern hemisphere. This is a static covariate.",
+      "dataType": "NUMERIC",
+      "example": 1
+    },
+    {
+      "name": "in_southern_hemisphere",
+      "description": "Whether the city is in southern hemisphere. This is a static covariate.",
+      "dataType": "NUMERIC",
+      "example": 0
+    }
+  ]
 }

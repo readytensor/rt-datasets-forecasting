@@ -1,0 +1,29 @@
+{
+  "title": "Atmospheric CO2 Concentrations",
+  "description": "The Atmospheric CO2 Concentrations dataset comprises measurements of the concentration of carbon dioxide in the atmosphere, expressed in parts per million (ppm). The data spans from March 1958 onwards, providing a long-term record of one of the greenhouse gases affecting Earth's climate. The dataset's monthly resolution allows for observing seasonal variations and long-term trends in CO2 concentrations. Sourced from the National Oceanic and Atmospheric Association (NOAA) Global Monitoring Laboratory, this dataset is a valuable resource in climate change research and environmental studies.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "MONTHLY",
+  "forecastLength": 60,
+  "idField": {
+    "name": "Indicator",
+    "description": "Unique identified attached to this series single series in this dataset. "
+  },
+  "timeField": {
+    "name": "Date",
+    "description": "Month of the observation",
+    "dataType": "DATE",
+    "example": "1958-03-01"
+  },
+  "forecastTarget": {
+    "name": "Value",
+    "description": "CO2 parts per million",
+    "dataType": "NUMERIC",
+    "example": 315.7
+  },
+  "pastCovariates": [],
+  "futureCovariates": [],
+  "staticCovariates": []
+}

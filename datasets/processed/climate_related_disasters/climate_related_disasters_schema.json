@@ -1,0 +1,66 @@
+{
+  "title": "Climate Related Disasters Frequency",
+  "description": "The links between climate change and natural disasters are well documented in a wide variety of climate change literature. This dataset represents data for these climate-related disasters over time by country.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "YEARLY",
+  "forecastLength": 5,
+  "idField": {
+    "name": "Country",
+    "description": "Country name"
+  },
+  "timeField": {
+    "name": "Year",
+    "description": "Date representing year of observation",
+    "dataType": "DATE",
+    "example": "1980-01-01"
+  },
+  "forecastTarget": {
+    "name": "Total Disasters",
+    "description": "Total number of climate related disasters",
+    "dataType": "NUMERIC",
+    "example": 1.0
+  },
+  "pastCovariates": [
+    {
+      "name": "Drought",
+      "description": "Number of droughts",
+      "dataType": "NUMERIC",
+      "example": 0.0
+    },
+    {
+      "name": "Extreme temperature",
+      "description": "Number of extreme temperature events",
+      "dataType": "NUMERIC",
+      "example": 0.0
+    },
+    {
+      "name": "Flood",
+      "description": "Number of floods",
+      "dataType": "NUMERIC",
+      "example": 1.0
+    },
+    {
+      "name": "Landslide",
+      "description": "Number of landslides",
+      "dataType": "NUMERIC",
+      "example": 0.0
+    },
+    {
+      "name": "Storm",
+      "description": "Number of storms",
+      "dataType": "NUMERIC",
+      "example": 0.0
+    },
+    {
+      "name": "Wildfire",
+      "description": "Number of wildfires",
+      "dataType": "NUMERIC",
+      "example": 0.0
+    }
+  ],
+  "futureCovariates": [],
+  "staticCovariates": []
+}

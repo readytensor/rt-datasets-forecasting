@@ -1,0 +1,29 @@
+{
+  "title": "Random Walk Dataset",
+  "description": "This synthetically generated random walk dataset is a collection of 70 individual time series, each involving 500 time steps. This dataset is generated using the random walk process, a statistical phenomenon often encountered in fields as varied as physics and finance, where each point in the series is a sum of its predecessor and a random fluctuation. Each random fluctuation at every step is drawn independently from a normal distribution, and this process is independent of the current state or any past steps. This dataset is a valuable resource to explore the principles and applications of random walks processes for timeseries analysis.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "OTHER",
+  "forecastLength": 25,
+  "idField": {
+    "name": "series_id",
+    "description": "Unique identifier per series"
+  },
+  "timeField": {
+    "name": "time_step",
+    "description": "Time step number of observation.",
+    "dataType": "INT",
+    "example": 1
+  },
+  "forecastTarget": {
+    "name": "value",
+    "description": "Target variable",
+    "dataType": "NUMERIC",
+    "example": 0.0
+  },
+  "pastCovariates": [],
+  "futureCovariates": [],
+  "staticCovariates": []
+}

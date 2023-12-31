@@ -1,0 +1,29 @@
+{
+  "title": "Sunspots",
+  "description": "The Sunspots dataset consists of observations of the number of sunspots on the Sun, recorded each month. It spans the time period from January 1749 to December 1983, providing a long-term view of solar activity. This dataset is invaluable for time series analysis and forecasting due to its longevity, regularity, and the clear cyclical patterns it presents, which are reflective of the approximately 11-year solar cycle. Researchers and analysts commonly use this dataset to practice and test forecasting models, including ARIMA, exponential smoothing, and more modern machine learning approaches. The dataset's extensive history makes it particularly suitable for studying long-term trends and cyclic behavior in solar activity, offering insights into past solar cycles and helping predict future solar phenomena.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "MONTHLY",
+  "forecastLength": 144,
+  "idField": {
+    "name": "Series",
+    "description": "Unique identifier marking the single series in this dataset"
+  },
+  "timeField": {
+    "name": "Month",
+    "description": "Month of the observation",
+    "dataType": "DATE",
+    "example": "1749-01-01"
+  },
+  "forecastTarget": {
+    "name": "Sunspots",
+    "description": "Number of sunspots. Sunspots are temporary phenomena on the Sun's photosphere that appear as spots darker than the surrounding areas. ",
+    "dataType": "NUMERIC",
+    "example": 58.0
+  },
+  "pastCovariates": [],
+  "futureCovariates": [],
+  "staticCovariates": []
+}

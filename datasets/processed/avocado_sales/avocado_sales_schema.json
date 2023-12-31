@@ -1,0 +1,79 @@
+{
+  "title": "Avocado Sales",
+  "description": "This dataset is sourced from the Hass Avocado Board.  It contains data from weekly retail scans over 169 weeks beginning in January 2015, detailing national sales volume (units) and prices of Hass avocados. The information is sourced directly from the sales records of retailers, reflecting actual sales. It covers various retail outlets including grocery stores, mass merchandisers, club and drug stores, dollar stores, and military commissaries. The average price listed represents the cost per individual avocado, even if sold in multi-unit bags. The dataset only includes Product Lookup codes (PLUs) for Hass avocados, excluding other avocado types like greenskins.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "WEEKLY",
+  "forecastLength": 12,
+  "idField": {
+    "name": "series_id",
+    "description": "Unique identifier which is a combination of region and avocado type (conventional vs organic)"
+  },
+  "timeField": {
+    "name": "date",
+    "description": "Date representing the week of the data sample",
+    "dataType": "DATE",
+    "example": "1/4/2015"
+  },
+  "forecastTarget": {
+    "name": "total_bulk_and_bagged_units",
+    "description": "Total units sold of bulk and bagged avocados. Unit is in thousands.",
+    "dataType": "NUMERIC",
+    "example": 40.873
+  },
+  "pastCovariates": [
+    {
+      "name": "average_sales_price",
+      "description": "Average sales price per avocado (i.e. single avocado, not a unit of thousand avocados).",
+      "dataType": "NUMERIC",
+      "example": 1.22
+    },
+    {
+      "name": "plu_4046_units",
+      "description": "Total number of avocados with Product Lookup (PLU) code 4046 sold in bulk. Unit is in thousands.",
+      "dataType": "NUMERIC",
+      "example": 2.82
+    },
+    {
+      "name": "plu_4225_units",
+      "description": "Total number of avocados with Product Lookup (PLU) code 4225 sold in bulk. Unit is in thousands.",
+      "dataType": "NUMERIC",
+      "example": 28.287
+    },
+    {
+      "name": "plu_4770_units",
+      "description": "Total number of avocados with Product Lookup (PLU) code 4770 sold in bulk. Unit is in thousands.",
+      "dataType": "NUMERIC",
+      "example": 0.05
+    },
+    {
+      "name": "small_bagged_units",
+      "description": "Total number of avocados sold in small bags. Bagged volume is reported in avocado units. One unit is equal to one avocado, not one bag.  Unit is in thousands.",
+      "dataType": "NUMERIC",
+      "example": 9.187
+    },
+    {
+      "name": "large_bagged_units",
+      "description": "Total number of avocados sold in large bags. Bagged volume is reported in avocado units. One unit is equal to one avocado, not one bag. Unit is in thousands.",
+      "dataType": "NUMERIC",
+      "example": 0.53
+    },
+    {
+      "name": "xlarge_bagged_units",
+      "description": "Total number of avocados sold in extra large bags. Bagged volume is reported in avocado units. One unit is equal to one avocado, not one bag. Unit is in thousands.",
+      "dataType": "NUMERIC",
+      "example": 0.0
+    }
+  ],
+  "futureCovariates": [],
+  "staticCovariates": [
+    {
+      "name": "is_organic",
+      "description": "Whether sample represents organic avocados (1) or conventional (0). This is a static variable. ",
+      "dataType": "NUMERIC",
+      "example": 0
+    }
+  ]
+}

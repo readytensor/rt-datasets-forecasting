@@ -1,0 +1,29 @@
+{
+  "title": "M4 Forecasting Competition Sampled Quarterly Series",
+  "description": "This dataset comprises 75 quarterly time series, each spanning March 1998 to June 2017, randomly sampled from the M4 forecasting competition. These series provide a consistent historical window and are ideal for exploring long-term trends and forecasting challenges on quarterly-frequency series drawn from across various sectors.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "QUARTERLY",
+  "forecastLength": 12,
+  "idField": {
+    "name": "series",
+    "description": "Unique idenfier for the series."
+  },
+  "timeField": {
+    "name": "quarter",
+    "description": "Date representing quarter of year of measurement.",
+    "dataType": "DATE",
+    "example": "1998-03-31"
+  },
+  "forecastTarget": {
+    "name": "value",
+    "description": "Target variable for forecasting.",
+    "dataType": "NUMERIC",
+    "example": 872.0
+  },
+  "pastCovariates": [],
+  "futureCovariates": [],
+  "staticCovariates": []
+}

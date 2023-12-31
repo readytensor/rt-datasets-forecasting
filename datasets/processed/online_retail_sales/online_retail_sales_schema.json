@@ -31,5 +31,6 @@
       "example": 213.03
     }
   ],
-  "futureCovariates": []
+  "futureCovariates": [],
+  "staticCovariates": []
 }

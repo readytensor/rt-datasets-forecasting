@@ -1,0 +1,54 @@
+{
+  "title": "Seattle Burke Gilman Trail",
+  "description": "This dataset contains hourly level pedestrian and bicycle counts at the Burke Gilman Trail in Seattle. \nThere are a total of 4 series in the dataset for the pedestrian and bike counts in each direction (north-bound and south-bound). The data is filtered to cover the date range from 1/1/2017 to 7/31/2017. This dataset is useful for timeseries analysis involving short-term seasonalities, especially intra-day (hour-of-the-day) and intra-week (day-of-the-week) seasonalities. The dataset contains some extreme outliers, presumably due to one-off special events at the trail locations. ",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "HOURLY",
+  "forecastLength": 168,
+  "idField": {
+    "name": "Trail",
+    "description": "Unique identifier for the trail"
+  },
+  "timeField": {
+    "name": "Datetime",
+    "description": "Datetime of observation",
+    "dataType": "DATETIME",
+    "example": "2017-01-01 00:00:00"
+  },
+  "forecastTarget": {
+    "name": "Count",
+    "description": "Count of bike or pedestrian on the trail",
+    "dataType": "NUMERIC",
+    "example": 0.0
+  },
+  "pastCovariates": [],
+  "futureCovariates": [],
+  "staticCovariates": [
+    {
+      "name": "Is_Bike_Trail",
+      "description": "Whether series represents a bike trail",
+      "dataType": "NUMERIC",
+      "example": 1
+    },
+    {
+      "name": "Is_Ped_Trail",
+      "description": "Whether series represents a pedestrian trail",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "Is_North_Trail",
+      "description": "Whether series represents a bike trail",
+      "dataType": "NUMERIC",
+      "example": 1
+    },
+    {
+      "name": "Is_South_Trail",
+      "description": "Whether series represents a pedestrian trail",
+      "dataType": "NUMERIC",
+      "example": 0
+    }
+  ]
+}

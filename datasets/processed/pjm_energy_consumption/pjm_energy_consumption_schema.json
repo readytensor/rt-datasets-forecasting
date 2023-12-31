@@ -1,0 +1,29 @@
+{
+  "title": "PJM Hourly Energy Consumption",
+  "description": "This dataset contains data related to hourly level energy consumption in regions served by PJM Interconnection LLC (PJM). ",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "HOURLY",
+  "forecastLength": 72,
+  "idField": {
+    "name": "Region",
+    "description": "Region served by PJM"
+  },
+  "timeField": {
+    "name": "Datetime",
+    "description": "Datetime representing hour of observation",
+    "dataType": "DATETIME",
+    "example": "2017-05-01 00:00:00"
+  },
+  "forecastTarget": {
+    "name": "Energy_Consumption_GW",
+    "description": "Target variable representing energy consumption in gigawatt. ",
+    "dataType": "NUMERIC",
+    "example": 12.481
+  },
+  "pastCovariates": [],
+  "futureCovariates": [],
+  "staticCovariates": []
+}

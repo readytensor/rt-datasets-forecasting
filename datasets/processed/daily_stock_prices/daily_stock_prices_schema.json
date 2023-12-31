@@ -55,5 +55,6 @@
       "example": 11210300
     }
   ],
-  "futureCovariates": []
+  "futureCovariates": [],
+  "staticCovariates": []
 }

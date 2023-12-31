@@ -24,5 +24,6 @@
     "example": 2874.87
   },
   "pastCovariates": [],
-  "futureCovariates": []
+  "futureCovariates": [],
+  "staticCovariates": []
 }

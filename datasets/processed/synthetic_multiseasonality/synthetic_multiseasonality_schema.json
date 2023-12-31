@@ -1,0 +1,68 @@
+{
+  "title": "Multi-Seasonality Timeseries With Covariates",
+  "description": "This dataset is a synthetically generated collection designed to simulate complex time series forecasting scenarios with multiple seasonalities, covariates, and types. It comprises 36 condensed series, each of 160 epochs (time-steps). The dataset is structured to facilitate the development, testing, and comparison of time series forecasting models, particularly those capable of handling multiple seasonal patterns and covariates.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "OTHER",
+  "forecastLength": 10,
+  "idField": {
+    "name": "series_id",
+    "description": "Unique identifier for the series."
+  },
+  "timeField": {
+    "name": "time_step",
+    "description": "Time step number of observation.",
+    "dataType": "INT",
+    "example": 1
+  },
+  "forecastTarget": {
+    "name": "value",
+    "description": "Value of the series",
+    "dataType": "NUMERIC",
+    "example": 35.1216
+  },
+  "pastCovariates": [
+    {
+      "name": "past_covariate_event",
+      "description": "Past covariate event indicator (1 or 0)",
+      "dataType": "NUMERIC",
+      "example": 0
+    }
+  ],
+  "futureCovariates": [
+    {
+      "name": "series_type_effect_idx",
+      "description": "An index number that ranges 1 to 90 representing day number in quarter",
+      "dataType": "NUMERIC",
+      "example": 22
+    },
+    {
+      "name": "is_special_event",
+      "description": "Special event marker (1 or 0)",
+      "dataType": "NUMERIC",
+      "example": 0
+    }
+  ],
+  "staticCovariates": [
+    {
+      "name": "is_type_A",
+      "description": "Whether series is of type A",
+      "dataType": "NUMERIC",
+      "example": 1
+    },
+    {
+      "name": "is_type_B",
+      "description": "Whether series is of type B",
+      "dataType": "NUMERIC",
+      "example": 0
+    },
+    {
+      "name": "is_type_C",
+      "description": "Whether series is of type C",
+      "dataType": "NUMERIC",
+      "example": 0
+    }
+  ]
+}

@@ -62,5 +62,19 @@
       "dataType": "NUMERIC",
       "example": 0
     }
+  ],
+  "staticCovariates": [
+    {
+      "name": "is_region_1",
+      "description": "Whether bank branch location is in region 1",
+      "dataType": "NUMERIC",
+      "example": 1
+    },
+    {
+      "name": "is_region_2",
+      "description": "Whether bank branch location is in region 2",
+      "dataType": "NUMERIC",
+      "example": 0
+    }
   ]
 }

@@ -55,5 +55,6 @@
       "example": 9.0
     }
   ],
-  "futureCovariates": []
+  "futureCovariates": [],
+  "staticCovariates": []
 }

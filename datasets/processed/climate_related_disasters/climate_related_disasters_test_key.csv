@@ -1,0 +1,251 @@
+Country,Year,Total Disasters
+"Afghanistan, Islamic Rep. of",2018-01-01,5.0
+"Afghanistan, Islamic Rep. of",2019-01-01,7.0
+"Afghanistan, Islamic Rep. of",2020-01-01,7.0
+"Afghanistan, Islamic Rep. of",2021-01-01,4.0
+"Afghanistan, Islamic Rep. of",2022-01-01,6.0
+Algeria,2018-01-01,1.0
+Algeria,2019-01-01,1.0
+Algeria,2020-01-01,0.0
+Algeria,2021-01-01,3.0
+Algeria,2022-01-01,1.0
+Angola,2018-01-01,1.0
+Angola,2019-01-01,3.0
+Angola,2020-01-01,3.0
+Angola,2021-01-01,2.0
+Angola,2022-01-01,0.0
+Argentina,2018-01-01,5.0
+Argentina,2019-01-01,4.0
+Argentina,2020-01-01,2.0
+Argentina,2021-01-01,2.0
+Argentina,2022-01-01,1.0
+Australia,2018-01-01,3.0
+Australia,2019-01-01,3.0
+Australia,2020-01-01,3.0
+Australia,2021-01-01,7.0
+Australia,2022-01-01,5.0
+Bolivia,2018-01-01,1.0
+Bolivia,2019-01-01,4.0
+Bolivia,2020-01-01,3.0
+Bolivia,2021-01-01,7.0
+Bolivia,2022-01-01,1.0
+Botswana,2018-01-01,1.0
+Botswana,2019-01-01,1.0
+Botswana,2020-01-01,0.0
+Botswana,2021-01-01,0.0
+Botswana,2022-01-01,0.0
+Brazil,2018-01-01,3.0
+Brazil,2019-01-01,8.0
+Brazil,2020-01-01,7.0
+Brazil,2021-01-01,9.0
+Brazil,2022-01-01,12.0
+Canada,2018-01-01,4.0
+Canada,2019-01-01,2.0
+Canada,2020-01-01,2.0
+Canada,2021-01-01,4.0
+Canada,2022-01-01,6.0
+Central African Rep.,2018-01-01,0.0
+Central African Rep.,2019-01-01,1.0
+Central African Rep.,2020-01-01,0.0
+Central African Rep.,2021-01-01,1.0
+Central African Rep.,2022-01-01,3.0
+Chad,2018-01-01,0.0
+Chad,2019-01-01,2.0
+Chad,2020-01-01,2.0
+Chad,2021-01-01,1.0
+Chad,2022-01-01,2.0
+Chile,2018-01-01,0.0
+Chile,2019-01-01,2.0
+Chile,2020-01-01,0.0
+Chile,2021-01-01,2.0
+Chile,2022-01-01,2.0
+"China, P.R.: Mainland",2018-01-01,20.0
+"China, P.R.: Mainland",2019-01-01,13.0
+"China, P.R.: Mainland",2020-01-01,11.0
+"China, P.R.: Mainland",2021-01-01,12.0
+"China, P.R.: Mainland",2022-01-01,7.0
+Colombia,2018-01-01,2.0
+Colombia,2019-01-01,6.0
+Colombia,2020-01-01,6.0
+Colombia,2021-01-01,11.0
+Colombia,2022-01-01,14.0
+"Congo, Dem. Rep. of the",2018-01-01,1.0
+"Congo, Dem. Rep. of the",2019-01-01,3.0
+"Congo, Dem. Rep. of the",2020-01-01,6.0
+"Congo, Dem. Rep. of the",2021-01-01,0.0
+"Congo, Dem. Rep. of the",2022-01-01,5.0
+"Egypt, Arab Rep. of",2018-01-01,0.0
+"Egypt, Arab Rep. of",2019-01-01,0.0
+"Egypt, Arab Rep. of",2020-01-01,1.0
+"Egypt, Arab Rep. of",2021-01-01,1.0
+"Egypt, Arab Rep. of",2022-01-01,0.0
+"Ethiopia, The Federal Dem. Rep. of",2018-01-01,2.0
+"Ethiopia, The Federal Dem. Rep. of",2019-01-01,2.0
+"Ethiopia, The Federal Dem. Rep. of",2020-01-01,4.0
+"Ethiopia, The Federal Dem. Rep. of",2021-01-01,2.0
+"Ethiopia, The Federal Dem. Rep. of",2022-01-01,2.0
+France,2018-01-01,7.0
+France,2019-01-01,9.0
+France,2020-01-01,7.0
+France,2021-01-01,9.0
+France,2022-01-01,6.0
+India,2018-01-01,23.0
+India,2019-01-01,12.0
+India,2020-01-01,11.0
+India,2021-01-01,16.0
+India,2022-01-01,7.0
+Indonesia,2018-01-01,8.0
+Indonesia,2019-01-01,14.0
+Indonesia,2020-01-01,26.0
+Indonesia,2021-01-01,21.0
+Indonesia,2022-01-01,13.0
+"Iran, Islamic Rep. of",2018-01-01,1.0
+"Iran, Islamic Rep. of",2019-01-01,3.0
+"Iran, Islamic Rep. of",2020-01-01,7.0
+"Iran, Islamic Rep. of",2021-01-01,4.0
+"Iran, Islamic Rep. of",2022-01-01,3.0
+"Kazakhstan, Rep. of",2018-01-01,1.0
+"Kazakhstan, Rep. of",2019-01-01,0.0
+"Kazakhstan, Rep. of",2020-01-01,1.0
+"Kazakhstan, Rep. of",2021-01-01,1.0
+"Kazakhstan, Rep. of",2022-01-01,0.0
+Kenya,2018-01-01,3.0
+Kenya,2019-01-01,3.0
+Kenya,2020-01-01,2.0
+Kenya,2021-01-01,1.0
+Kenya,2022-01-01,0.0
+Libya,2018-01-01,0.0
+Libya,2019-01-01,1.0
+Libya,2020-01-01,0.0
+Libya,2021-01-01,0.0
+Libya,2022-01-01,0.0
+"Madagascar, Rep. of",2018-01-01,2.0
+"Madagascar, Rep. of",2019-01-01,3.0
+"Madagascar, Rep. of",2020-01-01,3.0
+"Madagascar, Rep. of",2021-01-01,2.0
+"Madagascar, Rep. of",2022-01-01,7.0
+Mali,2018-01-01,1.0
+Mali,2019-01-01,2.0
+Mali,2020-01-01,1.0
+Mali,2021-01-01,0.0
+Mali,2022-01-01,2.0
+"Mauritania, Islamic Rep. of",2018-01-01,1.0
+"Mauritania, Islamic Rep. of",2019-01-01,1.0
+"Mauritania, Islamic Rep. of",2020-01-01,3.0
+"Mauritania, Islamic Rep. of",2021-01-01,0.0
+"Mauritania, Islamic Rep. of",2022-01-01,1.0
+Mexico,2018-01-01,3.0
+Mexico,2019-01-01,6.0
+Mexico,2020-01-01,7.0
+Mexico,2021-01-01,10.0
+Mexico,2022-01-01,5.0
+Mongolia,2018-01-01,3.0
+Mongolia,2019-01-01,3.0
+Mongolia,2020-01-01,4.0
+Mongolia,2021-01-01,2.0
+Mongolia,2022-01-01,2.0
+"Mozambique, Rep. of",2018-01-01,2.0
+"Mozambique, Rep. of",2019-01-01,5.0
+"Mozambique, Rep. of",2020-01-01,3.0
+"Mozambique, Rep. of",2021-01-01,3.0
+"Mozambique, Rep. of",2022-01-01,4.0
+Myanmar,2018-01-01,4.0
+Myanmar,2019-01-01,3.0
+Myanmar,2020-01-01,2.0
+Myanmar,2021-01-01,1.0
+Myanmar,2022-01-01,0.0
+Namibia,2018-01-01,1.0
+Namibia,2019-01-01,0.0
+Namibia,2020-01-01,1.0
+Namibia,2021-01-01,1.0
+Namibia,2022-01-01,0.0
+Niger,2018-01-01,1.0
+Niger,2019-01-01,2.0
+Niger,2020-01-01,3.0
+Niger,2021-01-01,1.0
+Niger,2022-01-01,2.0
+Nigeria,2018-01-01,2.0
+Nigeria,2019-01-01,2.0
+Nigeria,2020-01-01,3.0
+Nigeria,2021-01-01,2.0
+Nigeria,2022-01-01,3.0
+Pakistan,2018-01-01,2.0
+Pakistan,2019-01-01,10.0
+Pakistan,2020-01-01,6.0
+Pakistan,2021-01-01,6.0
+Pakistan,2022-01-01,4.0
+Peru,2018-01-01,0.0
+Peru,2019-01-01,5.0
+Peru,2020-01-01,4.0
+Peru,2021-01-01,8.0
+Peru,2022-01-01,2.0
+Russian Federation,2018-01-01,2.0
+Russian Federation,2019-01-01,5.0
+Russian Federation,2020-01-01,0.0
+Russian Federation,2021-01-01,5.0
+Russian Federation,2022-01-01,3.0
+Saudi Arabia,2018-01-01,0.0
+Saudi Arabia,2019-01-01,3.0
+Saudi Arabia,2020-01-01,1.0
+Saudi Arabia,2021-01-01,0.0
+Saudi Arabia,2022-01-01,0.0
+Somalia,2018-01-01,2.0
+Somalia,2019-01-01,3.0
+Somalia,2020-01-01,4.0
+Somalia,2021-01-01,1.0
+Somalia,2022-01-01,1.0
+South Africa,2018-01-01,0.0
+South Africa,2019-01-01,6.0
+South Africa,2020-01-01,2.0
+South Africa,2021-01-01,4.0
+South Africa,2022-01-01,8.0
+"South Sudan, Rep. of",2018-01-01,0.0
+"South Sudan, Rep. of",2019-01-01,3.0
+"South Sudan, Rep. of",2020-01-01,1.0
+"South Sudan, Rep. of",2021-01-01,2.0
+"South Sudan, Rep. of",2022-01-01,1.0
+Sudan,2018-01-01,3.0
+Sudan,2019-01-01,2.0
+Sudan,2020-01-01,1.0
+Sudan,2021-01-01,2.0
+Sudan,2022-01-01,2.0
+"Tanzania, United Rep. of",2018-01-01,1.0
+"Tanzania, United Rep. of",2019-01-01,5.0
+"Tanzania, United Rep. of",2020-01-01,4.0
+"Tanzania, United Rep. of",2021-01-01,3.0
+"Tanzania, United Rep. of",2022-01-01,1.0
+Thailand,2018-01-01,0.0
+Thailand,2019-01-01,3.0
+Thailand,2020-01-01,7.0
+Thailand,2021-01-01,6.0
+Thailand,2022-01-01,11.0
+"Türkiye, Rep. of",2018-01-01,1.0
+"Türkiye, Rep. of",2019-01-01,3.0
+"Türkiye, Rep. of",2020-01-01,5.0
+"Türkiye, Rep. of",2021-01-01,3.0
+"Türkiye, Rep. of",2022-01-01,3.0
+Ukraine,2018-01-01,1.0
+Ukraine,2019-01-01,0.0
+Ukraine,2020-01-01,3.0
+Ukraine,2021-01-01,1.0
+Ukraine,2022-01-01,0.0
+United States,2018-01-01,19.0
+United States,2019-01-01,20.0
+United States,2020-01-01,23.0
+United States,2021-01-01,43.0
+United States,2022-01-01,25.0
+"Venezuela, Rep. Bolivariana de",2018-01-01,2.0
+"Venezuela, Rep. Bolivariana de",2019-01-01,1.0
+"Venezuela, Rep. Bolivariana de",2020-01-01,1.0
+"Venezuela, Rep. Bolivariana de",2021-01-01,2.0
+"Venezuela, Rep. Bolivariana de",2022-01-01,8.0
+"Yemen, Rep. of",2018-01-01,2.0
+"Yemen, Rep. of",2019-01-01,3.0
+"Yemen, Rep. of",2020-01-01,5.0
+"Yemen, Rep. of",2021-01-01,2.0
+"Yemen, Rep. of",2022-01-01,3.0
+Zambia,2018-01-01,0.0
+Zambia,2019-01-01,2.0
+Zambia,2020-01-01,3.0
+Zambia,2021-01-01,1.0
+Zambia,2022-01-01,1.0

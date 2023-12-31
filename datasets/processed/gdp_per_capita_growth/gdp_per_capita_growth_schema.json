@@ -1,0 +1,29 @@
+{
+  "title": "GDP per Capita Change",
+  "description": NaN,
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "YEARLY",
+  "forecastLength": 5,
+  "idField": {
+    "name": "Country Name",
+    "description": "Country name - unique identifier for the series"
+  },
+  "timeField": {
+    "name": "Year",
+    "description": "Date representing the year of observation",
+    "dataType": "DATE",
+    "example": "1961-01-01"
+  },
+  "forecastTarget": {
+    "name": "GDP per Capita Growth",
+    "description": "Target series - GDP per capital change in percentage from previous year",
+    "dataType": "NUMERIC",
+    "example": -15.127218311281
+  },
+  "pastCovariates": [],
+  "futureCovariates": [],
+  "staticCovariates": []
+}

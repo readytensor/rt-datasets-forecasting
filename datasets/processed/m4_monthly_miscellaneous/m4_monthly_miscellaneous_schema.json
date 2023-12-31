@@ -1,0 +1,29 @@
+{
+  "title": "M4 Forecasting Competition Sampled Monthly Series",
+  "description": "This dataset comprises 80 timeseries at monthly frequency, each spanning 324 months, randomly sampled from the M4 forecasting competition. These series provide a consistent length of historical window and are ideal for exploring long-term trends and seasonalities. The M4 dataset contains series drawn from across various sectors.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "MONTHLY",
+  "forecastLength": 24,
+  "idField": {
+    "name": "series",
+    "description": "Unique idenfier for the series."
+  },
+  "timeField": {
+    "name": "month",
+    "description": "Date representing first day of the month of measurement.",
+    "dataType": "DATE",
+    "example": "1990-01-01"
+  },
+  "forecastTarget": {
+    "name": "value",
+    "description": "Target variable for forecasting.",
+    "dataType": "NUMERIC",
+    "example": 3090.0
+  },
+  "pastCovariates": [],
+  "futureCovariates": [],
+  "staticCovariates": []
+}

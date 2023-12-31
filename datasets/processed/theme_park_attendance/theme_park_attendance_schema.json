@@ -361,5 +361,6 @@
       "dataType": "NUMERIC",
       "example": 0
     }
-  ]
+  ],
+  "staticCovariates": []
 }
