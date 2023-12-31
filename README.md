@@ -133,7 +133,7 @@ The "ARIMA Process" dataset is a synthetic dataset generated using the ARIMA (Au
 - Number of series = 23
 - Series length = 750
 - Forecast length = 30
-- Time granularity = None
+- Time granularity = Other
 - Number of past covariates = 0
 - Number of future covariates = 0
 - Number of static covariates = 0
@@ -352,7 +352,7 @@ The Geometric Brownian Motion (GBM) dataset consists of simulated time series re
 - Number of series = 100
 - Series length = 504
 - Forecast length = 10
-- Time granularity = None
+- Time granularity = Other
 - Number of past covariates = 0
 - Number of future covariates = 0
 - Number of static covariates = 0
@@ -600,7 +600,7 @@ This dataset is a valuable resource to explore the principles and applications o
 - Number of series = 70
 - Series length = 500
 - Forecast length = 25
-- Time granularity = None
+- Time granularity = Other
 - Number of past covariates = 0
 - Number of future covariates = 0
 - Number of static covariates = 0
@@ -657,7 +657,7 @@ This dataset comprises five unique time series with varying components, includin
 - Number of series = 5
 - Series length = 100
 - Forecast length = 10
-- Time granularity = None
+- Time granularity = Other
 - Number of past covariates = 0
 - Number of future covariates = 1
 - Number of static covariates = 0
@@ -714,7 +714,7 @@ This dataset is a synthetically generated collection designed to simulate comple
 - Number of series = 36
 - Series length = 160
 - Forecast length = 10
-- Time granularity = None
+- Time granularity = Other
 - Number of past covariates = 1
 - Number of future covariates = 2
 - Number of static covariates = 3
