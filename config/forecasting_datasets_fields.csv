@@ -13,6 +13,23 @@ forecasting,airline_passengers,3,#Passengers,target,NUMERIC,Total number of airl
 forecasting,arima_process,1,series_id,id,TEXT,Unique identifier per series in the dataset.
 forecasting,arima_process,2,time_step,time,INT,Time step number of observation.
 forecasting,arima_process,3,value,target,NUMERIC,Time series observation.
+forecasting,atmospheric_co2_concentrations,1,Indicator,id,TEXT,Unique identified attached to this series single series in this dataset. 
+forecasting,atmospheric_co2_concentrations,2,Date,time,DATE,Month of the observation
+forecasting,atmospheric_co2_concentrations,3,Value,target,NUMERIC,CO2 parts per million
+forecasting,australian_beer_production,1,Series,id,TEXT,Unique Id assigned to the data series
+forecasting,australian_beer_production,2,Quarter,time,DATE,Date representing the quarterly of the data
+forecasting,australian_beer_production,3,Beer,target,NUMERIC,Target variable - beer production in megaliters
+forecasting,avocado_sales,1,series_id,id,TEXT,Unique identifier which is a combination of region and avocado type (conventional vs organic)
+forecasting,avocado_sales,2,date,time,DATE,Date representing the week of the data sample
+forecasting,avocado_sales,3,total_bulk_and_bagged_units,target,NUMERIC,Total units sold of bulk and bagged avocados. Unit is in thousands.
+forecasting,avocado_sales,4,average_sales_price,past_covariate,NUMERIC,"Average sales price per avocado (i.e. single avocado, not a unit of thousand avocados)."
+forecasting,avocado_sales,5,plu_4046_units,past_covariate,NUMERIC,Total number of avocados with Product Lookup (PLU) code 4046 sold in bulk. Unit is in thousands.
+forecasting,avocado_sales,6,plu_4225_units,past_covariate,NUMERIC,Total number of avocados with Product Lookup (PLU) code 4225 sold in bulk. Unit is in thousands.
+forecasting,avocado_sales,7,plu_4770_units,past_covariate,NUMERIC,Total number of avocados with Product Lookup (PLU) code 4770 sold in bulk. Unit is in thousands.
+forecasting,avocado_sales,8,small_bagged_units,past_covariate,NUMERIC,"Total number of avocados sold in small bags. Bagged volume is reported in avocado units. One unit is equal to one avocado, not one bag.  Unit is in thousands."
+forecasting,avocado_sales,9,large_bagged_units,past_covariate,NUMERIC,"Total number of avocados sold in large bags. Bagged volume is reported in avocado units. One unit is equal to one avocado, not one bag. Unit is in thousands."
+forecasting,avocado_sales,10,xlarge_bagged_units,past_covariate,NUMERIC,"Total number of avocados sold in extra large bags. Bagged volume is reported in avocado units. One unit is equal to one avocado, not one bag. Unit is in thousands."
+forecasting,avocado_sales,11,is_organic,static_covariate,NUMERIC,Whether sample represents organic avocados (1) or conventional (0). This is a static variable. 
 forecasting,bank_branch_transactions,1,branch_id,id,TEXT,Unique identifier per branch.
 forecasting,bank_branch_transactions,2,week_start_date,time,DATE,Date representing week of the sample.
 forecasting,bank_branch_transactions,3,Act_5_0__40944,target,NUMERIC,This is target variable. Represents volumes for activity `Act_5_0__40944`
@@ -22,6 +39,17 @@ forecasting,bank_branch_transactions,6,Act_5_0__89097,past_covariate,NUMERIC,Thi
 forecasting,bank_branch_transactions,7,Act_5_0__94157,past_covariate,NUMERIC,This is feature variable. Represents volumes for activity `Act_5_0__94157`
 forecasting,bank_branch_transactions,8,Act_5_0__96723,past_covariate,NUMERIC,This is feature variable. Represents volumes for activity `Act_5_0__96723`
 forecasting,bank_branch_transactions,9,num_holidays,future_covariate,NUMERIC,Number of bank holidays in this week
+forecasting,bank_branch_transactions,10,is_region_1,static_covariate,NUMERIC,Whether bank branch location is in region 1
+forecasting,bank_branch_transactions,11,is_region_2,static_covariate,NUMERIC,Whether bank branch location is in region 2
+forecasting,climate_related_disasters,1,Country,id,TEXT,Country name
+forecasting,climate_related_disasters,2,Year,time,DATE,Date representing year of observation
+forecasting,climate_related_disasters,3,Total Disasters,target,NUMERIC,Total number of climate related disasters
+forecasting,climate_related_disasters,4,Drought,past_covariate,NUMERIC,Number of droughts
+forecasting,climate_related_disasters,5,Extreme temperature,past_covariate,NUMERIC,Number of extreme temperature events
+forecasting,climate_related_disasters,6,Flood,past_covariate,NUMERIC,Number of floods
+forecasting,climate_related_disasters,7,Landslide,past_covariate,NUMERIC,Number of landslides
+forecasting,climate_related_disasters,8,Storm,past_covariate,NUMERIC,Number of storms
+forecasting,climate_related_disasters,9,Wildfire,past_covariate,NUMERIC,Number of wildfires
 forecasting,daily_stock_prices,1,Masked_Ticker,id,TEXT,Unique identifier for the stock. This is a masked ticker that replaced the original stock ticker.
 forecasting,daily_stock_prices,2,Day_Num,time,INT,Day number of the observation.
 forecasting,daily_stock_prices,3,Adj Close,target,NUMERIC,Adjusted closing price of the stock; this is the target variable for forecasting.
@@ -49,62 +77,62 @@ forecasting,daily_weather,16,dewpoint,past_covariate,NUMERIC,Dew point in celciu
 forecasting,daily_weather,17,windchill,past_covariate,NUMERIC,Windchill temperature in celcius
 forecasting,daily_weather,18,windgust,past_covariate,NUMERIC,Wind gust in kmph
 forecasting,daily_weather,19,feelslike,past_covariate,NUMERIC,Feels like in Celcius
-forecasting,gasoline_prices,1,SeriesId,id,TEXT,Unique identifier for the series.
-forecasting,gasoline_prices,2,Date,time,DATE,Date representing the week of the data sample
-forecasting,gasoline_prices,3,Weekly U.S. All Grades All Formulations Retail Gasoline Prices (Dollars per Gallon),target,NUMERIC,"Target variable: Average retail prices per gallon for gasoline across all grades and formulations, reflecting the broad U.S. market."
-forecasting,gasoline_prices,4,Weekly U.S. All Grades Conventional Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Average weekly retail prices for conventional gasoline across all grades, excluding reformulated blends."
-forecasting,gasoline_prices,5,Weekly U.S. All Grades Reformulated Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Average weekly retail prices for reformulated gasoline, which is blended to reduce pollutants, across all grades."
-forecasting,gasoline_prices,6,Weekly U.S. Regular All Formulations Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Composite average of retail prices for regular gasoline, encompassing both conventional and reformulated gasoline."
-forecasting,gasoline_prices,7,Weekly U.S. Regular Conventional Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Average price of regular grade conventional gasoline, not including any reformulated gasoline components."
-forecasting,gasoline_prices,8,Weekly U.S. Regular Reformulated Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Weekly average price for regular grade reformulated gasoline, specifically designed to produce fewer emissions."
-forecasting,gasoline_prices,9,Weekly U.S. Midgrade All Formulations Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Combined average retail prices for midgrade gasoline, including both conventional and reformulated types."
-forecasting,gasoline_prices,10,Weekly U.S. Midgrade Conventional Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Average retail price for midgrade conventional gasoline, which does not include reformulated gasoline."
-forecasting,gasoline_prices,11,Weekly U.S. Midgrade Reformulated Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Average weekly price of midgrade gasoline in its reformulated variant, mixed to lower environmental impact."
-forecasting,gasoline_prices,12,Weekly U.S. Premium All Formulations Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Average weekly prices for premium gasoline, covering all types including both conventional and reformulated gasoline."
-forecasting,gasoline_prices,13,Weekly U.S. Premium Conventional Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Weekly retail prices for premium conventional gasoline, excluding the reformulated blend."
-forecasting,gasoline_prices,14,Weekly U.S. Premium Reformulated Retail Gasoline Prices (Dollars per Gallon),past_covariate,NUMERIC,"Average price for premium grade reformulated gasoline, which burns cleaner than conventional blends."
-forecasting,gasoline_prices,15,Weekly U.S. No 2 Diesel Retail Prices (Dollars per Gallon),past_covariate,NUMERIC,"Average retail price per gallon of No. 2 diesel fuel, commonly used in freight and diesel-engine vehicles."
+forecasting,daily_weather,20,in_northern_hemisphere,static_covariate,NUMERIC,Whether the city is in northern hemisphere. This is a static covariate.
+forecasting,daily_weather,21,in_southern_hemisphere,static_covariate,NUMERIC,Whether the city is in southern hemisphere. This is a static covariate.
+forecasting,gdp_per_capita_growth,1,Country Name,id,TEXT,Country name - unique identifier for the series
+forecasting,gdp_per_capita_growth,2,Year,time,DATE,Date representing the year of observation
+forecasting,gdp_per_capita_growth,3,GDP per Capita Growth,target,NUMERIC,Target series - GDP per capital change in percentage from previous year
+forecasting,geometric_brownian_motion,1,series_id,id,TEXT,Unique identifier for each series.
+forecasting,geometric_brownian_motion,2,time,time,INT,Time step (in integer) of the observation.
+forecasting,geometric_brownian_motion,3,value,target,NUMERIC,Target variable to forecast.
+forecasting,m4_daily_miscellaneous,1,series,id,TEXT,Unique idenfier for the series.
+forecasting,m4_daily_miscellaneous,2,day,time,INT,Day number of measurement.
+forecasting,m4_daily_miscellaneous,3,value,target,NUMERIC,Target variable for forecasting.
 forecasting,m4_hourly_miscellaneous,1,series,id,TEXT,Unique idenfier for the series.
 forecasting,m4_hourly_miscellaneous,2,hour_num,time,INT,Hour number of measurement.
 forecasting,m4_hourly_miscellaneous,3,value,target,NUMERIC,Target variable for forecasting.
+forecasting,m4_monthly_miscellaneous,1,series,id,TEXT,Unique idenfier for the series.
+forecasting,m4_monthly_miscellaneous,2,month,time,DATE,Date representing first day of the month of measurement.
+forecasting,m4_monthly_miscellaneous,3,value,target,NUMERIC,Target variable for forecasting.
+forecasting,m4_quarterly_miscellaneous,1,series,id,TEXT,Unique idenfier for the series.
+forecasting,m4_quarterly_miscellaneous,2,quarter,time,DATE,Date representing quarter of year of measurement.
+forecasting,m4_quarterly_miscellaneous,3,value,target,NUMERIC,Target variable for forecasting.
 forecasting,m4_yearly_miscellaneous,1,series,id,TEXT,Unique idenfier for the series
 forecasting,m4_yearly_miscellaneous,2,year,time,DATE,Year of the sample for the series
 forecasting,m4_yearly_miscellaneous,3,value,target,NUMERIC,Target variable for forecasting.
-forecasting,monthly_unemployment,1,SERIES_ID,id,TEXT,Unique idenfier for the series (there is a single series in this dataset)
-forecasting,monthly_unemployment,2,DATE,time,DATE,Date representing month and year of the sample.
-forecasting,monthly_unemployment,3,UNRATE,target,NUMERIC,"Target variable: Monthly unemployment rate, representing the percentage of the labor force that is jobless and actively seeking employment."
-forecasting,monthly_unemployment,4,CPIAUCSL,past_covariate,NUMERIC,"Consumer Price Index for All Urban Consumers: All Items, indicating the average change over time in the prices paid by urban consumers for a market basket of consumer goods and services."
-forecasting,monthly_unemployment,5,CPIAUCSL_YoY_PCT_CHNG,past_covariate,NUMERIC,"Year-over-Year percent change in the Consumer Price Index for All Urban Consumers: All Items, measuring the inflation rate or the increase in prices over a 12-month period."
-forecasting,monthly_unemployment,6,GDPC1,past_covariate,NUMERIC,"Real Gross Domestic Product, reflecting the value of all goods and services produced by the nation, adjusted for inflation or deflation."
-forecasting,monthly_unemployment,7,GDPC1_YoY_PCT_CHNG,past_covariate,NUMERIC,"Year-over-Year percent change in Real Gross Domestic Product, providing a measure of economic growth from one year to the next."
-forecasting,monthly_unemployment,8,DFF,past_covariate,NUMERIC,"Effective Federal Funds Rate, which is the interest rate at which depository institutions trade federal funds (balances held at Federal Reserve Banks) with each other overnight."
-forecasting,monthly_unemployment,9,DFF_YoY_CHNG,past_covariate,NUMERIC,"Year-over-Year change in the Effective Federal Funds Rate, highlighting shifts in monetary policy interest rates from one year to the next."
-forecasting,new_house_sales,1,Region,id,TEXT,"Unique identifier for each region; one of Mid-west, North-east, South and West."
-forecasting,new_house_sales,2,Period,time,DATE,Date representing month and year of the observation.
-forecasting,new_house_sales,3,houses_sold_not_seas_adj,target,NUMERIC,Target variable; Number of houses sold in thousands; not seasonality adjusted
-forecasting,new_house_sales,4,houses_sold_annualized_seas_adj,past_covariate,NUMERIC,Annualized houses sold in thousands; seasonality adjusted
 forecasting,online_retail_sales,1,StockCode,id,TEXT,Unique identifier per item sold
 forecasting,online_retail_sales,2,InvoiceDate,time,DATE,Date on which the sale occurred
 forecasting,online_retail_sales,3,Quantity,target,NUMERIC,Total number of units sold
 forecasting,online_retail_sales,4,Sales,past_covariate,NUMERIC,Total revenue (units sold * unit price)
-forecasting,random_walk_plus,1,series_id,id,TEXT,Unique identifier per series
-forecasting,random_walk_plus,2,time_step,time,INT,Time step number of observation.
-forecasting,random_walk_plus,3,value,target,NUMERIC,Target variable
+forecasting,pjm_energy_consumption,1,Region,id,TEXT,Region served by PJM
+forecasting,pjm_energy_consumption,2,Datetime,time,DATETIME,Datetime representing hour of observation
+forecasting,pjm_energy_consumption,3,Energy_Consumption_GW,target,NUMERIC,Target variable representing energy consumption in gigawatt. 
+forecasting,random_walk,1,series_id,id,TEXT,Unique identifier per series
+forecasting,random_walk,2,time_step,time,INT,Time step number of observation.
+forecasting,random_walk,3,value,target,NUMERIC,Target variable
+forecasting,seattle_burke_gilman_trail,1,Trail,id,TEXT,Unique identifier for the trail
+forecasting,seattle_burke_gilman_trail,2,Datetime,time,DATETIME,Datetime of observation
+forecasting,seattle_burke_gilman_trail,3,Count,target,NUMERIC,Count of bike or pedestrian on the trail
+forecasting,seattle_burke_gilman_trail,4,Is_Bike_Trail,static_covariate,NUMERIC,Whether series represents a bike trail
+forecasting,seattle_burke_gilman_trail,5,Is_Ped_Trail,static_covariate,NUMERIC,Whether series represents a pedestrian trail
+forecasting,seattle_burke_gilman_trail,6,Is_North_Trail,static_covariate,NUMERIC,Whether series represents a bike trail
+forecasting,seattle_burke_gilman_trail,7,Is_South_Trail,static_covariate,NUMERIC,Whether series represents a pedestrian trail
 forecasting,smoke_test_forecasting,1,series_id,id,TEXT,Unique identifier per series
 forecasting,smoke_test_forecasting,2,t,time,INT,Time step number of observation.
 forecasting,smoke_test_forecasting,3,y,target,NUMERIC,Target variable
 forecasting,smoke_test_forecasting,4,special_event,future_covariate,NUMERIC,Numeric variable representing that an offset is added on this sample
-forecasting,wikipedia_page_visits,1,topic,id,TEXT,Unique topic represented on the Wikipedia page
-forecasting,wikipedia_page_visits,2,date,time,DATE,Date of page visits
-forecasting,wikipedia_page_visits,3,cube_root_num_page_visits,target,NUMERIC,Target variable: Total number of page visits on the day after taking cube root of it
-forecasting,river_flow,1,series,id,TEXT,Unique identifier for the series.
-forecasting,river_flow,2,date,time,DATE,Date of the observation
-forecasting,river_flow,3,flow,target,NUMERIC,Target variable: instantaneous river flow
-forecasting,river_flow,4,melting,past_covariate,NUMERIC,Melting rate of upstream glacier
-forecasting,river_flow,5,rainfalls,future_covariate,NUMERIC,Rainfall
-forecasting,australian_beer_production,1,Series,id,TEXT,Unique Id assigned to the data series
-forecasting,australian_beer_production,2,Quarter,time,DATE,Date representing the quarterly of the data
-forecasting,australian_beer_production,3,Beer,target,NUMERIC,Target variable - beer production in megaliters
+forecasting,sunspots,1,Series,id,TEXT,Unique identifier marking the single series in this dataset
+forecasting,sunspots,2,Month,time,DATE,Month of the observation
+forecasting,sunspots,3,Sunspots,target,NUMERIC,Number of sunspots. Sunspots are temporary phenomena on the Sun's photosphere that appear as spots darker than the surrounding areas. 
+forecasting,synthetic_multiseasonality,1,series_id,id,TEXT,Unique identifier for the series.
+forecasting,synthetic_multiseasonality,2,time_step,time,INT,Time step number of observation.
+forecasting,synthetic_multiseasonality,3,value,target,NUMERIC,Value of the series
+forecasting,synthetic_multiseasonality,4,past_covariate_event,past_covariate,NUMERIC,Past covariate event indicator (1 or 0)
+forecasting,synthetic_multiseasonality,5,series_type_effect_idx,future_covariate,NUMERIC,An index number that ranges 1 to 90 representing day number in quarter
+forecasting,synthetic_multiseasonality,6,is_special_event,future_covariate,NUMERIC,Special event marker (1 or 0)
+forecasting,synthetic_multiseasonality,7,is_type_A,static_covariate,NUMERIC,Whether series is of type A
+forecasting,synthetic_multiseasonality,8,is_type_B,static_covariate,NUMERIC,Whether series is of type B
+forecasting,synthetic_multiseasonality,9,is_type_C,static_covariate,NUMERIC,Whether series is of type C
 forecasting,theme_park_attendance,1,series,id,TEXT,Unique Id assigned to the data series
 forecasting,theme_park_attendance,2,date,time,DATE,Date of attendance
 forecasting,theme_park_attendance,3,total_day_attendance,target,NUMERIC,Target variable: Total attendance for the day
@@ -164,6 +192,3 @@ forecasting,theme_park_attendance,56,Veterans Day_minus2,future_covariate,NUMERI
 forecasting,theme_park_attendance,57,Veterans Day_minus3,future_covariate,NUMERIC,Binary indicator whether Veterans Day holiday occurred 3 days after this day
 forecasting,theme_park_attendance,58,Veterans Day_plus1,future_covariate,NUMERIC,Binary indicator whether Veterans Day holiday occurred 1 day before this day
 forecasting,theme_park_attendance,59,Veterans Day_plus2,future_covariate,NUMERIC,Binary indicator whether Veterans Day holiday occurred 2 days before this day
-forecasting,geometric_brownian_motion,1,series_id,id,TEXT,Unique identifier for each series.
-forecasting,geometric_brownian_motion,2,time,time,INT,Time step (in integer) of the observation.
-forecasting,geometric_brownian_motion,3,value,target,NUMERIC,Target variable to forecast.

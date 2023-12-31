@@ -142,7 +142,7 @@ def create_train_test_testkey_files(dataset_cfg_path:str, processed_datasets_pat
         save_test_no_target_data(
             test_df,
             schema['forecastTarget']['name'],
-            past_covariates,
+            past_covariates, # these will be dropped from the test data
             dataset_name,
             processed_datasets_path)
 

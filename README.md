@@ -1,10 +1,41 @@
 # Datasets for Forecasting model category on Ready Tensor
 
-This repo contains all files related to the datasets used for benchmarking models under the **Forecasting** category.
+This repo contains files related to the datasets used for benchmarking models under the **Forecasting** category on Ready tensor. There are a total of 24 benchmarking datasets used in this category. Additionally, there is a 25th dataset for smoke testing of models. The list of datasets and their domain/industry is as follows:
+
+1. Air Quality KDD 2018: Environmental Science / Climate Science
+2. Airline Passengers: Transportation / Aviation
+3. ARIMA Process: None (Synthetic)
+4. Australian Beer Production: Food & Beverage / Brewing
+5. Avocado Sales: Agriculture and Food Industry
+6. Bank Branch Transactions: Finance / Retail Banking / Synthetic
+7. Climate Related Disasters Frequency: Finance
+8. Daily Stock Prices: Finance
+9. Daily Weather in 26 World Cities: Meteorology
+10. GDP Per Capita Growth: Economics and Finance Industry
+11. Geometric Brownian Motion Dataset: None (Synthetic)
+12. M4 Forecasting Competition Sampled Daily Series: Miscellaneous
+13. M4 Forecasting Competition Sampled Hourly Series: Miscellaneous
+14. M4 Forecasting Competition Sampled Monthly Series: Miscellaneous
+15. M4 Forecasting Competition Sampled Quarterly Series: Miscellaneous
+16. M4 Forecasting Competition Sampled Yearly Series: Miscellaneous
+17. Online Retail Sales: E-commerce / Retail
+18. PJM Hourly Energy Consumption: Energy
+19. Random Walk Dataset: None (Synthetic)
+20. Seattle Burke Gilman Trail Dataset: Urban Planning Industry
+21. Smoke Test Forecasting Dataset: None (Synthetic)
+22. Sunspots: Astronomy / Astrophysics
+23. Synthetic Multi-Seasonal Timeseries: None (Synthetic)
+24. Theme Park attendance: Entertainment / Theme Parks
+25. Smoke Test Forecasting Dataset: None (Synthetic)
+
+More information about each dataset is provided in the sections below.
+
+---
+
+## Repository Structure
 
 The `datasets` folder contains the main data files and the schema files for all the benchmark datasets.
 
-- The `raw` folder contains the original data files from the source (see attributions below). The Jupyter notebook file within each dataset folder is used to convert the raw data file for each dataset into the processed form in `processed` folder.
 - `processed` folder contains the processed files. These files are used in the Ready Tensor platform for model benchmarking.
   - The CSV file with suffix `_train.csv` is used for training. This file excludes the forecast horizon. The forecast horizon is the time period for which the model is expected to generate forecasts. This file contains columns for the series id, time, and the target value. It may also contain columns for past and future covariates.
   - The CSV file with suffix `_test.csv` is used for input to the forecast step. It represents the forecast horizon for which the model is expected to generate forecasts. This file contains columns for the series id, and time. It may also contain columns for future covariates. The target value is not included in this file.
@@ -13,11 +44,12 @@ The `datasets` folder contains the main data files and the schema files for all 
   - The CSV file with the dataset name, and no other suffix, is the full data made of both training data, and data from the forecast horizon.
   - In case of some datasets, `.png` files are also included to visualize the data.
 - The folder `config` contains two csv files - one called `forecasting_datasets.csv` which contains the dataset level attribute information. The second csv called `forecasting_datasets_fields.csv` contains information regarding all the fields in each of the datasets.
+- The `raw` folder contains the original data files from the source (see attributions below). The Jupyter notebook file within each dataset folder is used to convert the raw data file for each dataset into the processed form in `processed` folder.
 - `generate_schemas.py`: contains the code to generate the schema files for each dataset. These are saved in the `datasets/processed` folder.
 - `create_train_test_key_files.py`: contains the code to generate the train, test, and test-key files for each dataset. These are saved in the `datasets/processed` folder.
 - `run_all.py`: This is used to run the above two scripts in sequence.
 
-Below is the description of 19 datasets in this repo. One of the datasets is a "smoke test" dataset that is used for quick testing of models to ensure that they are working as expected. The smoke test dataset is not used for scoring and benchmarking in the Ready Tensor platform.
+Below is the description of datasets in this repo. One of the datasets is a "smoke test" dataset that is used for quick testing of models to ensure that they are working as expected. The smoke test dataset is not used for scoring and benchmarking in the Ready Tensor platform.
 
 ---
 
@@ -39,6 +71,7 @@ Air Quality KDD 2018 is a time series dataset from the KDD Cup 2018 competition,
 - Time granularity = Hourly
 - Number of past covariates = 5
 - Number of future covariates = 0
+- Number of static covariates = 0
 
 #### Attribution
 
@@ -68,6 +101,7 @@ This is the classic Box & Jenkins airline data which contains monthly totals of 
 - Time granularity = Yearly
 - Number of past covariates = 0
 - Number of future covariates = 0
+- Number of static covariates = 0
 
 #### Attribution
 
@@ -96,12 +130,13 @@ The "ARIMA Process" dataset is a synthetic dataset generated using the ARIMA (Au
 
 #### Dataset characteristics
 
-- Number of series = 25
+- Number of series = 23
 - Series length = 750
 - Forecast length = 30
 - Time granularity = None
 - Number of past covariates = 0
 - Number of future covariates = 0
+- Number of static covariates = 0
 
 #### Attribution
 
@@ -127,11 +162,40 @@ The "Australian Beer Production Dataset" provides a detailed record of beer prod
 - Time granularity = quarterly
 - Number of past covariates = 0
 - Number of future covariates = 0
+- Number of static covariates = 0
 
 #### Attribution
 
 This dataset is sourced from the repository for [Darts](https://unit8.com/resources/darts-time-series-made-easy-in-python/) python package for time series forecasting. See here for more information:  
 https://github.com/unit8co/darts
+
+---
+
+## Avocado Sales
+
+#### Alias (on scoreboards): avocado_sales
+
+#### Domain / Industry: Agriculture and Food Industry
+
+#### Description
+
+This dataset is sourced from the Hass Avocado Board. It contains data from weekly retail scans over 169 weeks beginning in January 2015, detailing national sales volume (units) and prices of Hass avocados. The information is sourced directly from the sales records of retailers, reflecting actual sales. It covers various retail outlets including grocery stores, mass merchandisers, club and drug stores, dollar stores, and military commissaries. The average price listed represents the cost per individual avocado, even if sold in multi-unit bags. The dataset only includes Product Lookup codes (PLUs) for Hass avocados, excluding other avocado types like greenskins. This dataset is useful for timeseries forecasting and trend analysis in the context of the agricultural industry.
+
+#### Dataset characteristics
+
+- Number of series = 106
+- Series length = 169
+- Forecast length = 12
+- Time granularity = Weekly
+- Number of past covariates = 7
+- Number of future covariates = 0
+- Number of static covariates = 1
+
+#### Attribution
+
+The dataset is sourced from the Hass Avocado Board.
+Dataset can be downloaded from here: https://hassavocadoboard.com/
+Filter for "Category Data" and download the weekly level "UNIT SALES, DOLLAR SALES AND ASP" report.
 
 ---
 
@@ -153,10 +217,38 @@ The "Bank Branch Transactions" dataset is a synthetic dataset that emulates the 
 - Time granularity = Weekly
 - Number of past covariates = 5
 - Number of future covariates = 1
+- Number of static covariates = 2
 
 #### Attribution
 
-This is a synthetic dataset generated by Ready Tensor.
+This is a synthetic dataset generated by Ready Tensor. It is available under the Creative Commons Attribution 4.0 International license (CC-BY 4.0).
+
+---
+
+## Climate Related Disasters Frequency
+
+#### Alias (on scoreboards): climate_related_disasters
+
+#### Domain / Industry: Finance
+
+#### Description
+
+This dataset, sourced from the IMF's Climate Change Indicators Dashboard, captures the count of climate-related disasters in the 50 largest countries by land area from 1980 to 2022. It categorizes disasters into six types: Drought, Extreme temperature, Flood, Landslide, Storm, and Wildfire. This data reflects the increasing importance of understanding the impacts of climate change on natural disasters, a link extensively documented in climate change literature.
+
+#### Dataset characteristics
+
+- Number of series = 50
+- Series length = 43
+- Forecast length = 5
+- Time granularity = Yearly
+- Number of past covariates = 6
+- Number of future covariates = 0
+- Number of static covariates = 0
+
+#### Attribution
+
+This dataset is sourced from the IMF's Climate Change Indicators Dashboard. The Climate Change Indicators Dashboard is an international statistical initiative to address the growing need for climate-related data used in macroeconomic and financial stability analysis. See here for more information:  
+https://climatedata.imf.org/pages/climatechange-data
 
 ---
 
@@ -178,6 +270,7 @@ This dataset provides historical stock data from 52 selected S&P 500 companies o
 - Time granularity = Daily
 - Number of past covariates = 5
 - Number of future covariates = 0
+- Number of static covariates = 0
 
 #### Attribution
 
@@ -203,6 +296,7 @@ The "Daily Weather Dataset" spans 3 years and includes daily weather measurement
 - Time granularity = Daily
 - Number of past covariates = 16
 - Number of future covariates = 0
+- Number of static covariates = 2
 
 #### Attribution
 
@@ -210,29 +304,32 @@ Extracted using API provided by `https://www.weatherapi.com/`. See more informat
 
 ---
 
-## Gasoline Prices
+## GDP Per Capita Growth
 
-#### Alias (on scoreboards): gasoline_prices
+#### Alias (on scoreboards): gdp_per_capita_growth
 
-#### Domain / Industry: Energy / Oil & Gas
+#### Domain / Industry: Economics and Finance Industry
 
 #### Description
 
-The "Gasoline Prices" dataset, sourced from the U.S. Energy Information Administration, spans 20 years from 1994 to 2023 and contains various weekly series related to gasoline and diesel prices. These series encompass different gasoline grades and formulations, along with diesel prices. The dataset is a valuable resource for analyzing and predicting fluctuations in gasoline prices over time.
+This dataset detailing GDP per Capita change from 1961 to 2019 for 89 countries provides a comprehensive look at economic growth and contraction over nearly six decades. Sourced from the World Bank, a reputable authority in global economic data, this dataset offers annual percentage changes in Gross Domestic Product (GDP) for a wide range of countries, reflecting the economic performance of each nation over time. The dataset's extended timeframe and broad coverage make it an invaluable tool for testing various time series forecasting models, offering insights into cyclical patterns, long-term trends, and potential future trajectories of economies.
 
 #### Dataset characteristics
 
-- Number of series = 1
-- Series length = 1,508
-- Forecast length = 13
-- Time granularity = Weekly
-- Number of past covariates = 12
+- Number of series = 89
+- Series length = 58
+- Forecast length = 5
+- Time granularity = Yearly
+- Number of past covariates = 0
 - Number of future covariates = 0
+- Number of static covariates = 0
 
 #### Attribution
 
-Dataset is extracted from the U.S. Energy Information Administration. Specific dataset can be downloaded from here:  
-https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm
+Dataset is extracted from The World Bank. The data can be downloaded from here:  
+https://data.worldbank.org/indicator/NY.GDP.PCAP.KD.ZG
+
+Dataset is available under the Creative Commons Attribution 4.0 International license (CC-BY 4.0).
 
 ---
 
@@ -254,10 +351,44 @@ The Geometric Brownian Motion (GBM) dataset consists of simulated time series re
 - Time granularity = None
 - Number of past covariates = 0
 - Number of future covariates = 0
+- Number of static covariates = 0
 
 #### Attribution
 
-This is a synthetic dataset generated by Ready Tensor.
+This is a synthetic dataset generated by Ready Tensor. It is available under the Creative Commons Attribution 4.0 International license (CC-BY 4.0).
+
+---
+
+## M4 Forecasting Competition Sampled Daily Series
+
+#### Alias (on scoreboards): m4_daily_miscellaneous
+
+#### Domain / Industry: Miscellaneous
+
+#### Description
+
+This dataset comprises 60 timeseries at daily frequency, each spanning 1280 days, randomly sampled from the M4 forecasting competition. These series provide a consistent length of historical window and are ideal for exploring trends and seasonalities of various kinds such as day-of-week, day-of-month, day-of-year, etc. The M4 dataset contains
+series drawn from across various sectors.
+
+#### Dataset characteristics
+
+- Number of series = 60
+- Series length = 1280
+- Forecast length = 60
+- Time granularity = Daily
+- Number of past covariates = 0
+- Number of future covariates = 0
+- Number of static covariates = 0
+
+#### Attribution
+
+Citation:  
+Godahewa, R., Bergmeir, C., Webb, G., Hyndman, R., & Montero-Manso, P. (2020). M4 Hourly Dataset (Version 3) [Data set]. Zenodo.
+
+Dataset can be found here:  
+https://zenodo.org/records/4656548
+
+DOI: 10.5281/zenodo.4656548
 
 ---
 
@@ -279,6 +410,7 @@ This dataset is a curated collection of 35 unique hourly time series, each with 
 - Time granularity = Hourly
 - Number of past covariates = 0
 - Number of future covariates = 0
+- Number of static covariates = 0
 
 #### Attribution
 
@@ -289,6 +421,70 @@ Dataset can be found here:
 https://zenodo.org/records/4656589
 
 DOI: 10.5281/zenodo.4656589
+
+---
+
+## M4 Forecasting Competition Sampled Monthly Series
+
+#### Alias (on scoreboards): m4_monthly_miscellaneous
+
+#### Domain / Industry: Miscellaneous
+
+#### Description
+
+This dataset comprises 80 timeseries at monthly frequency, each spanning 324 months, randomly sampled from the M4 forecasting competition. These series provide a consistent length of historical window and are ideal for exploring long-term trends and seasonalities. The M4 dataset contains series drawn from across various sectors.
+
+#### Dataset characteristics
+
+- Number of series = 80
+- Series length = 324
+- Forecast length = 24
+- Time granularity = Monthly
+- Number of past covariates = 0
+- Number of future covariates = 0
+- Number of static covariates = 0
+
+#### Attribution
+
+Citation:  
+Godahewa, R., Bergmeir, C., Webb, G., Hyndman, R., & Montero-Manso, P. (2020). M4 Hourly Dataset (Version 3) [Data set]. Zenodo.
+
+Dataset can be found here:  
+https://zenodo.org/records/4656480
+
+DOI: 10.5281/zenodo.4656480
+
+---
+
+## M4 Forecasting Competition Sampled Quarterly Series
+
+#### Alias (on scoreboards): m4_quarterly_miscellaneous
+
+#### Domain / Industry: Miscellaneous
+
+#### Description
+
+This dataset comprises 75 quarterly time series, each spanning March 1998 to June 2017, randomly sampled from the M4 forecasting competition. These series provide a consistent historical window and are ideal for exploring long-term trends and forecasting challenges on quarterly-frequency series drawn from across various sectors.
+
+#### Dataset characteristics
+
+- Number of series = 75
+- Series length = 78
+- Forecast length = 12
+- Time granularity = Quarterly
+- Number of past covariates = 0
+- Number of future covariates = 0
+- Number of static covariates = 0
+
+#### Attribution
+
+Citation:  
+Godahewa, R., Bergmeir, C., Webb, G., Hyndman, R., & Montero-Manso, P. (2020). M4 Hourly Dataset (Version 3) [Data set]. Zenodo.
+
+Dataset can be found here:  
+https://zenodo.org/records/4656480
+
+DOI: 10.5281/zenodo.4656480
 
 ---
 
@@ -310,6 +506,7 @@ This dataset comprises 100 yearly time series, each spanning 46 years from 1970 
 - Time granularity = Yearly
 - Number of past covariates = 0
 - Number of future covariates = 0
+- Number of static covariates = 0
 
 #### Attribution
 
@@ -320,66 +517,6 @@ Dataset can be found here:
 https://zenodo.org/records/4656379
 
 DOI: 10.5281/zenodo.4656379
-
----
-
-## Monthly Unemployment
-
-#### Alias (on scoreboards): monthly_unemployment
-
-#### Domain / Industry: Macroeconomics
-
-#### Description
-
-The "Monthly Unemployment" dataset is a valuable assembly of monthly economic indicators from 1955 to 2018, sourced from the Federal Reserve Economic Data (FRED). It includes critical measures such as the Unemployment Rate (UNRATE), Consumer Price Index (CPIAUCSL), Real GDP (GDPC1), and the Effective Federal Funds Rate (DFF), along with their year-over-year percentage changes, providing a robust foundation for forecasting the U.S. un
-
-#### Dataset characteristics
-
-- Number of series = 1
-- Series length = 573
-- Forecast length = 15
-- Time granularity = Monthly
-- Number of past covariates = 6
-- Number of future covariates = 0
-
-#### Attribution
-
-Dataset is sourced from the Federal Reserve Economic Data (FRED). See more information here:  
-https://fred.stlouisfed.org/
-
-Specific components from the dataset can be downloaded from here:
-
-- **Unemployment Rate (UNRATE)**: https://fred.stlouisfed.org/series/UNRATE
-- **Real Gross Domestic Product (GDPC1)**: https://fred.stlouisfed.org/series/GDPC1
-- **Consumer Price Index for All Urban Consumers: All Items (CPIAUCSL)**: https://fred.stlouisfed.org/series/CPIAUCSL
-- **Effective Federal Funds Rate (DFF)**: https://fred.stlouisfed.org/series/DFF
-
----
-
-## New House Sales - U.S. Census
-
-#### Alias (on scoreboards): new_house_sales
-
-#### Domain / Industry: Housing
-
-#### Description
-
-The "New House Sales" dataset, with its comprehensive monthly data on new single-family house sales in the U.S. divided by region from January 1973 to August 2023, offers a pivotal resource for analyzing regional housing market dynamics, forecasting trends, and informing economic policy decisions. Generated by the U.S. Census Bureau's Survey of Construction, it serves as an essential tool for economists, urban planners, and market analysts interested in the evolution of the U.S. housing sector.
-
-#### Dataset characteristics
-
-- Number of series = 4
-- Series length = 608
-- Forecast length = 15
-- Time granularity = Monthly
-- Number of past covariates = 1
-- Number of future covariates = 0
-
-#### Attribution
-
-Dataset is sourced from the U.S. Census Bureau. Data can be downloaded from here:  
-https://www.census.gov/construction/nrs/historical_data/index.html  
-Download the data labeled as "Houses Sold".
 
 ---
 
@@ -401,6 +538,7 @@ The "Online Retail Sales" dataset aggregates daily transactions from a UK-based 
 - Time granularity = Daily
 - Number of past covariates = 1
 - Number of future covariates = 0
+- Number of static covariates = 0
 
 #### Attribution
 
@@ -412,15 +550,46 @@ DOI:
 
 ---
 
-## Random Walk Plus Dataset
+## PJM Hourly Energy Consumption
 
-#### Alias (on scoreboards): random_walk_plus
+#### Alias (on scoreboards): pjm_energy_consumption
+
+#### Domain / Industry: Energy
+
+#### Description
+
+This dataset contains data related to hourly level energy consumption in regions served by PJM Interconnection LLC (PJM). PJM Interconnection is a regional transmission organization (RTO) that coordinates the movement of wholesale electricity in all or parts of Delaware, Illinois, Indiana, Kentucky, Maryland, Michigan, New Jersey, North Carolina, Ohio, Pennsylvania, Tennessee, Virginia, West Virginia and the District of Columbia.
+
+The hourly power consumption data comes from PJM's website and are in megawatts (GW). This particular dataset is filtered to represent the time span from May 1st, 2017 through June 30th, 2018. There are 10 regions represented in the data. This dataset is valuable for timeseries analysis at the hourly level. It contains seasonalities of different frequencies such as hour-of-day, day-of-week, and day-of-year.
+
+#### Dataset characteristics
+
+- Number of series = 10
+- Series length = 10,223
+- Forecast length = 72
+- Time granularity = Daily
+- Number of past covariates = 0
+- Number of future covariates = 0
+- Number of static covariates = 0
+
+#### Attribution
+
+Dataset is sourced from here:
+https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption?select=est_hourly.paruqet
+
+---
+
+## Random Walk Dataset
+
+#### Alias (on scoreboards): random_walk
 
 #### Domain / Industry: None (Synthetic)
 
 #### Description
 
-The "Random Walk Plus" dataset is crafted to simulate the unpredictable nature of financial markets and economic trends through random walk time series, some of which include deliberate regime shifts to model changes in drift and volatility. It serves as a robust testbed for developing and evaluating time series forecasting models and regime change detection algorithms, offering both the fundamental simplicity of a random walk and the intricate complexity introduced by the regime changes.
+This synthetically generated random walk dataset is a collection of 70 individual time series, each involving 500 time steps. This dataset is generated using the random walk process, a statistical phenomenon often encountered in fields as varied as physics and finance, where each point in the series is a sum of its predecessor and a random fluctuation. Each random fluctuation at every step is drawn independently from a normal distribution, and this process is independent of the current state or any past steps.
+
+This dataset is a valuable resource to explore the principles and applications of random walks processes for timeseries analysis.
 
 #### Dataset characteristics
 
@@ -430,35 +599,42 @@ The "Random Walk Plus" dataset is crafted to simulate the unpredictable nature o
 - Time granularity = None
 - Number of past covariates = 0
 - Number of future covariates = 0
+- Number of static covariates = 0
 
 #### Attribution
 
-This is a synthetic dataset generated by Ready Tensor.
+This is a synthetic dataset generated by Ready Tensor. It is available under the Creative Commons Attribution 4.0 International license (CC-BY 4.0).
 
 ---
 
-## River Flow Dataset
+## Seattle Burke Gilman Trail Dataset
 
-#### Alias (on scoreboards): river_flow
+#### Alias (on scoreboards): seattle_burke_gilman_trail
 
-#### Domain / Industry: None (Synthetic)
+#### Domain / Industry: Urban Planning
 
 #### Description
 
-The "River Flow" dataset is a simplified simulation for predicting river flow. It considers past glacier melting rates and future rainfall data as key factors and aims to forecast river flow for a specified number of days ahead, making it a useful test case for time series forecasting models that accomodate both historical and forward-looking regressors.
+This dataset contains hourly level pedestrian and bicycle counts at the Burke Gilman Trail in Seattle. There are a total of 4 series in the dataset: 2 bicycle count series (north-bound and south-bound) and 2 pedestrian count series. The data is filtered to cover the date range from 1/1/2017 to 7/31/2017. This dataset is useful for timeseries analysis involving short-term seasonalities, especially intra-day (hour-of-the-day) and intra-week (day-of-the-week) seasonalities.
+
+The dataset contains some extreme outliers, presumably due to one-off special events at the trail locations.
 
 #### Dataset characteristics
 
-- Number of series = 1
-- Series length = 1090
-- Forecast length = 10
-- Time granularity = daily
-- Number of past covariates = 1
-- Number of future covariates = 1
+- Number of series = 4
+- Series length = 5,088
+- Forecast length = 168
+- Time granularity = hourly
+- Number of past covariates = 0
+- Number of future covariates = 0
+- Number of static covariates = 4
 
 #### Attribution
 
-This dataset is sourced from the tutorials/examples contained in the repository for [Darts](https://unit8.com/resources/darts-time-series-made-easy-in-python/) python package for time series forecasting.
+This dataset is sourced from the City of Seattle Open Data Portal. See here for more information: https://data.seattle.gov/.
+
+The specific dataset can be extracted here:  
+https://data.seattle.gov/Transportation/Burke-Gilman-Trail-north-of-NE-70th-St-Bicycle-and/2z5v-ecg8/about_data
 
 ---
 
@@ -480,10 +656,68 @@ This dataset comprises five unique time series with varying components, includin
 - Time granularity = None
 - Number of past covariates = 0
 - Number of future covariates = 1
+- Number of static covariates = 0
 
 #### Attribution
 
 This is a synthetic dataset generated by Ready Tensor.
+
+---
+
+## Sunspots
+
+#### Alias (on scoreboards): sunspots
+
+#### Domain / Industry: Astronomy / Astrophysics
+
+#### Description
+
+The Sunspots dataset consists of observations of the number of sunspots on the Sun, recorded each month. It spans the time period from January 1749 to December 1983, providing a long-term view of solar activity.
+
+Sunspots are temporary phenomena on the Sun's photosphere that appear as spots darker than the surrounding areas. They are regions of reduced surface temperature caused by concentrations of magnetic field flux that inhibit convection. Sunspots usually appear in pairs of opposite magnetic polarity. Their number varies according to the approximately 11-year solar cycle.
+
+This dataset is invaluable for time series analysis and forecasting due to its longevity, regularity, and the clear cyclical patterns it presents, which are reflective of the approximately 11-year solar cycle. Researchers and analysts commonly use this dataset to practice and test forecasting models, including ARIMA, exponential smoothing, and more modern machine learning approaches. The dataset's extensive history makes it particularly suitable for studying long-term trends and cyclic behavior in solar activity, offering insights into past solar cycles and helping predict future solar phenomena.
+
+#### Dataset characteristics
+
+- Number of series = 1
+- Series length = 2,280
+- Forecast length = 144
+- Time granularity = Monthly
+- Number of past covariates = 0
+- Number of future covariates = 0
+- Number of static covariates = 0
+
+#### Attribution
+
+This dataset is sourced from here:  
+https://www.kaggle.com/datasets/robervalt/sunspots
+
+---
+
+## Synthetic Multi-Seasonal Timeseries
+
+#### Alias (on scoreboards): synthetic_multiseasonality
+
+#### Domain / Industry: None (Synthetic)
+
+#### Description
+
+This dataset is a synthetically generated collection designed to simulate complex time series forecasting scenarios with multiple seasonalities, covariates, and types. It comprises 36 condensed series, each of 160 epochs (time-steps). The dataset is structured to facilitate the development, testing, and comparison of time series forecasting models, particularly those capable of handling multiple seasonal patterns and different types of covariates, namely static, past and future.
+
+#### Dataset characteristics
+
+- Number of series = 36
+- Series length = 160
+- Forecast length = 10
+- Time granularity = None
+- Number of past covariates = 1
+- Number of future covariates = 2
+- Number of static covariates = 3
+
+#### Attribution
+
+This is a synthetic dataset generated by Ready Tensor. It is available under the Creative Commons Attribution 4.0 International license (CC-BY 4.0).
 
 ---
 
@@ -505,34 +739,10 @@ This synthetic dataset represents daily attendance at a fictitious theme park in
 - Time granularity = Daily
 - Number of past covariates = 0
 - Number of future covariates = 56
+- Number of static covariates = 0
 
 #### Attribution
 
-This is a synthetic dataset generated by Ready Tensor.
-
----
-
-## Wikipedia Page Visits
-
-#### Alias (on scoreboards): wikipedia_page_visits
-
-#### Domain / Industry: Media / News
-
-#### Description
-
-The "Wikipedia Page Visits" dataset captures the ebb and flow of public interest over five years (2018-2022), charting the daily visit counts of 50 diverse Wikipedia pages. Topics span sports, politics, entertainment, technology, and environmental issues, reflecting a broad spectrum of global events and trends such as the 2020 U.S. presidential election, the COVID-19 pandemic, and significant cultural moments like the Black Lives Matter movement. This dataset is a rich repository for analyzing temporal patterns in collective attention and information-seeking behavior.
-
-#### Dataset characteristics
-
-- Number of series = 50
-- Series length = 1826
-- Forecast length = 30
-- Time granularity = Daily
-- Number of past covariates = 0
-- Number of future covariates = 0
-
-#### Attribution
-
-Data is extracted using API provided by Wikipedia. See information here: https://wikimedia.org/api/rest_v1/#/
+This is a synthetic dataset generated by Ready Tensor. It is available under the Creative Commons Attribution 4.0 International license (CC-BY 4.0).
 
 ---

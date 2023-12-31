@@ -30,8 +30,8 @@ def filter_features_for_dataset(
     if dataset_df.empty:
         raise ValueError(f"Error: No features for {dataset_name}")
     if field_type == 'feature':
-        feature_field_types = ['past_covariate', 'future_covariate']
-    else: 
+        feature_field_types = ['past_covariate', 'future_covariate', 'static_covariate']
+    else:
         feature_field_types = [field_type]
     filtered_features = dataset_df[dataset_df["field_type"].isin(feature_field_types)]
     return filtered_features
@@ -79,7 +79,7 @@ def create_target_section(
     Returns:
     Dict: The target section of the schema.
     """
-    
+
     filtered = filter_features_for_dataset(
         dataset_name, "target", features_config
     )
@@ -161,8 +161,10 @@ def create_feature_section(
     # create the features section
     past_covariates = []
     future_covariates = []
+    static_covariates = []
     if filtered.empty:
-        return past_covariates, future_covariates # no exogenous covariates
+        # no exogenous covariates
+        return past_covariates, future_covariates, static_covariates
     for _, feature_row in filtered.iterrows():
         feature = {
             "name": feature_row['field_name'],
@@ -174,9 +176,11 @@ def create_feature_section(
             past_covariates.append(feature)
         elif feature_row['field_type'] == 'future_covariate':
             future_covariates.append(feature)
+        elif feature_row['field_type'] == 'static_covariate':
+            static_covariates.append(feature)
         else:
             raise ValueError(f"Error: Unknown feature type for {dataset_name}")
-    return past_covariates, future_covariates
+    return past_covariates, future_covariates, static_covariates
 
 
 def generate_schemas(
@@ -228,11 +232,13 @@ def generate_schemas(
         schema["forecastTarget"] = create_target_section(
             dataset_name, dataset, features_config)
 
-        past_covariates, future_covariates = create_feature_section(
-            dataset_name, dataset_row, dataset, features_config)
+        past_covariates, future_covariates, static_covariates = \
+            create_feature_section(
+                dataset_name, dataset_row, dataset, features_config)
 
         schema["pastCovariates"] = past_covariates
         schema["futureCovariates"] = future_covariates
+        schema["staticCovariates"] = static_covariates
 
         schemas.append(schema)
         dataset_names.append(dataset_name)
