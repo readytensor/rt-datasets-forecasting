@@ -6,12 +6,12 @@ This repo contains files related to the datasets used for benchmarking models un
 2. Airline Passengers: Transportation / Aviation
 3. ARIMA Process: None (Synthetic)
 4. Australian Beer Production: Food & Beverage / Brewing
-5. Avocado Sales: Agriculture and Food Industry
+5. Avocado Sales: Agriculture and Food
 6. Bank Branch Transactions: Finance / Retail Banking / Synthetic
 7. Climate Related Disasters Frequency: Finance
 8. Daily Stock Prices: Finance
 9. Daily Weather in 26 World Cities: Meteorology
-10. GDP Per Capita Growth: Economics and Finance Industry
+10. GDP Per Capita Growth: Economics and Finance
 11. Geometric Brownian Motion Dataset: None (Synthetic)
 12. M4 Forecasting Competition Sampled Daily Series: Miscellaneous
 13. M4 Forecasting Competition Sampled Hourly Series: Miscellaneous
@@ -21,7 +21,7 @@ This repo contains files related to the datasets used for benchmarking models un
 17. Online Retail Sales: E-commerce / Retail
 18. PJM Hourly Energy Consumption: Energy
 19. Random Walk Dataset: None (Synthetic)
-20. Seattle Burke Gilman Trail Dataset: Urban Planning Industry
+20. Seattle Burke Gilman Trail Dataset: Urban Planning
 21. Smoke Test Forecasting Dataset: None (Synthetic)
 22. Sunspots: Astronomy / Astrophysics
 23. Synthetic Multi-Seasonal Timeseries: None (Synthetic)
