@@ -106,14 +106,14 @@ This is the classic Box & Jenkins airline data which contains monthly totals of 
 
 #### Attribution
 
-**Original source: **
+Original source:
 Box, G.E.P., Jenkins, G.M., Reinsel, G.C., & Ljung, G.M. (2015). Time Series Analysis: Forecasting and Control. John Wiley & Sons.
 
-**Original Publication:**
+Original Publication:
 
 1970
 
-**Dataset Source:**
+Dataset Source:
 
 [https://www.kaggle.com/datasets/rakannimer/air-passengers](https://www.kaggle.com/datasets/rakannimer/air-passengers)
 
