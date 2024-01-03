@@ -1,32 +1,33 @@
 # Datasets for Forecasting model category on Ready Tensor
 
 This repo contains files related to the datasets used for benchmarking models under the **Forecasting** category on Ready tensor. There are a total of 24 benchmarking datasets used in this category. Additionally, there is a 25th dataset for smoke testing of models. The list of datasets and their domain/industry is as follows:
-
-1. Air Quality KDD 2018: Environmental Science
-2. Airline Passengers: Transportation / Aviation
-3. ARIMA Process: None (Synthetic)
-4. Atmospheric CO2 Concentrations: Environmental Science
-5. Australian Beer Production: Food & Beverage / Brewing
-6. Avocado Sales: Agriculture and Food
-7. Bank Branch Transactions: Finance / Retail Banking / Synthetic
-8. Climate Related Disasters Frequency: Climate Science
-9. Daily Stock Prices: Finance
-10. Daily Weather in 26 World Cities: Meteorology
-11. GDP Per Capita Growth: Economics and Finance
-12. Geometric Brownian Motion Dataset: None (Synthetic)
-13. M4 Forecasting Competition Sampled Daily Series: Miscellaneous
-14. M4 Forecasting Competition Sampled Hourly Series: Miscellaneous
-15. M4 Forecasting Competition Sampled Monthly Series: Miscellaneous
-16. M4 Forecasting Competition Sampled Quarterly Series: Miscellaneous
-17. M4 Forecasting Competition Sampled Yearly Series: Miscellaneous
-18. Online Retail Sales: E-commerce / Retail
-19. PJM Hourly Energy Consumption: Energy
-20. Random Walk Dataset: None (Synthetic)
-21. Seattle Burke Gilman Trail Dataset: Urban Planning
-22. Smoke Test Forecasting Dataset: None (Synthetic)
-23. Sunspots: Astronomy / Astrophysics
-24. Synthetic Multi-Seasonal Timeseries: None (Synthetic)
-25. Theme Park attendance: Entertainment / Theme Parks
+| Dataset | Dataset Industry | Time Granularity | Series Length | # of Series | # Past Covariates | # Future Covariates | # Static Covariates |
+|-------------------------------------------------------|:---------------------------:|:----------------:|:-------------:|:-----------:|:-----------------:|:-------------------:|:-------------------:|
+| Air Quality KDD 2018 | Environmental Science | hourly | 10,898 | 34 | 5 | 0 | 0 |
+| Airline Passengers | Transportation / Aviation | monthly | 144 | 1 | 0 | 0 | 0 |
+| ARIMA Process | None (Synthetic) | other | 750 | 25 | 0 | 0 | 0 |
+| Atmospheric CO2 Concentrations | Environmental Science | monthly | 789 | 1 | 0 | 0 | 0 |
+| Australian Beer Production | Food & Beverage / Brewing | quarterly | 218 | 1 | 0 | 0 | 0 |
+| Avocado Sales | Agriculture and Food | weekly | 169 | 106 | 7 | 0 | 1 |
+| Bank Branch Transactions | Finance / Synthetic | weekly | 169 | 32 | 5 | 1 | 2 |
+| Climate Related Disasters Frequency | Climate Science | yearly | 43 | 50 | 6 | 0 | 0 |
+| Daily Stock Prices | Finance | daily | 1,000 | 52 | 5 | 0 | 0 |
+| Daily Weather in 26 World Cities | Meteorology | daily | 1,095 | 25 | 16 | 0 | 1 |
+| GDP per Capita Change | Economics and Finance | yearly | 58 | 89 | 0 | 0 | 0 |
+| Geometric Brownian Motion | None (Synthetic) | other | 504 | 100 | 0 | 0 | 0 |
+| M4 Forecasting Competition Sampled Daily Series | Miscellaneous | daily | 1,280 | 60 | 0 | 0 | 0 |
+| M4 Forecasting Competition Sampled Hourly Series | Miscellaneous | hourly | 748 | 35 | 0 | 0 | 0 |
+| M4 Forecasting Competition Sampled Monthly Series | Miscellaneous | monthly | 324 | 80 | 0 | 0 | 0 |
+| M4 Forecasting Competition Sampled Quarterly Series | Miscellaneous | quarterly | 78 | 75 | 0 | 0 | 0 |
+| M4 Forecasting Competition Sampled Yearly Series | Miscellaneous | yearly | 46 | 100 | 0 | 0 | 0 |
+| Online Retail Sales | E-commerce / Retail | daily | 374 | 38 | 1 | 0 | 0 |
+| PJM Hourly Energy Consumption | Energy | hourly | 10,223 | 10 | 0 | 0 | 0 |
+| Random Walk Dataset | None (Synthetic) | other | 500 | 70 | 0 | 0 | 0 |
+| Seattle Burke Gilman Trail | Urban Planning | hourly | 5,088 | 4 | 0 | 0 | 4 |
+| Smoke Test Forecasting | None (Synthetic) | other | 100 | 5 | 0 | 1 | 0 |
+| Sunspots | Astronomy / Astrophysics | monthly | 2,280 | 1 | 0 | 0 | 0 |
+| Multi-Seasonality Timeseries With Covariates | None (Synthetic) | other | 160 | 36 | 1 | 2 | 3 |
+| Theme Park Attendance | Entertainment / Theme Parks | daily | 1,142 | 1 | 0 | 56 | 0 |
 
 More information about each dataset is provided in the sections below.
 
