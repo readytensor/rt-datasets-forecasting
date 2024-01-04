@@ -1,6 +1,6 @@
 # Datasets for Forecasting model category on Ready Tensor
 
-This repo contains files related to the datasets used for benchmarking models under the **Forecasting** category on Ready tensor. There are a total of 24 benchmarking datasets used in this category. Additionally, there is a 25th dataset for smoke testing of models. The list of datasets and their domain/industry is as follows:
+This repo contains files related to the datasets used for benchmarking models under the **Forecasting** category on Ready tensor. There are a total of 24 benchmarking datasets used in this category. Additionally, there is a 25th dataset for smoke testing of models. The list of datasets is as follows:
 | Dataset | Dataset Industry | Time Granularity | Series Length | # of Series | # Past Covariates | # Future Covariates | # Static Covariates |
 |-------------------------------------------------------|:---------------------------:|:----------------:|:-------------:|:-----------:|:-----------------:|:-------------------:|:-------------------:|
 | Air Quality KDD 2018 | Environmental Science | hourly | 10,898 | 34 | 5 | 0 | 0 |
