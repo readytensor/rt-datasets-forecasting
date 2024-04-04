@@ -6,11 +6,12 @@ import sys
 
 import utils
 import paths
-
+from tqdm import tqdm
 
 
 def save_train_data(
-        train_df: DataFrame, dataset_name: str, processed_datasets_path: str) -> None:
+    train_df: DataFrame, dataset_name: str, processed_datasets_path: str
+) -> None:
     """
     Saves the train data to a CSV file.
 
@@ -19,15 +20,21 @@ def save_train_data(
         dataset_name (str): The name of the dataset.
         processed_datasets_path (str): The path where the processed datasets are stored.
     """
-    train_df.to_csv(os.path.join(
-        processed_datasets_path, dataset_name, f"{dataset_name}_train.csv"), index=False)
+    train_df.to_csv(
+        os.path.join(
+            processed_datasets_path, dataset_name, f"{dataset_name}_train.csv"
+        ),
+        index=False,
+    )
+
 
 def save_test_no_target_data(
-        test_df: DataFrame,
-        target_name: str,
-        past_covariates: List[str],
-        dataset_name: str,
-        processed_datasets_path: str) -> None:
+    test_df: DataFrame,
+    target_name: str,
+    past_covariates: List[str],
+    dataset_name: str,
+    processed_datasets_path: str,
+) -> None:
     """
     Saves the test data without the target column to a CSV file.
 
@@ -38,9 +45,13 @@ def save_test_no_target_data(
         dataset_name (str): The name of the dataset.
         processed_datasets_path (str): The path where the processed datasets are stored.
     """
-    test_no_target_df_no_past_cov = test_df.drop(columns=past_covariates + [target_name], axis=1)
+    test_no_target_df_no_past_cov = test_df.drop(
+        columns=past_covariates + [target_name], axis=1
+    )
     test_no_target_df_no_past_cov.to_csv(
-        os.path.join(processed_datasets_path, dataset_name, f"{dataset_name}_test.csv"), index=False)
+        os.path.join(processed_datasets_path, dataset_name, f"{dataset_name}_test.csv"),
+        index=False,
+    )
 
 
 def get_past_covariates(schema: dict) -> list:
@@ -60,21 +71,22 @@ def get_past_covariates(schema: dict) -> list:
         print(past_covariates)
     """
     # Check if 'pastCovariates' exists in the schema and is a list
-    if 'pastCovariates' in schema and isinstance(schema['pastCovariates'], list):
+    if "pastCovariates" in schema and isinstance(schema["pastCovariates"], list):
         # Extract and return the names of the past covariates
-        return [covariate['name'] for covariate in schema['pastCovariates']]
+        return [covariate["name"] for covariate in schema["pastCovariates"]]
 
     # Return an empty list if there are no past covariates
     return []
 
 
 def save_test_key_data(
-        test_df: DataFrame,
-        id_name: str,
-        time_name: str,
-        target_name: str,
-        dataset_name: str,
-        processed_datasets_path: str) -> None:
+    test_df: DataFrame,
+    id_name: str,
+    time_name: str,
+    target_name: str,
+    dataset_name: str,
+    processed_datasets_path: str,
+) -> None:
     """
     Saves the test key data to a CSV file.
 
@@ -88,10 +100,16 @@ def save_test_key_data(
     """
     test_key_df = test_df[[id_name, time_name, target_name]]
     test_key_df.to_csv(
-        os.path.join(processed_datasets_path, dataset_name, f"{dataset_name}_test_key.csv"), index=False)
+        os.path.join(
+            processed_datasets_path, dataset_name, f"{dataset_name}_test_key.csv"
+        ),
+        index=False,
+    )
 
 
-def create_train_test_testkey_files(dataset_cfg_path:str, processed_datasets_path:str) -> None:
+def create_train_test_testkey_files(
+    dataset_cfg_path: str, processed_datasets_path: str
+) -> None:
     """
     Creates train, test, and test key files for each dataset marked for use in the metadata.
     """
@@ -100,12 +118,17 @@ def create_train_test_testkey_files(dataset_cfg_path:str, processed_datasets_pat
     dataset_metadata = utils.load_metadata(dataset_cfg_path)
 
     # Iterate through each dataset marked for use in the metadata
-    for _, dataset_row in dataset_metadata[dataset_metadata['use_dataset'] == 1].iterrows():
+    for _, dataset_row in dataset_metadata[
+        dataset_metadata["use_dataset"] == 1
+    ].iterrows():
 
         if dataset_row["use_dataset"] == 0:
             continue
 
         dataset_name = dataset_row["name"]
+
+        if dataset_name.startswith("store_sales"):
+            continue
         print("Creating train/test files for dataset:", dataset_name)
 
         # Read dataset
@@ -115,24 +138,24 @@ def create_train_test_testkey_files(dataset_cfg_path:str, processed_datasets_pat
         schema = utils.load_schema(dataset_name, processed_datasets_path)
 
         if schema["timeField"]["dataType"] != "INT":
-            dataset[schema["timeField"]["name"]] = pd.to_datetime(dataset[schema["timeField"]["name"]])
+            dataset[schema["timeField"]["name"]] = pd.to_datetime(
+                dataset[schema["timeField"]["name"]]
+            )
 
-        dataset_train_dfs = []
-        dataset_test_dfs = []
+        # dataset_train_dfs = []
+        # dataset_test_dfs = []
 
-        dataset_series_list = dataset[schema['idField']['name']].unique().tolist()
-        forecast_length = schema['forecastLength']
+        # dataset_series_list = dataset[schema["idField"]["name"]].unique().tolist()
+        forecast_length = schema["forecastLength"]
 
-        for series in dataset_series_list:
-            series_df = dataset[dataset[schema['idField']['name']] == series]
-            series_train_df = series_df.iloc[:-forecast_length]
-            series_test_df = series_df.iloc[-forecast_length:]
-            dataset_train_dfs.append(series_train_df)
-            dataset_test_dfs.append(series_test_df)
-            # print(series, series_df.shape, series_train_df.shape, series_test_df.shape)
-        
-        train_df = pd.concat(dataset_train_dfs)
-        test_df = pd.concat(dataset_test_dfs)
+        grouped = dataset.groupby(schema["idField"]["name"])
+
+        train_dfs = [group.iloc[:-forecast_length] for _, group in grouped]
+        test_dfs = [group.iloc[-forecast_length:] for _, group in grouped]
+
+        # Concatenate all the train and test splits into two DataFrames
+        train_df = pd.concat(train_dfs)
+        test_df = pd.concat(test_dfs)
 
         # Save train/test data
         save_train_data(train_df, dataset_name, processed_datasets_path)
@@ -141,19 +164,20 @@ def create_train_test_testkey_files(dataset_cfg_path:str, processed_datasets_pat
         past_covariates = get_past_covariates(schema)
         save_test_no_target_data(
             test_df,
-            schema['forecastTarget']['name'],
-            past_covariates, # these will be dropped from the test data
+            schema["forecastTarget"]["name"],
+            past_covariates,  # these will be dropped from the test data
             dataset_name,
-            processed_datasets_path)
+            processed_datasets_path,
+        )
 
         # Save test key data
         save_test_key_data(
             test_df,
-            schema['idField']['name'],
-            schema['timeField']['name'],
-            schema['forecastTarget']['name'],
+            schema["idField"]["name"],
+            schema["timeField"]["name"],
+            schema["forecastTarget"]["name"],
             dataset_name,
-            processed_datasets_path
+            processed_datasets_path,
         )
 
 
@@ -161,8 +185,9 @@ def run_train_test_testkey_files_gen():
     """Creates train, test, and test key files for each dataset marked for use in the metadata."""
     create_train_test_testkey_files(
         dataset_cfg_path=paths.dataset_cfg_path,
-        processed_datasets_path=paths.processed_datasets_path
+        processed_datasets_path=paths.processed_datasets_path,
     )
+
 
 if __name__ == "__main__":
     run_train_test_testkey_files_gen()
