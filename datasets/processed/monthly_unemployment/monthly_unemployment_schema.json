@@ -1,0 +1,65 @@
+{
+  "title": "Monthly Unemployment ",
+  "description": "The `Monthly Unemployment` dataset is a valuable assembly of monthly economic indicators from 1955 to 2018, sourced from the Federal Reserve Economic Data. It includes critical measures such as the Unemployment Rate (UNRATE), Consumer Price Index (CPIAUCSL), Real GDP (GDPC1), and the Effective Federal Funds Rate (DFF), along with their year-over-year percentage changes, providing a robust foundation for forecasting the U.S. unemployment rate.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "MONTHLY",
+  "forecastLength": 18,
+  "idField": {
+    "name": "SERIES_ID",
+    "description": "Unique idenfier for the series (there is a single series in this dataset)"
+  },
+  "timeField": {
+    "name": "DATE",
+    "description": "Date representing month and year of the sample.",
+    "dataType": "DATE",
+    "example": "1955-07-01"
+  },
+  "forecastTarget": {
+    "name": "UNRATE",
+    "description": "Target variable: Monthly unemployment rate, representing the percentage of the labor force that is jobless and actively seeking employment.",
+    "dataType": "NUMERIC",
+    "example": 4.0
+  },
+  "pastCovariates": [
+    {
+      "name": "CPIAUCSL",
+      "description": "Consumer Price Index for All Urban Consumers: All Items, indicating the average change over time in the prices paid by urban consumers for a market basket of consumer goods and services.",
+      "dataType": "NUMERIC",
+      "example": 26.76
+    },
+    {
+      "name": "CPIAUCSL_YoY_PCT_CHNG",
+      "description": "Year-over-Year percent change in the Consumer Price Index for All Urban Consumers: All Items, measuring the inflation rate or the increase in prices over a 12-month period.",
+      "dataType": "NUMERIC",
+      "example": -0.372
+    },
+    {
+      "name": "GDPC1",
+      "description": "Real Gross Domestic Product, reflecting the value of all goods and services produced by the nation, adjusted for inflation or deflation.",
+      "dataType": "NUMERIC",
+      "example": 3111.379
+    },
+    {
+      "name": "GDPC1_YoY_PCT_CHNG",
+      "description": "Year-over-Year percent change in Real Gross Domestic Product, providing a measure of economic growth from one year to the next.",
+      "dataType": "NUMERIC",
+      "example": 8.016
+    },
+    {
+      "name": "DFF",
+      "description": "Effective Federal Funds Rate, which is the interest rate at which depository institutions trade federal funds (balances held at Federal Reserve Banks) with each other overnight.",
+      "dataType": "NUMERIC",
+      "example": 1.682
+    },
+    {
+      "name": "DFF_YoY_CHNG",
+      "description": "Year-over-Year change in the Effective Federal Funds Rate, highlighting shifts in monetary policy interest rates from one year to the next.",
+      "dataType": "NUMERIC",
+      "example": 0.883
+    }
+  ],
+  "futureCovariates": []
+}

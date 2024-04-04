@@ -1,0 +1,28 @@
+{
+  "title": "Yearly Tourism",
+  "description": "Yearly Tourism Kaggle Dataset",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "OTHER",
+  "forecastLength": 4,
+  "idField": {
+    "name": "series_id",
+    "description": "Unique identifier for the series."
+  },
+  "timeField": {
+    "name": "year_num",
+    "description": "Time step number of observation.",
+    "dataType": "INT",
+    "example": 1
+  },
+  "forecastTarget": {
+    "name": "value",
+    "description": "Value of the series",
+    "dataType": "NUMERIC",
+    "example": 25092.2284
+  },
+  "pastCovariates": [],
+  "futureCovariates": []
+}

@@ -1,6 +1,6 @@
 {
   "title": "M4 Forecasting Competition Sampled Daily Series",
-  "description": "This dataset comprises 60 timeseries at daily frequency, each spanning 1280 days, randomly sampled from the M4 forecasting competition. These series provide a consistent length of historical window and are ideal for exploring trends and seasonalities of various kinds such as day-of-week, day-of-month, day-of-year, etc. The M4 dataset contains \r\nseries drawn from across various sectors.",
+  "description": "This dataset comprises 60 timeseries at daily frequency, each spanning 1280 days, randomly sampled from the M4 forecasting competition. These series provide a consistent length of historical window and are ideal for exploring trends and seasonalities of various kinds such as day-of-week, day-of-month, day-of-year, etc. The M4 dataset contains \nseries drawn from across various sectors.",
   "modelCategory": "forecasting",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",
