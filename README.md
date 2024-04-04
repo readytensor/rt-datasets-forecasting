@@ -20,7 +20,7 @@ This repo contains files related to the datasets used for benchmarking models un
 | M4 Forecasting Competition Sampled Monthly Series | Miscellaneous | monthly | 324 | 80 | 0 | 0 | 0 |
 | M4 Forecasting Competition Sampled Quarterly Series | Miscellaneous | quarterly | 78 | 75 | 0 | 0 | 0 |
 | M4 Forecasting Competition Sampled Yearly Series | Miscellaneous | yearly | 46 | 100 | 0 | 0 | 0 |
-| Online Retail Sales | E-commerce / Retail | daily | 374 | 38 | 1 | 0 | 0 |
+| Online Retail Sales | E-commerce / Retail | daily | 363 | 38 | 1 | 0 | 0 |
 | PJM Hourly Energy Consumption | Energy | hourly | 10,223 | 10 | 0 | 0 | 0 |
 | Random Walk Dataset | None (Synthetic) | other | 500 | 70 | 0 | 0 | 0 |
 | Seattle Burke Gilman Trail | Urban Planning | hourly | 5,088 | 4 | 0 | 0 | 4 |
