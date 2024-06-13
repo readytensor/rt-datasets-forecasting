@@ -1,0 +1,66 @@
+{
+  "title": "ETTm2",
+  "description": "The `ETTh2` subset of the ETT dataset contains hourly data collected from a single transformer. This subset is particularly useful for studying the temperature variations and trends on an hourly basis, enabling the development of models that can predict short-term temperature changes.",
+  "modelCategory": "forecasting",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "frequency": "OTHER",
+  "forecastLength": 336,
+  "idField": {
+    "name": "series_id",
+    "description": "Series id"
+  },
+  "timeField": {
+    "name": "timestamp",
+    "description": "Time step number of observation.",
+    "dataType": "DATE",
+    "example": "2016-07-01 00:00:00"
+  },
+  "forecastTarget": {
+    "name": "OT",
+    "description": "Oil Temperature, representing the temperature of the transformer's oil, which is the target variable for forecasting.",
+    "dataType": "NUMERIC",
+    "example": 38.662
+  },
+  "pastCovariates": [],
+  "futureCovariates": [
+    {
+      "name": "HUFL",
+      "description": "High Useful Load Forecast, representing the forecasted load at a high level.",
+      "dataType": "NUMERIC",
+      "example": 41.13
+    },
+    {
+      "name": "HULL",
+      "description": "High Useful Load Low, representing the forecasted load at a low level.",
+      "dataType": "NUMERIC",
+      "example": 12.481
+    },
+    {
+      "name": "LUFL",
+      "description": "Medium Useful Load Forecast, representing the forecasted load at a medium level.",
+      "dataType": "NUMERIC",
+      "example": 4.424
+    },
+    {
+      "name": "LULL",
+      "description": "Medium Useful Load Low, representing the forecasted load at a low level.",
+      "dataType": "NUMERIC",
+      "example": 1.311
+    },
+    {
+      "name": "MUFL",
+      "description": "Low Useful Load Forecast, representing the forecasted load at a low level.",
+      "dataType": "NUMERIC",
+      "example": 36.536
+    },
+    {
+      "name": "MULL",
+      "description": "Low Useful Load Low, representing the forecasted load at a low level.",
+      "dataType": "NUMERIC",
+      "example": 9.355
+    }
+  ],
+  "staticCovariates": []
+}

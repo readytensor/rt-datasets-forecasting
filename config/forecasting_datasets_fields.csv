@@ -1,12 +1,12 @@
 model_category,name,field_num,field_name,field_type,data_type,field_description
 forecasting,air_quality_kdd_2018,1,station,id,TEXT,Station id in city
 forecasting,air_quality_kdd_2018,2,timestamp,time,DATETIME,Hour of measurement
-forecasting,air_quality_kdd_2018,3,PM2.5,target,NUMERIC,Air quality metric: PM2.5 - particles that are 2.5 microns or less in diameter (µg/m³)
-forecasting,air_quality_kdd_2018,4,PM10,past_covariate,NUMERIC,Air quality metric: PM10 - particles that are 10 microns or less in diameter (µg/m³)
-forecasting,air_quality_kdd_2018,5,NO2,past_covariate,NUMERIC,Air quality metric: PM10 - nitrogen dioxide (µg/m³)
-forecasting,air_quality_kdd_2018,6,CO,past_covariate,NUMERIC,Air quality metric: CO -carbon monoxide (µg/m³)
-forecasting,air_quality_kdd_2018,7,O3,past_covariate,NUMERIC,Air quality metric: O3 - ozone (µg/m³)
-forecasting,air_quality_kdd_2018,8,SO2,past_covariate,NUMERIC,Air quality metric: SO2 - sulphur dioxide (µg/m³)
+forecasting,air_quality_kdd_2018,3,PM2.5,target,NUMERIC,Air quality metric: PM2.5 - particles that are 2.5 microns or less in diameter (ï¿½g/mï¿½)
+forecasting,air_quality_kdd_2018,4,PM10,past_covariate,NUMERIC,Air quality metric: PM10 - particles that are 10 microns or less in diameter (ï¿½g/mï¿½)
+forecasting,air_quality_kdd_2018,5,NO2,past_covariate,NUMERIC,Air quality metric: PM10 - nitrogen dioxide (ï¿½g/mï¿½)
+forecasting,air_quality_kdd_2018,6,CO,past_covariate,NUMERIC,Air quality metric: CO -carbon monoxide (ï¿½g/mï¿½)
+forecasting,air_quality_kdd_2018,7,O3,past_covariate,NUMERIC,Air quality metric: O3 - ozone (ï¿½g/mï¿½)
+forecasting,air_quality_kdd_2018,8,SO2,past_covariate,NUMERIC,Air quality metric: SO2 - sulphur dioxide (ï¿½g/mï¿½)
 forecasting,airline_passengers,1,SeriesId,id,TEXT,Unique identifier added to this dataset
 forecasting,airline_passengers,2,Month,time,DATE,Date representing month and year of the sample.
 forecasting,airline_passengers,3,#Passengers,target,NUMERIC,Total number of airline passengers in thousands.
@@ -204,3 +204,147 @@ forecasting,weather_forecast_len_336,3,max_temp,target,NUMERIC,Target variable
 forecasting,weather_forecast_len_720,1,series_id,id,TEXT,Station id for each weather station
 forecasting,weather_forecast_len_720,2,timestamp,time,INT,Time step number of observation.
 forecasting,weather_forecast_len_720,3,max_temp,target,NUMERIC,Target variable
+forecasting,etth1_forecast_len_96,1,series_id,id,TEXT,Series id
+forecasting,etth1_forecast_len_96,2,timestamp,time,DATE,Time step number of observation.
+forecasting,etth1_forecast_len_96,3,HUFL,future_covariate,NUMERIC,"High Useful Load Forecast, representing the forecasted load at a high level."
+forecasting,etth1_forecast_len_96,4,HULL,future_covariate,NUMERIC,"High Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth1_forecast_len_96,5,LUFL,future_covariate,NUMERIC,"Medium Useful Load Forecast, representing the forecasted load at a medium level."
+forecasting,etth1_forecast_len_96,6,LULL,future_covariate,NUMERIC,"Medium Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth1_forecast_len_96,7,MUFL,future_covariate,NUMERIC,"Low Useful Load Forecast, representing the forecasted load at a low level."
+forecasting,etth1_forecast_len_96,8,MULL,future_covariate,NUMERIC,"Low Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth1_forecast_len_96,9,OT,target,NUMERIC,"Oil Temperature, representing the temperature of the transformer's oil, which is the target variable for forecasting."
+forecasting,etth1_forecast_len_192,1,series_id,id,TEXT,Series id
+forecasting,etth1_forecast_len_192,2,timestamp,time,DATE,Time step number of observation.
+forecasting,etth1_forecast_len_192,3,HUFL,future_covariate,NUMERIC,"High Useful Load Forecast, representing the forecasted load at a high level."
+forecasting,etth1_forecast_len_192,4,HULL,future_covariate,NUMERIC,"High Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth1_forecast_len_192,5,LUFL,future_covariate,NUMERIC,"Medium Useful Load Forecast, representing the forecasted load at a medium level."
+forecasting,etth1_forecast_len_192,6,LULL,future_covariate,NUMERIC,"Medium Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth1_forecast_len_192,7,MUFL,future_covariate,NUMERIC,"Low Useful Load Forecast, representing the forecasted load at a low level."
+forecasting,etth1_forecast_len_192,8,MULL,future_covariate,NUMERIC,"Low Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth1_forecast_len_192,9,OT,target,NUMERIC,"Oil Temperature, representing the temperature of the transformer's oil, which is the target variable for forecasting."
+forecasting,etth1_forecast_len_336,1,series_id,id,TEXT,Series id
+forecasting,etth1_forecast_len_336,2,timestamp,time,DATE,Time step number of observation.
+forecasting,etth1_forecast_len_336,3,HUFL,future_covariate,NUMERIC,"High Useful Load Forecast, representing the forecasted load at a high level."
+forecasting,etth1_forecast_len_336,4,HULL,future_covariate,NUMERIC,"High Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth1_forecast_len_336,5,LUFL,future_covariate,NUMERIC,"Medium Useful Load Forecast, representing the forecasted load at a medium level."
+forecasting,etth1_forecast_len_336,6,LULL,future_covariate,NUMERIC,"Medium Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth1_forecast_len_336,7,MUFL,future_covariate,NUMERIC,"Low Useful Load Forecast, representing the forecasted load at a low level."
+forecasting,etth1_forecast_len_336,8,MULL,future_covariate,NUMERIC,"Low Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth1_forecast_len_336,9,OT,target,NUMERIC,"Oil Temperature, representing the temperature of the transformer's oil, which is the target variable for forecasting."
+forecasting,etth1_forecast_len_720,1,series_id,id,TEXT,Series id
+forecasting,etth1_forecast_len_720,2,timestamp,time,DATE,Time step number of observation.
+forecasting,etth1_forecast_len_720,3,HUFL,future_covariate,NUMERIC,"High Useful Load Forecast, representing the forecasted load at a high level."
+forecasting,etth1_forecast_len_720,4,HULL,future_covariate,NUMERIC,"High Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth1_forecast_len_720,5,LUFL,future_covariate,NUMERIC,"Medium Useful Load Forecast, representing the forecasted load at a medium level."
+forecasting,etth1_forecast_len_720,6,LULL,future_covariate,NUMERIC,"Medium Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth1_forecast_len_720,7,MUFL,future_covariate,NUMERIC,"Low Useful Load Forecast, representing the forecasted load at a low level."
+forecasting,etth1_forecast_len_720,8,MULL,future_covariate,NUMERIC,"Low Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth1_forecast_len_720,9,OT,target,NUMERIC,"Oil Temperature, representing the temperature of the transformer's oil, which is the target variable for forecasting."
+forecasting,etth2_forecast_len_96,1,series_id,id,TEXT,Series id
+forecasting,etth2_forecast_len_96,2,timestamp,time,DATE,Time step number of observation.
+forecasting,etth2_forecast_len_96,3,HUFL,future_covariate,NUMERIC,"High Useful Load Forecast, representing the forecasted load at a high level."
+forecasting,etth2_forecast_len_96,4,HULL,future_covariate,NUMERIC,"High Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth2_forecast_len_96,5,LUFL,future_covariate,NUMERIC,"Medium Useful Load Forecast, representing the forecasted load at a medium level."
+forecasting,etth2_forecast_len_96,6,LULL,future_covariate,NUMERIC,"Medium Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth2_forecast_len_96,7,MUFL,future_covariate,NUMERIC,"Low Useful Load Forecast, representing the forecasted load at a low level."
+forecasting,etth2_forecast_len_96,8,MULL,future_covariate,NUMERIC,"Low Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth2_forecast_len_96,9,OT,target,NUMERIC,"Oil Temperature, representing the temperature of the transformer's oil, which is the target variable for forecasting."
+forecasting,etth2_forecast_len_192,1,series_id,id,TEXT,Series id
+forecasting,etth2_forecast_len_192,2,timestamp,time,DATE,Time step number of observation.
+forecasting,etth2_forecast_len_192,3,HUFL,future_covariate,NUMERIC,"High Useful Load Forecast, representing the forecasted load at a high level."
+forecasting,etth2_forecast_len_192,4,HULL,future_covariate,NUMERIC,"High Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth2_forecast_len_192,5,LUFL,future_covariate,NUMERIC,"Medium Useful Load Forecast, representing the forecasted load at a medium level."
+forecasting,etth2_forecast_len_192,6,LULL,future_covariate,NUMERIC,"Medium Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth2_forecast_len_192,7,MUFL,future_covariate,NUMERIC,"Low Useful Load Forecast, representing the forecasted load at a low level."
+forecasting,etth2_forecast_len_192,8,MULL,future_covariate,NUMERIC,"Low Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth2_forecast_len_192,9,OT,target,NUMERIC,"Oil Temperature, representing the temperature of the transformer's oil, which is the target variable for forecasting."
+forecasting,etth2_forecast_len_336,1,series_id,id,TEXT,Series id
+forecasting,etth2_forecast_len_336,2,timestamp,time,DATE,Time step number of observation.
+forecasting,etth2_forecast_len_336,3,HUFL,future_covariate,NUMERIC,"High Useful Load Forecast, representing the forecasted load at a high level."
+forecasting,etth2_forecast_len_336,4,HULL,future_covariate,NUMERIC,"High Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth2_forecast_len_336,5,LUFL,future_covariate,NUMERIC,"Medium Useful Load Forecast, representing the forecasted load at a medium level."
+forecasting,etth2_forecast_len_336,6,LULL,future_covariate,NUMERIC,"Medium Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth2_forecast_len_336,7,MUFL,future_covariate,NUMERIC,"Low Useful Load Forecast, representing the forecasted load at a low level."
+forecasting,etth2_forecast_len_336,8,MULL,future_covariate,NUMERIC,"Low Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth2_forecast_len_336,9,OT,target,NUMERIC,"Oil Temperature, representing the temperature of the transformer's oil, which is the target variable for forecasting."
+forecasting,etth2_forecast_len_720,1,series_id,id,TEXT,Series id
+forecasting,etth2_forecast_len_720,2,timestamp,time,DATE,Time step number of observation.
+forecasting,etth2_forecast_len_720,3,HUFL,future_covariate,NUMERIC,"High Useful Load Forecast, representing the forecasted load at a high level."
+forecasting,etth2_forecast_len_720,4,HULL,future_covariate,NUMERIC,"High Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth2_forecast_len_720,5,LUFL,future_covariate,NUMERIC,"Medium Useful Load Forecast, representing the forecasted load at a medium level."
+forecasting,etth2_forecast_len_720,6,LULL,future_covariate,NUMERIC,"Medium Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth2_forecast_len_720,7,MUFL,future_covariate,NUMERIC,"Low Useful Load Forecast, representing the forecasted load at a low level."
+forecasting,etth2_forecast_len_720,8,MULL,future_covariate,NUMERIC,"Low Useful Load Low, representing the forecasted load at a low level."
+forecasting,etth2_forecast_len_720,9,OT,target,NUMERIC,"Oil Temperature, representing the temperature of the transformer's oil, which is the target variable for forecasting."
+forecasting,ettm1_forecast_len_96,1,series_id,id,TEXT,Series id
+forecasting,ettm1_forecast_len_96,2,timestamp,time,DATE,Time step number of observation.
+forecasting,ettm1_forecast_len_96,3,HUFL,future_covariate,NUMERIC,"High Useful Load Forecast, representing the forecasted load at a high level."
+forecasting,ettm1_forecast_len_96,4,HULL,future_covariate,NUMERIC,"High Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm1_forecast_len_96,5,LUFL,future_covariate,NUMERIC,"Medium Useful Load Forecast, representing the forecasted load at a medium level."
+forecasting,ettm1_forecast_len_96,6,LULL,future_covariate,NUMERIC,"Medium Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm1_forecast_len_96,7,MUFL,future_covariate,NUMERIC,"Low Useful Load Forecast, representing the forecasted load at a low level."
+forecasting,ettm1_forecast_len_96,8,MULL,future_covariate,NUMERIC,"Low Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm1_forecast_len_96,9,OT,target,NUMERIC,"Oil Temperature, representing the temperature of the transformer's oil, which is the target variable for forecasting."
+forecasting,ettm1_forecast_len_192,1,series_id,id,TEXT,Series id
+forecasting,ettm1_forecast_len_192,2,timestamp,time,DATE,Time step number of observation.
+forecasting,ettm1_forecast_len_192,3,HUFL,future_covariate,NUMERIC,"High Useful Load Forecast, representing the forecasted load at a high level."
+forecasting,ettm1_forecast_len_192,4,HULL,future_covariate,NUMERIC,"High Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm1_forecast_len_192,5,LUFL,future_covariate,NUMERIC,"Medium Useful Load Forecast, representing the forecasted load at a medium level."
+forecasting,ettm1_forecast_len_192,6,LULL,future_covariate,NUMERIC,"Medium Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm1_forecast_len_192,7,MUFL,future_covariate,NUMERIC,"Low Useful Load Forecast, representing the forecasted load at a low level."
+forecasting,ettm1_forecast_len_192,8,MULL,future_covariate,NUMERIC,"Low Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm1_forecast_len_192,9,OT,target,NUMERIC,"Oil Temperature, representing the temperature of the transformer's oil, which is the target variable for forecasting."
+forecasting,ettm1_forecast_len_336,1,series_id,id,TEXT,Series id
+forecasting,ettm1_forecast_len_336,2,timestamp,time,DATE,Time step number of observation.
+forecasting,ettm1_forecast_len_336,3,HUFL,future_covariate,NUMERIC,"High Useful Load Forecast, representing the forecasted load at a high level."
+forecasting,ettm1_forecast_len_336,4,HULL,future_covariate,NUMERIC,"High Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm1_forecast_len_336,5,LUFL,future_covariate,NUMERIC,"Medium Useful Load Forecast, representing the forecasted load at a medium level."
+forecasting,ettm1_forecast_len_336,6,LULL,future_covariate,NUMERIC,"Medium Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm1_forecast_len_336,7,MUFL,future_covariate,NUMERIC,"Low Useful Load Forecast, representing the forecasted load at a low level."
+forecasting,ettm1_forecast_len_336,8,MULL,future_covariate,NUMERIC,"Low Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm1_forecast_len_336,9,OT,target,NUMERIC,"Oil Temperature, representing the temperature of the transformer's oil, which is the target variable for forecasting."
+forecasting,ettm1_forecast_len_720,1,series_id,id,TEXT,Series id
+forecasting,ettm1_forecast_len_720,2,timestamp,time,DATE,Time step number of observation.
+forecasting,ettm1_forecast_len_720,3,HUFL,future_covariate,NUMERIC,"High Useful Load Forecast, representing the forecasted load at a high level."
+forecasting,ettm1_forecast_len_720,4,HULL,future_covariate,NUMERIC,"High Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm1_forecast_len_720,5,LUFL,future_covariate,NUMERIC,"Medium Useful Load Forecast, representing the forecasted load at a medium level."
+forecasting,ettm1_forecast_len_720,6,LULL,future_covariate,NUMERIC,"Medium Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm1_forecast_len_720,7,MUFL,future_covariate,NUMERIC,"Low Useful Load Forecast, representing the forecasted load at a low level."
+forecasting,ettm1_forecast_len_720,8,MULL,future_covariate,NUMERIC,"Low Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm1_forecast_len_720,9,OT,target,NUMERIC,"Oil Temperature, representing the temperature of the transformer's oil, which is the target variable for forecasting."
+forecasting,ettm2_forecast_len_96,1,series_id,id,TEXT,Series id
+forecasting,ettm2_forecast_len_96,2,timestamp,time,DATE,Time step number of observation.
+forecasting,ettm2_forecast_len_96,3,HUFL,future_covariate,NUMERIC,"High Useful Load Forecast, representing the forecasted load at a high level."
+forecasting,ettm2_forecast_len_96,4,HULL,future_covariate,NUMERIC,"High Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm2_forecast_len_96,5,LUFL,future_covariate,NUMERIC,"Medium Useful Load Forecast, representing the forecasted load at a medium level."
+forecasting,ettm2_forecast_len_96,6,LULL,future_covariate,NUMERIC,"Medium Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm2_forecast_len_96,7,MUFL,future_covariate,NUMERIC,"Low Useful Load Forecast, representing the forecasted load at a low level."
+forecasting,ettm2_forecast_len_96,8,MULL,future_covariate,NUMERIC,"Low Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm2_forecast_len_96,9,OT,target,NUMERIC,"Oil Temperature, representing the temperature of the transformer's oil, which is the target variable for forecasting."
+forecasting,ettm2_forecast_len_192,1,series_id,id,TEXT,Series id
+forecasting,ettm2_forecast_len_192,2,timestamp,time,DATE,Time step number of observation.
+forecasting,ettm2_forecast_len_192,3,HUFL,future_covariate,NUMERIC,"High Useful Load Forecast, representing the forecasted load at a high level."
+forecasting,ettm2_forecast_len_192,4,HULL,future_covariate,NUMERIC,"High Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm2_forecast_len_192,5,LUFL,future_covariate,NUMERIC,"Medium Useful Load Forecast, representing the forecasted load at a medium level."
+forecasting,ettm2_forecast_len_192,6,LULL,future_covariate,NUMERIC,"Medium Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm2_forecast_len_192,7,MUFL,future_covariate,NUMERIC,"Low Useful Load Forecast, representing the forecasted load at a low level."
+forecasting,ettm2_forecast_len_192,8,MULL,future_covariate,NUMERIC,"Low Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm2_forecast_len_192,9,OT,target,NUMERIC,"Oil Temperature, representing the temperature of the transformer's oil, which is the target variable for forecasting."
+forecasting,ettm2_forecast_len_336,1,series_id,id,TEXT,Series id
+forecasting,ettm2_forecast_len_336,2,timestamp,time,DATE,Time step number of observation.
+forecasting,ettm2_forecast_len_336,3,HUFL,future_covariate,NUMERIC,"High Useful Load Forecast, representing the forecasted load at a high level."
+forecasting,ettm2_forecast_len_336,4,HULL,future_covariate,NUMERIC,"High Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm2_forecast_len_336,5,LUFL,future_covariate,NUMERIC,"Medium Useful Load Forecast, representing the forecasted load at a medium level."
+forecasting,ettm2_forecast_len_336,6,LULL,future_covariate,NUMERIC,"Medium Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm2_forecast_len_336,7,MUFL,future_covariate,NUMERIC,"Low Useful Load Forecast, representing the forecasted load at a low level."
+forecasting,ettm2_forecast_len_336,8,MULL,future_covariate,NUMERIC,"Low Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm2_forecast_len_336,9,OT,target,NUMERIC,"Oil Temperature, representing the temperature of the transformer's oil, which is the target variable for forecasting."
+forecasting,ettm2_forecast_len_720,1,series_id,id,TEXT,Series id
+forecasting,ettm2_forecast_len_720,2,timestamp,time,DATE,Time step number of observation.
+forecasting,ettm2_forecast_len_720,3,HUFL,future_covariate,NUMERIC,"High Useful Load Forecast, representing the forecasted load at a high level."
+forecasting,ettm2_forecast_len_720,4,HULL,future_covariate,NUMERIC,"High Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm2_forecast_len_720,5,LUFL,future_covariate,NUMERIC,"Medium Useful Load Forecast, representing the forecasted load at a medium level."
+forecasting,ettm2_forecast_len_720,6,LULL,future_covariate,NUMERIC,"Medium Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm2_forecast_len_720,7,MUFL,future_covariate,NUMERIC,"Low Useful Load Forecast, representing the forecasted load at a low level."
+forecasting,ettm2_forecast_len_720,8,MULL,future_covariate,NUMERIC,"Low Useful Load Low, representing the forecasted load at a low level."
+forecasting,ettm2_forecast_len_720,9,OT,target,NUMERIC,"Oil Temperature, representing the temperature of the transformer's oil, which is the target variable for forecasting."
