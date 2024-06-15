@@ -192,15 +192,3 @@ forecasting,theme_park_attendance,56,Veterans Day_minus2,future_covariate,NUMERI
 forecasting,theme_park_attendance,57,Veterans Day_minus3,future_covariate,NUMERIC,Binary indicator whether Veterans Day holiday occurred 3 days after this day
 forecasting,theme_park_attendance,58,Veterans Day_plus1,future_covariate,NUMERIC,Binary indicator whether Veterans Day holiday occurred 1 day before this day
 forecasting,theme_park_attendance,59,Veterans Day_plus2,future_covariate,NUMERIC,Binary indicator whether Veterans Day holiday occurred 2 days before this day
-forecasting,weather_forecast_len_96,1,series_id,id,TEXT,Station id for each weather station
-forecasting,weather_forecast_len_96,2,timestamp,time,INT,Time step number of observation.
-forecasting,weather_forecast_len_96,3,max_temp,target,NUMERIC,Target variable
-forecasting,weather_forecast_len_192,1,series_id,id,TEXT,Station id for each weather station
-forecasting,weather_forecast_len_192,2,timestamp,time,INT,Time step number of observation.
-forecasting,weather_forecast_len_192,3,max_temp,target,NUMERIC,Target variable
-forecasting,weather_forecast_len_336,1,series_id,id,TEXT,Station id for each weather station
-forecasting,weather_forecast_len_336,2,timestamp,time,INT,Time step number of observation.
-forecasting,weather_forecast_len_336,3,max_temp,target,NUMERIC,Target variable
-forecasting,weather_forecast_len_720,1,series_id,id,TEXT,Station id for each weather station
-forecasting,weather_forecast_len_720,2,timestamp,time,INT,Time step number of observation.
-forecasting,weather_forecast_len_720,3,max_temp,target,NUMERIC,Target variable

@@ -3,4 +3,3 @@ pandas>=1.5,<1.6
 numpy>=1.26,<1.27
 scipy>=1.11,<1.12
 statsmodels>=0.14,<0.15
-matplotlib
